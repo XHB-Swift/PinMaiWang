@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		447B8D459535E27B720676EC /* libPods-PinMaiWang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37342B550ED67A32909ADA1D /* libPods-PinMaiWang.a */; };
+		C609A9CA1ECC040A00DDAB6A /* PMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9C91ECC040A00DDAB6A /* PMAppDelegate.m */; };
+		C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9CB1ECC04AF00DDAB6A /* main.m */; };
 		C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F311ECBF6970025457D /* NSArray+Description.m */; };
 		C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F331ECBF6970025457D /* NSArray+Range.m */; };
 		C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F351ECBF6970025457D /* NSCalendar+Utils.m */; };
@@ -23,10 +25,7 @@
 		C6480F561ECBF6970025457D /* UIView+XHBFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F491ECBF6970025457D /* UIView+XHBFrame.m */; };
 		C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F591ECBF6AC0025457D /* ViewController.m */; };
 		D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D425DF2A1ECBE40800B8B80E /* HomeModel.m */; };
-		D4B6173C1EC998A200CB1AD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B6173B1EC998A200CB1AD8 /* main.m */; };
-		D4B6173F1EC998A200CB1AD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B6173E1EC998A200CB1AD8 /* AppDelegate.m */; };
 		D4B617471EC998A200CB1AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B617461EC998A200CB1AD8 /* Assets.xcassets */; };
-		D4B6174A1EC998A200CB1AD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B617481EC998A200CB1AD8 /* LaunchScreen.storyboard */; };
 		D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617801EC99F6B00CB1AD8 /* CategoryViewController.m */; };
 		D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617831EC99F8900CB1AD8 /* AuctionViewController.m */; };
 		D4B617871EC99FAC00CB1AD8 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617861EC99FAC00CB1AD8 /* CartViewController.m */; };
@@ -43,6 +42,9 @@
 		37342B550ED67A32909ADA1D /* libPods-PinMaiWang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PinMaiWang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A416B669264FB0EE218CF31C /* Pods-PinMaiWang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinMaiWang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinMaiWang/Pods-PinMaiWang.debug.xcconfig"; sourceTree = "<group>"; };
 		C209078F9A095D655AFBA0D6 /* Pods-PinMaiWang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinMaiWang.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinMaiWang/Pods-PinMaiWang.release.xcconfig"; sourceTree = "<group>"; };
+		C609A9C81ECC040A00DDAB6A /* PMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAppDelegate.h; sourceTree = "<group>"; };
+		C609A9C91ECC040A00DDAB6A /* PMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAppDelegate.m; sourceTree = "<group>"; };
+		C609A9CB1ECC04AF00DDAB6A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6480F2F1ECBF6970025457D /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		C6480F301ECBF6970025457D /* NSArray+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
 		C6480F311ECBF6970025457D /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
@@ -75,11 +77,7 @@
 		D425DF291ECBE40800B8B80E /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		D425DF2A1ECBE40800B8B80E /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		D4B617371EC998A200CB1AD8 /* PinMaiWang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinMaiWang.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B6173B1EC998A200CB1AD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D4B6173D1EC998A200CB1AD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../AppDelegate.h; sourceTree = "<group>"; };
-		D4B6173E1EC998A200CB1AD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../AppDelegate.m; sourceTree = "<group>"; };
 		D4B617461EC998A200CB1AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4B617491EC998A200CB1AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4B6174B1EC998A200CB1AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4B6177E1EC99DFB00CB1AD8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D4B6177F1EC99F6B00CB1AD8 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -198,9 +196,10 @@
 			children = (
 				D4B617511EC99D4900CB1AD8 /* Classes */,
 				D4B617461EC998A200CB1AD8 /* Assets.xcassets */,
-				D4B617481EC998A200CB1AD8 /* LaunchScreen.storyboard */,
 				D4B6174B1EC998A200CB1AD8 /* Info.plist */,
 				D4B6173A1EC998A200CB1AD8 /* Supporting Files */,
+				C609A9C81ECC040A00DDAB6A /* PMAppDelegate.h */,
+				C609A9C91ECC040A00DDAB6A /* PMAppDelegate.m */,
 			);
 			path = PinMaiWang;
 			sourceTree = "<group>";
@@ -208,7 +207,7 @@
 		D4B6173A1EC998A200CB1AD8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D4B6173B1EC998A200CB1AD8 /* main.m */,
+				C609A9CB1ECC04AF00DDAB6A /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,8 +258,6 @@
 			children = (
 				D4B617951ECA83D600CB1AD8 /* UIBarButtonItem+Custom.h */,
 				D4B617961ECA83D600CB1AD8 /* UIBarButtonItem+Custom.m */,
-				D4B6173D1EC998A200CB1AD8 /* AppDelegate.h */,
-				D4B6173E1EC998A200CB1AD8 /* AppDelegate.m */,
 				D4B6177E1EC99DFB00CB1AD8 /* PrefixHeader.pch */,
 			);
 			path = View;
@@ -516,7 +513,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B6174A1EC998A200CB1AD8 /* LaunchScreen.storyboard in Resources */,
 				D4B617CA1ECAC95D00CB1AD8 /* XRPlaceholder.png in Resources */,
 				D4B617471EC998A200CB1AD8 /* Assets.xcassets in Resources */,
 			);
@@ -577,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
 				C6480F4F1ECBF6970025457D /* NSString+Security.m in Sources */,
 				C6480F4D1ECBF6970025457D /* NSDictionary+Description.m in Sources */,
 				D4B6178E1EC9A00600CB1AD8 /* AFNetWorkRequest.m in Sources */,
@@ -587,15 +584,14 @@
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,
 				C6480F501ECBF6970025457D /* UIButton+XHBCommon.m in Sources */,
 				C6480F551ECBF6970025457D /* UITableViewCell+Identifier.m in Sources */,
-				D4B6173F1EC998A200CB1AD8 /* AppDelegate.m in Sources */,
 				D4B617941EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m in Sources */,
 				C6480F511ECBF6970025457D /* UIColor+RGB.m in Sources */,
 				D4B617971ECA83D600CB1AD8 /* UIBarButtonItem+Custom.m in Sources */,
 				D4B617C91ECAC95D00CB1AD8 /* XRCarouselView.m in Sources */,
 				C6480F4E1ECBF6970025457D /* NSString+RegularExpression.m in Sources */,
+				C609A9CA1ECC040A00DDAB6A /* PMAppDelegate.m in Sources */,
 				D4B617871EC99FAC00CB1AD8 /* CartViewController.m in Sources */,
 				D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */,
-				D4B6173C1EC998A200CB1AD8 /* main.m in Sources */,
 				C6480F541ECBF6970025457D /* UIImage+ReSize.m in Sources */,
 				C6480F531ECBF6970025457D /* UIImage+Crop.m in Sources */,
 				C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */,
@@ -607,17 +603,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D4B617481EC998A200CB1AD8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4B617491EC998A200CB1AD8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D4B6174C1EC998A200CB1AD8 /* Debug */ = {
