@@ -29,6 +29,7 @@
 		C6480F561ECBF6970025457D /* UIView+XHBFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F491ECBF6970025457D /* UIView+XHBFrame.m */; };
 		C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F591ECBF6AC0025457D /* ViewController.m */; };
 		D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D425DF2A1ECBE40800B8B80E /* HomeModel.m */; };
+		D42E32321ECC1D5000052781 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E32311ECC1D5000052781 /* HomeTableViewCell.m */; };
 		D4B617471EC998A200CB1AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B617461EC998A200CB1AD8 /* Assets.xcassets */; };
 		D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617801EC99F6B00CB1AD8 /* CategoryViewController.m */; };
 		D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617831EC99F8900CB1AD8 /* AuctionViewController.m */; };
@@ -88,6 +89,8 @@
 		C6480F591ECBF6AC0025457D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D425DF291ECBE40800B8B80E /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		D425DF2A1ECBE40800B8B80E /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		D42E32301ECC1D5000052781 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		D42E32311ECC1D5000052781 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		D4B617371EC998A200CB1AD8 /* PinMaiWang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinMaiWang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B617461EC998A200CB1AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B6174B1EC998A200CB1AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -439,6 +442,8 @@
 			children = (
 				D4B617CB1ECAE13C00CB1AD8 /* NoticeView */,
 				D4B617C51ECAC95D00CB1AD8 /* XRCarouselView */,
+				D42E32301ECC1D5000052781 /* HomeTableViewCell.h */,
+				D42E32311ECC1D5000052781 /* HomeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -505,7 +510,7 @@
 				TargetAttributes = {
 					D4B617361EC998A200CB1AD8 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = Y4K7BN45NN;
+						DevelopmentTeam = 6F3GE5ULW8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -609,6 +614,7 @@
 				D4B617941EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m in Sources */,
 				C6480F511ECBF6970025457D /* UIColor+RGB.m in Sources */,
 				D4B617971ECA83D600CB1AD8 /* UIBarButtonItem+Custom.m in Sources */,
+				D42E32321ECC1D5000052781 /* HomeTableViewCell.m in Sources */,
 				D4B617C91ECAC95D00CB1AD8 /* XRCarouselView.m in Sources */,
 				C609A9DB1ECC3E2E00DDAB6A /* PMCategoryContentView.m in Sources */,
 				C6480F4E1ECBF6970025457D /* NSString+RegularExpression.m in Sources */,
@@ -724,7 +730,7 @@
 			baseConfigurationReference = A416B669264FB0EE218CF31C /* Pods-PinMaiWang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y4K7BN45NN;
+				DEVELOPMENT_TEAM = 6F3GE5ULW8;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinMaiWang/Classes/其他/View/PrefixHeader.pch";
@@ -741,7 +747,7 @@
 			baseConfigurationReference = C209078F9A095D655AFBA0D6 /* Pods-PinMaiWang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y4K7BN45NN;
+				DEVELOPMENT_TEAM = 6F3GE5ULW8;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinMaiWang/Classes/其他/View/PrefixHeader.pch";

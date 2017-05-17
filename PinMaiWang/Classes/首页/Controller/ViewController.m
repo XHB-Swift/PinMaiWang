@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "XRCarouselView.h"
 #import "SGAdvertScrollView.h"
+#import "HomeModel.h"
+#import "HomeTableViewCell.h"
 
 @interface ViewController ()<XRCarouselViewDelegate,SGAdvertScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITextField * searTextField;
@@ -151,6 +153,9 @@
         _homeTableView.dataSource = self;
         _homeTableView.tableHeaderView = self.headerView;
         _homeTableView.backgroundColor = XHBRGBColor(243, 243, 243);
+        [_homeTableView registerClass:[HomeTableViewCell class] forCellReuseIdentifier:NSStringFromClass([HomeTableViewCell class])];
+        _homeTableView.rowHeight = 120;
+        
     }
     return _homeTableView;
 }
@@ -178,12 +183,8 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    cell.backgroundColor = [UIColor whiteColor];
+    HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HomeTableViewCell class]) forIndexPath:indexPath];
+    
     return cell;
 }
 
