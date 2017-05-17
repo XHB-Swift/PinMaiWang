@@ -15,7 +15,18 @@
  */
 @property (nonatomic, class, readonly) NSString *cellIdentifier;
 
+/**
+ @param tableView 列表对象
+ @param indexPath 索引
+ @param dict      使用字典适配数据
+ */
 + (__kindof UITableViewCell *)cellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath withDictionary:(NSDictionary *)dict;
+/**
+ @param tableView 列表对象
+ @param indexPath 索引
+ @param anyData   使用任意类型的对象适配数据
+ */
+
 + (__kindof UITableViewCell *)cellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath withAnyData:(id)anyData;
 
 /**

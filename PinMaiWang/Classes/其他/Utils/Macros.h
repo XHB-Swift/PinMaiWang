@@ -90,7 +90,7 @@
 #define XHBPostNotification(name, params)    [XHBCenter postNotificationName:name object: params]
 
 //系统字体设置
-#define XHBSystemFont(size)  [UIFont systemtFontOfSize:size]
+#define XHBSystemFont(size)  [UIFont systemFontOfSize:size]
 
 
 //沙盒操作

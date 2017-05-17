@@ -7,8 +7,11 @@
 //
 
 #import "CategoryViewController.h"
+#import "PMCategoryItemView.h"
+#import "PMCategoryHeaderView.h"
+#import "PMCategoryContentView.h"
 
-@interface CategoryViewController ()
+@interface CategoryViewController () <PMCategoryContentViewDataSource>
 
 @end
 
@@ -17,26 +20,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor grayColor];
-    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]}];
-    
     self.title = @"商品分类";
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self setupHeaderView];
+    [self setupContentView];
+}
+
+- (void)setupHeaderView {
+    
+    PMCategoryHeaderView *headerView = [PMCategoryHeaderView categoryHeaderView];
+    [headerView setY:64];
+    headerView.tag = 10;
+    [self.view addSubview:headerView];
+    
+}
+
+- (void)setupContentView {
+    
+    PMCategoryHeaderView *headerView = [self.view viewWithTag:10];
+    PMCategoryContentView *contentView = [PMCategoryContentView categoryContentViewWithFrame:CGRectMake(0, headerView.maxY, self.view.width, self.view.height-headerView.height)];
+    contentView.dataSource = self;
+    
+    [self.view addSubview:contentView];
+}
+
+- (NSInteger)category:(PMCategoryContentView *)content leftSide:(UITableView *)left numberOfRowsInSection:(NSInteger)section {
+    
+    return 3;
+}
+
+- (NSString *)category:(PMCategoryContentView *)content contentTxtAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return XHBFormatString(@"%ld", indexPath.row+1);
+}
+
+
+- (NSInteger)category:(PMCategoryContentView *)content rightSide:(UICollectionView *)right numberOfItemsInSection:(NSInteger)section {
+    
+    return 0;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
