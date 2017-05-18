@@ -49,7 +49,7 @@
     UIImageView *imageView = [[UIImageView alloc] initWithImage:self.norImage];
     imageView.tag = PM_CATEGORY_ITEM_IMAGEVIEW_TAG;
     
-    UILabel *label = [[UILabel alloc] init];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, imageView.maxY, self.width, 30)];
     label.height = 30;
     label.text = aName;
     label.textColor = PM_CATEGORY_NORMAL_COLOR;
@@ -57,12 +57,13 @@
     label.font = XHBSystemFont(13);
     label.textAlignment = NSTextAlignmentCenter;
     
+//    self.height = label.maxY+5;
+    
     [self addSubview:imageView];
     [self addSubview:label];
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
+- (void)adjustItemViewFrame {
     
     UIImageView *imageView = [self viewWithTag:PM_CATEGORY_ITEM_IMAGEVIEW_TAG];
     UILabel *label = [self viewWithTag:PM_CATEGORY_ITEM_LABEL_TAG];
@@ -72,6 +73,7 @@
         label.origin = CGPointMake(0, imageView.maxY);
         if (label.width == 0) {
             label.width = self.width;
+            self.height = label.maxY+5;
         }
     }
     

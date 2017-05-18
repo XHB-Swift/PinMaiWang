@@ -7,11 +7,13 @@
 //
 
 #import "CategoryViewController.h"
+#import "PMGoodsDetailViewController.h"
+
 #import "PMCategoryItemView.h"
 #import "PMCategoryHeaderView.h"
 #import "PMCategoryContentView.h"
 
-@interface CategoryViewController () <PMCategoryContentViewDataSource>
+@interface CategoryViewController () <PMCategoryContentViewDataSource, PMCategoryContentViewDelegate>
 
 @end
 
@@ -29,7 +31,8 @@
 - (void)setupHeaderView {
     
     PMCategoryHeaderView *headerView = [PMCategoryHeaderView categoryHeaderView];
-    [headerView setY:64];
+    headerView.y = 64;
+    [headerView adjusHeaderViewFrame];
     headerView.tag = 10;
     [self.view addSubview:headerView];
     
@@ -40,24 +43,27 @@
     PMCategoryHeaderView *headerView = [self.view viewWithTag:10];
     PMCategoryContentView *contentView = [PMCategoryContentView categoryContentViewWithFrame:CGRectMake(0, headerView.maxY, self.view.width, self.view.height-headerView.height)];
     contentView.dataSource = self;
+    contentView.delegate = self;
     
     [self.view addSubview:contentView];
 }
 
-- (NSInteger)category:(PMCategoryContentView *)content leftSide:(UITableView *)left numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)category:(PMCategoryContentView *)content forSide:(PMCategoryContentSide)side numberOfElementsInSection:(NSInteger)section {
     
-    return 3;
+    return (side == PMCategoryContentSideLeft) ? 3 : 3;
+    
 }
 
-- (NSString *)category:(PMCategoryContentView *)content contentTxtAtIndexPath:(NSIndexPath *)indexPath {
+- (id)category:(PMCategoryContentView *)content forSide:(PMCategoryContentSide)side dataAtIndexPath:(NSIndexPath *)indexPath {
     
-    return XHBFormatString(@"%ld", indexPath.row+1);
+    return (side == PMCategoryContentSideLeft) ? XHBFormatString(@"%ld", indexPath.row+1) : @{@"imgColor":[UIColor cyanColor],@"lblTxt":@"2"};
 }
 
-
-- (NSInteger)category:(PMCategoryContentView *)content rightSide:(UICollectionView *)right numberOfItemsInSection:(NSInteger)section {
+- (void)category:(PMCategoryContentView *)content didSelectElementforSide:(PMCategoryContentSide)side AtIndex:(NSInteger)index {
     
-    return 0;
+    PMGoodsDetailViewController *vc = [[PMGoodsDetailViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

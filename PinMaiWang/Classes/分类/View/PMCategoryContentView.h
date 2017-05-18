@@ -10,22 +10,34 @@
 
 @class PMCategoryContentView;
 
+typedef NS_ENUM(NSInteger, PMCategoryContentSide) {
+    
+    PMCategoryContentSideLeft = 1,
+    PMCategoryContentSideRight
+    
+};
+
 @protocol PMCategoryContentViewDataSource <NSObject>
 
-- (NSInteger)category:(PMCategoryContentView *)content leftSide:(UITableView *)left numberOfRowsInSection:(NSInteger)section;
-- (NSString *)category:(PMCategoryContentView *)content contentTxtAtIndexPath:(NSIndexPath *)indexPath;
+- (NSInteger)category:(PMCategoryContentView *)content forSide:(PMCategoryContentSide)side numberOfElementsInSection:(NSInteger)section;
+- (id)category:(PMCategoryContentView *)content forSide:(PMCategoryContentSide)side dataAtIndexPath:(NSIndexPath *)indexPath;
 
+@end
 
-- (NSInteger)category:(PMCategoryContentView *)content rightSide:(UICollectionView *)right numberOfItemsInSection:(NSInteger)section;
+@protocol PMCategoryContentViewDelegate <NSObject>
 
+@optional
+
+- (void)category:(PMCategoryContentView *)content didSelectElementforSide:(PMCategoryContentSide)side AtIndex:(NSInteger)index;
 
 @end
 
 @interface PMCategoryContentView : UIView
 
 @property (nonatomic,weak) id<PMCategoryContentViewDataSource> dataSource;
-//@property (nonatomic,weak)
+@property (nonatomic,weak) id<PMCategoryContentViewDelegate>   delegate;
 
 + (instancetype)categoryContentViewWithFrame:(CGRect)frame;
+- (void)reloadDataForSide:(PMCategoryContentSide)side;
 
 @end

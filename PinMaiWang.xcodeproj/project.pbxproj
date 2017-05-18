@@ -14,6 +14,11 @@
 		C609A9D81ECC1C9100DDAB6A /* PMCategoryItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9D71ECC1C9100DDAB6A /* PMCategoryItemView.m */; };
 		C609A9DB1ECC3E2E00DDAB6A /* PMCategoryContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9DA1ECC3E2E00DDAB6A /* PMCategoryContentView.m */; };
 		C609A9DE1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9DD1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m */; };
+		C609A9E11ECD2F8400DDAB6A /* PMCategoryRightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9E01ECD2F8400DDAB6A /* PMCategoryRightViewCell.m */; };
+		C609A9E41ECD302300DDAB6A /* UICollectionViewCell+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9E31ECD302300DDAB6A /* UICollectionViewCell+Identifier.m */; };
+		C609AA021ECD86E700DDAB6A /* PMGoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA011ECD86E700DDAB6A /* PMGoodsDetailViewController.m */; };
+		C609AA051ECD870A00DDAB6A /* PMGoodsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */; };
+		C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */; };
 		C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F311ECBF6970025457D /* NSArray+Description.m */; };
 		C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F331ECBF6970025457D /* NSArray+Range.m */; };
 		C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F351ECBF6970025457D /* NSCalendar+Utils.m */; };
@@ -58,6 +63,16 @@
 		C609A9DA1ECC3E2E00DDAB6A /* PMCategoryContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCategoryContentView.m; sourceTree = "<group>"; };
 		C609A9DC1ECC440D00DDAB6A /* PMCategoryLeftViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCategoryLeftViewCell.h; sourceTree = "<group>"; };
 		C609A9DD1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCategoryLeftViewCell.m; sourceTree = "<group>"; };
+		C609A9DF1ECD2F8400DDAB6A /* PMCategoryRightViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCategoryRightViewCell.h; sourceTree = "<group>"; };
+		C609A9E01ECD2F8400DDAB6A /* PMCategoryRightViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCategoryRightViewCell.m; sourceTree = "<group>"; };
+		C609A9E21ECD302300DDAB6A /* UICollectionViewCell+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Identifier.h"; sourceTree = "<group>"; };
+		C609A9E31ECD302300DDAB6A /* UICollectionViewCell+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Identifier.m"; sourceTree = "<group>"; };
+		C609AA001ECD86E700DDAB6A /* PMGoodsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMGoodsDetailViewController.h; sourceTree = "<group>"; };
+		C609AA011ECD86E700DDAB6A /* PMGoodsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMGoodsDetailViewController.m; sourceTree = "<group>"; };
+		C609AA031ECD870A00DDAB6A /* PMGoodsDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMGoodsDetailView.h; sourceTree = "<group>"; };
+		C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMGoodsDetailView.m; sourceTree = "<group>"; };
+		C609AA091ECD96B000DDAB6A /* PMDetailTitleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDetailTitleViewCell.h; sourceTree = "<group>"; };
+		C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDetailTitleViewCell.m; sourceTree = "<group>"; };
 		C6480F2F1ECBF6970025457D /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		C6480F301ECBF6970025457D /* NSArray+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
 		C6480F311ECBF6970025457D /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
@@ -166,6 +181,8 @@
 				C6480F471ECBF6970025457D /* UITableViewCell+Identifier.m */,
 				C6480F481ECBF6970025457D /* UIView+XHBFrame.h */,
 				C6480F491ECBF6970025457D /* UIView+XHBFrame.m */,
+				C609A9E21ECD302300DDAB6A /* UICollectionViewCell+Identifier.h */,
+				C609A9E31ECD302300DDAB6A /* UICollectionViewCell+Identifier.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -257,6 +274,8 @@
 			children = (
 				D4B617921EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.h */,
 				D4B617931EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m */,
+				C609AA001ECD86E700DDAB6A /* PMGoodsDetailViewController.h */,
+				C609AA011ECD86E700DDAB6A /* PMGoodsDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,6 +293,10 @@
 				D4B617951ECA83D600CB1AD8 /* UIBarButtonItem+Custom.h */,
 				D4B617961ECA83D600CB1AD8 /* UIBarButtonItem+Custom.m */,
 				D4B6177E1EC99DFB00CB1AD8 /* PrefixHeader.pch */,
+				C609AA031ECD870A00DDAB6A /* PMGoodsDetailView.h */,
+				C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */,
+				C609AA091ECD96B000DDAB6A /* PMDetailTitleViewCell.h */,
+				C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +338,8 @@
 				C609A9DA1ECC3E2E00DDAB6A /* PMCategoryContentView.m */,
 				C609A9DC1ECC440D00DDAB6A /* PMCategoryLeftViewCell.h */,
 				C609A9DD1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m */,
+				C609A9DF1ECD2F8400DDAB6A /* PMCategoryRightViewCell.h */,
+				C609A9E01ECD2F8400DDAB6A /* PMCategoryRightViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -606,6 +631,8 @@
 				C6480F561ECBF6970025457D /* UIView+XHBFrame.m in Sources */,
 				D4B6178A1EC99FC400CB1AD8 /* MineViewController.m in Sources */,
 				C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */,
+				C609A9E41ECD302300DDAB6A /* UICollectionViewCell+Identifier.m in Sources */,
+				C609A9E11ECD2F8400DDAB6A /* PMCategoryRightViewCell.m in Sources */,
 				C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */,
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,
 				C6480F501ECBF6970025457D /* UIButton+XHBCommon.m in Sources */,
@@ -620,15 +647,18 @@
 				C6480F4E1ECBF6970025457D /* NSString+RegularExpression.m in Sources */,
 				C609A9CA1ECC040A00DDAB6A /* PMAppDelegate.m in Sources */,
 				C609A9DE1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m in Sources */,
+				C609AA051ECD870A00DDAB6A /* PMGoodsDetailView.m in Sources */,
 				D4B617871EC99FAC00CB1AD8 /* CartViewController.m in Sources */,
 				D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */,
 				C6480F541ECBF6970025457D /* UIImage+ReSize.m in Sources */,
 				C6480F531ECBF6970025457D /* UIImage+Crop.m in Sources */,
 				C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */,
 				D4B617D11ECAE80C00CB1AD8 /* SGAdvertScrollView.m in Sources */,
+				C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */,
 				C6480F521ECBF6970025457D /* UIImage+Color.m in Sources */,
 				D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */,
 				D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */,
+				C609AA021ECD86E700DDAB6A /* PMGoodsDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

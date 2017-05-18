@@ -77,12 +77,22 @@ static NSArray *categories = nil;
         PMCategoryItemView *itemView = [PMCategoryItemView categoryItemWithName:name NormalImage:norImg SelectedImage:selImg];
         itemView.frame = CGRectMake(idx*itemW, 0, itemW, self.height);
         itemView.tag = (idx+1) * PM_CATEGORY_ITEM_RATO;
-        [itemView setNeedsDisplay];
+        [itemView adjustItemViewFrame];
         itemView.state = idx == 0;
         [self addSubview:itemView];
         
     }];
     
+}
+
+- (void)adjusHeaderViewFrame {
+    
+    CGFloat height = self.subviews[0].maxY;
+//    XHBLogObject(self.subviews[0]);
+    if (height != 0 && self.height > height) {
+        self.height = height;
+//        XHBLogObject(@(height));
+    }
 }
 
 - (void)handleCategoryItemTapped:(NSNotification *)notification {

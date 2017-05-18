@@ -65,7 +65,7 @@
         UILabel *label = [self.contentView viewWithTag:LEFT_CELL_LABEL_TAG];
         if (![label.text isEqualToString:anyData]) {
             label.text = anyData;
-            [self setNeedsDisplay];
+            [self setNeedsLayout];
         }
     
     }

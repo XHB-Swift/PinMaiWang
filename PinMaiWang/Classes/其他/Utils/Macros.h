@@ -14,6 +14,7 @@
 #import "UIImage+Crop.h"
 #import "UIImage+ReSize.h"
 #import "UITableViewCell+Identifier.h"
+#import "UICollectionViewCell+Identifier.h"
 #import "UIView+XHBFrame.h"
 #import "NSString+RegularExpression.h"
 #import "NSString+Security.h"

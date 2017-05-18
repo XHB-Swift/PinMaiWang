@@ -11,5 +11,6 @@
 @interface PMCategoryHeaderView : UIView
 
 + (instancetype)categoryHeaderView;
+- (void)adjusHeaderViewFrame;
 
 @end

@@ -16,4 +16,6 @@
 
 + (instancetype)categoryItemWithName:(NSString *)aName NormalImage:(UIImage *)norImage SelectedImage:(UIImage *)selImage;
 
+- (void)adjustItemViewFrame;
+
 @end
