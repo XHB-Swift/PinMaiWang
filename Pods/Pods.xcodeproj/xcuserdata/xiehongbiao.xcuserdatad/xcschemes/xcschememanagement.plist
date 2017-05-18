@@ -6,53 +6,53 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-PinMaiWang.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>70BC44266C6FFE30D2C57129458E070B</key>
+		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
+		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B004560CD39295342038487B27633C14</key>
+		<key>BB989A7C2C8642C3820FFA543243B413</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E96127805A25E6ACC2A1A57BA8437C8A</key>
+		<key>FCFA157C56CCE423C69A9EE841E25E19</key>
 		<dict>
 			<key>primary</key>
 			<true/>

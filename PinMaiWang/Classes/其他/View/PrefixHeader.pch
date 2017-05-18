@@ -13,13 +13,13 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "Macros.h"
 #import "UIBarButtonItem+Custom.h"
-<<<<<<< HEAD
+
 #import <MJRefresh.h>
 #import <MJExtension.h>
-=======
+
 #import "UINavigationController+WXSTransition.h"
 #import "UIViewController+WXSTransition.h"
->>>>>>> origin/master
+
 
 
 #define UI_IS_LANDSCAPE         ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
