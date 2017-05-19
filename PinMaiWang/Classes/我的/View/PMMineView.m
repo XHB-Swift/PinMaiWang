@@ -10,6 +10,8 @@
 #import "PMMineCollectionViewCell.h"
 #import "PMMineHeaderView.h"
 
+PMMineViewMsgType *const PMMineViewMsg = @"PMMineViewMsg";
+
 @interface PMMineView () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
@@ -79,7 +81,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    XHBPostNotification(PMMineViewMsg, @(indexPath.item));
     
 }
 
