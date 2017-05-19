@@ -11,6 +11,7 @@
 #import "PMSettingViewController.h"
 #import "PMLoginViewController.h"
 #import "PMMyAccountViewController.h"
+#import "PMMyIntegrateViewController.h"
 
 @interface MineViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic,strong) UIView * myHeaderView;
@@ -102,39 +103,55 @@ static NSString *cellID = @"MineCellId";
     
     switch (indexPath.row) {
         case 0:{
-            NSLog(@"我的账户");
+            XHBLogObject(@"我的账户");
             PMMyAccountViewController *VC = [[PMMyAccountViewController alloc]init];
             VC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:VC animated:YES];
+            [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+                transition.animationTime = 0.5;
+                transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+                transition.autoShowAndHideNavBar = YES;
+            }];
             
         }
             break;
-        case 1:
-            NSLog(@"我的积分");
+        case 1:{
+            XHBLogObject(@"我的积分");
+            PMMyIntegrateViewController *VC = [[PMMyIntegrateViewController alloc]init];
+            VC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+                transition.animationTime = 0.5;
+                transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+                transition.autoShowAndHideNavBar = YES;
+            }];
+        }
             break;
         case 2:
-            NSLog(@"我的拍卖");
+            XHBLogObject(@"我的拍卖");
             break;
         case 3:
-            NSLog(@"我的收藏");
+            XHBLogObject(@"我的收藏");
             break;
         case 4:
-            NSLog(@"收货地址");
+            XHBLogObject(@"收货地址");
             break;
         case 5:
-            NSLog(@"我的发票");
+            XHBLogObject(@"我的发票");
             break;
         case 6:
-            NSLog(@"我的优惠券");
+            XHBLogObject(@"我的优惠券");
             break;
         case 7:
-            NSLog(@"分享App");
+            XHBLogObject(@"分享App");
             break;
         case 8:{
-            NSLog(@"应用设置");
+            XHBLogObject(@"应用设置");
             PMSettingViewController *VC = [[PMSettingViewController alloc]init];
             VC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:VC animated:YES];
+            [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+                transition.animationTime = 0.5;
+                transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+                transition.autoShowAndHideNavBar = YES;
+            }];
             
             
         }
@@ -257,12 +274,12 @@ static NSString *header = @"Header";
 
 -(void)headBtnAction:(UIButton *)sender{
     
-    NSLog(@"头像");
+    XHBLogObject(@"头像");
 }
 
 -(void)loginAction:(UIButton *)sender{
     
-    NSLog(@"登录/注册");
+    XHBLogObject(@"登录/注册");
     PMLoginViewController *VC = [[PMLoginViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:VC animated:YES];
@@ -271,26 +288,26 @@ static NSString *header = @"Header";
 
 -(void)allAction:(UIButton *)sender{
     
-    NSLog(@"查看全部订单");
+    XHBLogObject(@"查看全部订单");
 }
 
 -(void)buttonAction:(UIButton *)sender{
     
     switch (sender.tag) {
         case 0:
-            NSLog(@"待付款");
+            XHBLogObject(@"待付款");
             break;
         case 1:
-            NSLog(@"待发货");
+            XHBLogObject(@"待发货");
             break;
         case 2:
-            NSLog(@"待收货");
+            XHBLogObject(@"待收货");
             break;
         case 3:
-            NSLog(@"待评价");
+            XHBLogObject(@"待评价");
             break;
         case 4:
-            NSLog(@"已取消");
+            XHBLogObject(@"已取消");
         default:
             break;
     }

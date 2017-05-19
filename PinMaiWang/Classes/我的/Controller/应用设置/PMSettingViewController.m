@@ -22,7 +22,7 @@
 -(UITableView *)setingTableView{
     
     if (!_setingTableView) {
-        _setingTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT *0.65) style:UITableViewStylePlain];
+        _setingTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT *0.55) style:UITableViewStylePlain];
         _setingTableView.delegate = self;
         _setingTableView.dataSource = self;
         
@@ -44,6 +44,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = XHBRGBColor(244, 244, 244);
     self.title = @"设置";
     [self.view addSubview:self.setingTableView];
@@ -81,13 +82,13 @@
     
     switch (indexPath.row) {
         case 0:
-            NSLog(@"个人信息");
+            XHBLogObject(@"个人信息");
             break;
         case 1:
-            NSLog(@"安全设置");
+            XHBLogObject(@"安全设置");
             break;
         case 2:{
-            NSLog(@"清除缓存");
+            XHBLogObject(@"清除缓存");
             NSInteger fileSize = [[SDImageCache sharedImageCache] getSize]/1024/1024>1 ? [[SDImageCache sharedImageCache] getSize]/1024/1024 : [[SDImageCache sharedImageCache] getSize]/1024;
             NSString *sizeString = [[SDImageCache sharedImageCache] getSize]/1024/1024>1 ? @"MB":@"KB";
             
@@ -103,7 +104,7 @@
         }
             break;
         case 3:{
-            NSLog(@"客服电话");
+            XHBLogObject(@"客服电话");
             NSString *callString = [NSString stringWithFormat:@"tel:020-81718859"];
             UIAlertController *VC = [UIAlertController alertControllerWithTitle:callString message:nil preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *call = [UIAlertAction actionWithTitle:@"呼叫" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -120,17 +121,17 @@
         }
             break;
         case 4:{
-            NSLog(@"软件更新");
+            XHBLogObject(@"软件更新");
             PMUpdateViewController *VC = [[PMUpdateViewController alloc]init];
             VC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:VC animated:YES];
         }
             break;
         case 5:
-            NSLog(@"拼买服务协议");
+            XHBLogObject(@"拼买服务协议");
             break;
         case 6:{
-            NSLog(@"关于拼买网");
+            XHBLogObject(@"关于拼买网");
             PMAboutViewController *VC = [[PMAboutViewController alloc]init];
             VC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:VC animated:YES];

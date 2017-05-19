@@ -54,7 +54,7 @@
         if ([[[UIDevice currentDevice]systemName]floatValue] >= 7.0 ? YES:NO) {
             self.automaticallyAdjustsScrollViewInsets = NO;
         }
-        _myAccountTbaleView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.7+10) style:UITableViewStyleGrouped];
+        _myAccountTbaleView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.7+10) style:UITableViewStyleGrouped];
         _myAccountTbaleView.delegate = self;
         _myAccountTbaleView.dataSource = self;
         _myAccountTbaleView.tableHeaderView = self.topView;
@@ -73,7 +73,7 @@
     self.title = @"我的账户";
     [self.view addSubview:self.myAccountTbaleView];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-//    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
