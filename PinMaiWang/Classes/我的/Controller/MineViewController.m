@@ -10,6 +10,7 @@
 #import "PMMineCollectionViewCell.h"
 #import "PMSettingViewController.h"
 #import "PMLoginViewController.h"
+#import "PMMyAccountViewController.h"
 
 @interface MineViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic,strong) UIView * myHeaderView;
@@ -100,8 +101,13 @@ static NSString *cellID = @"MineCellId";
     
     
     switch (indexPath.row) {
-        case 0:
+        case 0:{
             NSLog(@"我的账户");
+            PMMyAccountViewController *VC = [[PMMyAccountViewController alloc]init];
+            VC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:VC animated:YES];
+            
+        }
             break;
         case 1:
             NSLog(@"我的积分");
