@@ -69,6 +69,11 @@
 		D4BE2EA51ECECE1C009E70C0 /* LZHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EA41ECECE1C009E70C0 /* LZHTextField.m */; };
 		D4BE2EA91ECEE7C8009E70C0 /* PMMyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EA81ECEE7C8009E70C0 /* PMMyAccountViewController.m */; };
 		D4BE2EAD1ECF286F009E70C0 /* PMMyIntegrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EAC1ECF286F009E70C0 /* PMMyIntegrateViewController.m */; };
+		D4BE2EB11ECF3436009E70C0 /* PMMyAuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EB01ECF3436009E70C0 /* PMMyAuctionViewController.m */; };
+		D4BE2EB51ECF35DD009E70C0 /* PMMyFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EB41ECF35DD009E70C0 /* PMMyFavoriteViewController.m */; };
+		D4BE2EB91ECF36B7009E70C0 /* PMMyAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EB81ECF36B7009E70C0 /* PMMyAddressViewController.m */; };
+		D4BE2EBD1ECF378C009E70C0 /* PMMyInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EBC1ECF378C009E70C0 /* PMMyInvoiceViewController.m */; };
+		D4BE2EC11ECF38BC009E70C0 /* PMMyCouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EC01ECF38BC009E70C0 /* PMMyCouponViewController.m */; };
 		D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */; };
 		D4C8CB811ECE8F0300E15121 /* PMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB801ECE8F0300E15121 /* PMAboutViewController.m */; };
 		D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB871ECEBE9C00E15121 /* PMLoginViewController.m */; };
@@ -202,6 +207,16 @@
 		D4BE2EA81ECEE7C8009E70C0 /* PMMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyAccountViewController.m; sourceTree = "<group>"; };
 		D4BE2EAB1ECF286F009E70C0 /* PMMyIntegrateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyIntegrateViewController.h; sourceTree = "<group>"; };
 		D4BE2EAC1ECF286F009E70C0 /* PMMyIntegrateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyIntegrateViewController.m; sourceTree = "<group>"; };
+		D4BE2EAF1ECF3436009E70C0 /* PMMyAuctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyAuctionViewController.h; sourceTree = "<group>"; };
+		D4BE2EB01ECF3436009E70C0 /* PMMyAuctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyAuctionViewController.m; sourceTree = "<group>"; };
+		D4BE2EB31ECF35DD009E70C0 /* PMMyFavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyFavoriteViewController.h; sourceTree = "<group>"; };
+		D4BE2EB41ECF35DD009E70C0 /* PMMyFavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyFavoriteViewController.m; sourceTree = "<group>"; };
+		D4BE2EB71ECF36B7009E70C0 /* PMMyAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyAddressViewController.h; sourceTree = "<group>"; };
+		D4BE2EB81ECF36B7009E70C0 /* PMMyAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyAddressViewController.m; sourceTree = "<group>"; };
+		D4BE2EBB1ECF378C009E70C0 /* PMMyInvoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyInvoiceViewController.h; sourceTree = "<group>"; };
+		D4BE2EBC1ECF378C009E70C0 /* PMMyInvoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyInvoiceViewController.m; sourceTree = "<group>"; };
+		D4BE2EBF1ECF38BC009E70C0 /* PMMyCouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyCouponViewController.h; sourceTree = "<group>"; };
+		D4BE2EC01ECF38BC009E70C0 /* PMMyCouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyCouponViewController.m; sourceTree = "<group>"; };
 		D4C8CB7C1ECE8AF500E15121 /* PMUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMUpdateViewController.h; sourceTree = "<group>"; };
 		D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMUpdateViewController.m; sourceTree = "<group>"; };
 		D4C8CB7F1ECE8F0300E15121 /* PMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAboutViewController.h; sourceTree = "<group>"; };
@@ -492,6 +507,11 @@
 			children = (
 				D4B617881EC99FC400CB1AD8 /* MineViewController.h */,
 				D4B617891EC99FC400CB1AD8 /* MineViewController.m */,
+				D4BE2EBE1ECF38AB009E70C0 /* 我的优惠券 */,
+				D4BE2EBA1ECF375D009E70C0 /* 我的发票 */,
+				D4BE2EB61ECF368D009E70C0 /* 收货地址 */,
+				D4BE2EB21ECF35AE009E70C0 /* 我的收藏 */,
+				D4BE2EAE1ECF341E009E70C0 /* 我的拍卖 */,
 				D4BE2EAA1ECF2850009E70C0 /* 我的积分 */,
 				D4BE2EA61ECEE77D009E70C0 /* 我的账户 */,
 				D4C8CB851ECEBE7600E15121 /* 登录 */,
@@ -662,6 +682,51 @@
 			path = "我的积分";
 			sourceTree = "<group>";
 		};
+		D4BE2EAE1ECF341E009E70C0 /* 我的拍卖 */ = {
+			isa = PBXGroup;
+			children = (
+				D4BE2EAF1ECF3436009E70C0 /* PMMyAuctionViewController.h */,
+				D4BE2EB01ECF3436009E70C0 /* PMMyAuctionViewController.m */,
+			);
+			path = "我的拍卖";
+			sourceTree = "<group>";
+		};
+		D4BE2EB21ECF35AE009E70C0 /* 我的收藏 */ = {
+			isa = PBXGroup;
+			children = (
+				D4BE2EB31ECF35DD009E70C0 /* PMMyFavoriteViewController.h */,
+				D4BE2EB41ECF35DD009E70C0 /* PMMyFavoriteViewController.m */,
+			);
+			path = "我的收藏";
+			sourceTree = "<group>";
+		};
+		D4BE2EB61ECF368D009E70C0 /* 收货地址 */ = {
+			isa = PBXGroup;
+			children = (
+				D4BE2EB71ECF36B7009E70C0 /* PMMyAddressViewController.h */,
+				D4BE2EB81ECF36B7009E70C0 /* PMMyAddressViewController.m */,
+			);
+			path = "收货地址";
+			sourceTree = "<group>";
+		};
+		D4BE2EBA1ECF375D009E70C0 /* 我的发票 */ = {
+			isa = PBXGroup;
+			children = (
+				D4BE2EBB1ECF378C009E70C0 /* PMMyInvoiceViewController.h */,
+				D4BE2EBC1ECF378C009E70C0 /* PMMyInvoiceViewController.m */,
+			);
+			path = "我的发票";
+			sourceTree = "<group>";
+		};
+		D4BE2EBE1ECF38AB009E70C0 /* 我的优惠券 */ = {
+			isa = PBXGroup;
+			children = (
+				D4BE2EBF1ECF38BC009E70C0 /* PMMyCouponViewController.h */,
+				D4BE2EC01ECF38BC009E70C0 /* PMMyCouponViewController.m */,
+			);
+			path = "我的优惠券";
+			sourceTree = "<group>";
+		};
 		D4C8CB851ECEBE7600E15121 /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
@@ -803,12 +868,14 @@
 				C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */,
 				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
 				C6E92A671ECDD5C00081924A /* WXSTransitionManager+TypeTool.m in Sources */,
+				D4BE2EB91ECF36B7009E70C0 /* PMMyAddressViewController.m in Sources */,
 				C6480F4F1ECBF6970025457D /* NSString+Security.m in Sources */,
 				D42E32661ECD7C4100052781 /* PMMineCollectionViewCell.m in Sources */,
 				C609A9D51ECC1BCC00DDAB6A /* PMCategoryHeaderView.m in Sources */,
 				C6480F4D1ECBF6970025457D /* NSDictionary+Description.m in Sources */,
 				D4B6178E1EC9A00600CB1AD8 /* AFNetWorkRequest.m in Sources */,
 				C6480F561ECBF6970025457D /* UIView+XHBFrame.m in Sources */,
+				D4BE2EB11ECF3436009E70C0 /* PMMyAuctionViewController.m in Sources */,
 				C6E92A6A1ECDD5C00081924A /* WXSTransitionProperty.m in Sources */,
 				C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */,
 				C6E92A5F1ECDD5C00081924A /* WXSTransitionManager+BoomAnimation.m in Sources */,
@@ -819,10 +886,12 @@
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,
 				C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */,
 				C6480F501ECBF6970025457D /* UIButton+XHBCommon.m in Sources */,
+				D4BE2EB51ECF35DD009E70C0 /* PMMyFavoriteViewController.m in Sources */,
 				C6480F551ECBF6970025457D /* UITableViewCell+Identifier.m in Sources */,
 				D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */,
 				C6E92A5C1ECDD5C00081924A /* UIViewController+WXSTransition.m in Sources */,
 				C609A9D81ECC1C9100DDAB6A /* PMCategoryItemView.m in Sources */,
+				D4BE2EC11ECF38BC009E70C0 /* PMMyCouponViewController.m in Sources */,
 				C6E92A611ECDD5C00081924A /* WXSTransitionManager+CoverAnimation.m in Sources */,
 				D4B617941EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m in Sources */,
 				C6480F511ECBF6970025457D /* UIColor+RGB.m in Sources */,
@@ -835,6 +904,7 @@
 				C6480F4E1ECBF6970025457D /* NSString+RegularExpression.m in Sources */,
 				C6E92A641ECDD5C00081924A /* WXSTransitionManager+PageAnimation.m in Sources */,
 				C609A9CA1ECC040A00DDAB6A /* PMAppDelegate.m in Sources */,
+				D4BE2EBD1ECF378C009E70C0 /* PMMyInvoiceViewController.m in Sources */,
 				D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */,
 				C609A9DE1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m in Sources */,
 				C6E92A661ECDD5C00081924A /* WXSTransitionManager+SystermAnimation.m in Sources */,

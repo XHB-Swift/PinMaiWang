@@ -124,7 +124,11 @@
             XHBLogObject(@"软件更新");
             PMUpdateViewController *VC = [[PMUpdateViewController alloc]init];
             VC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:VC animated:YES];
+            [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+                transition.animationTime = 0.5;
+                transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+                transition.autoShowAndHideNavBar = YES;
+            }];
         }
             break;
         case 5:
@@ -134,7 +138,12 @@
             XHBLogObject(@"关于拼买网");
             PMAboutViewController *VC = [[PMAboutViewController alloc]init];
             VC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:VC animated:YES];
+            [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+                transition.animationTime = 0.5;
+                transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+                transition.autoShowAndHideNavBar = YES;
+            }];
+
         }
             break;
         default:
