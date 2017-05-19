@@ -21,161 +21,170 @@
 #import "PMMineView.h"
 #import "PMMineHeaderView.h"
 
-typedef void(^PMMineVCOptions)();
+@class MineViewController;
+typedef void(^PMMineVCOptions)(MineViewController *mine);
 NSString *const OPT_KEY = @"ITEM_OPT_KEY";
 
 @interface MineViewController ()
 
 @property (nonatomic,strong) PMMineView *mineView;
-@property (nonatomic,strong) NSArray<NSDictionary *> * items;
 
 @end
 
 @implementation MineViewController
 
 #pragma mark 账户
-static PMMineVCOptions opt_account   = ^(){
+static PMMineVCOptions opt_account   = ^(MineViewController *mine){
     
 };
 //- (void)opt_account{
 //    
 //}
 #pragma mark 积分
-static PMMineVCOptions opt_points    = ^(){
+static PMMineVCOptions opt_points    = ^(MineViewController *mine){
     
 };
 //- (void)opt_points{
 //    
 //}
 #pragma mark 拍卖
-static PMMineVCOptions opt_auction   = ^(){
+static PMMineVCOptions opt_auction   = ^(MineViewController *mine){
     
 };
 //- (void)opt_auction{
 //    
 //}
 #pragma mark 收藏
-static PMMineVCOptions opt_favorite  = ^(){
+static PMMineVCOptions opt_favorite  = ^(MineViewController *mine){
     
 };
 //- (void)opt_favorite{
 //    
 //}
 #pragma mark 收货地址
-static PMMineVCOptions opt_address   = ^(){
+static PMMineVCOptions opt_address   = ^(MineViewController *mine){
     
 };
 //- (void)opt_address{
 //    
 //}
 #pragma mark 发票
-static PMMineVCOptions opt_invoice   = ^(){
+static PMMineVCOptions opt_invoice   = ^(MineViewController *mine){
     
 };
 //- (void)opt_invoice{
 //    
 //}
 #pragma mark 优惠卷
-static PMMineVCOptions opt_favorable = ^(){
+static PMMineVCOptions opt_favorable = ^(MineViewController *mine){
     
 };
 //- (void)opt_favorable{
 //    
 //}
 #pragma mark 分享
-static PMMineVCOptions opt_share     = ^(){
+static PMMineVCOptions opt_share     = ^(MineViewController *mine){
     
 };
 //- (void)opt_share{
 //    
 //}
 #pragma mark 设置
-static PMMineVCOptions opt_settings  = ^(){
+static PMMineVCOptions opt_settings  = ^(MineViewController *mine){
     
 };
 //- (void)opt_settings{
 //    
 //}
 #pragma mark 登录注册
-static PMMineVCOptions opt_loginreg = ^(){
+static PMMineVCOptions opt_loginreg = ^(MineViewController *mine){
     
 };
 //- (void)opt_loginreg{
 //    
 //}
 #pragma mark 点击头像
-static PMMineVCOptions opt_icon     = ^(){
+static PMMineVCOptions opt_icon     = ^(MineViewController *mine){
     
 };
 //- (void)opt_icon{
 //    
 //}
 #pragma mark 查看订单
-static PMMineVCOptions opt_order    = ^(){
+static PMMineVCOptions opt_order    = ^(MineViewController *mine){
     
 };
 //- (void)opt_order{
 //    
 //}
 #pragma mark 待付款
-static PMMineVCOptions opt_pay      = ^(){
+static PMMineVCOptions opt_pay      = ^(MineViewController *mine){
     
 };
 //- (void)opt_pay{
 //    
 //}
 #pragma mark 待发货
-static PMMineVCOptions opt_delivery = ^(){
+static PMMineVCOptions opt_delivery = ^(MineViewController *mine){
     
 };
 //- (void)opt_delivery{
 //    
 //}
 #pragma mark 待收货
-static PMMineVCOptions opt_recieve  = ^(){
+static PMMineVCOptions opt_recieve  = ^(MineViewController *mine){
     
 };
 //- (void)opt_recieve{
 //    
 //}
 #pragma mark 待评价
-static PMMineVCOptions opt_comment  = ^(){
+static PMMineVCOptions opt_comment  = ^(MineViewController *mine){
     
 };
 //- (void)opt_comment{
 //    
 //}
 #pragma mark 已取消
-static PMMineVCOptions opt_cancel   = ^(){
+static PMMineVCOptions opt_cancel   = ^(MineViewController *mine){
     
 };
 //- (void)opt_cancel{
 //    
 //}
+#pragma mark 静态数据
+static NSArray<NSDictionary *> *items = nil;
 
--(NSArray<NSDictionary *> *)items{
+- (instancetype)init {
     
-    if (!_items) {
-        _items = @[
-                   @{@"image":@"me_07",@"title":@"我的账户",OPT_KEY:opt_account},
-                   @{@"image":@"me_08",@"title":@"我的积分",OPT_KEY:opt_points},
-                   @{@"image":@"me_09",@"title":@"我的拍卖",OPT_KEY:opt_auction},
-                   @{@"image":@"me_10",@"title":@"我的收藏",OPT_KEY:opt_favorite},
-                   @{@"image":@"me_11",@"title":@"收货地址",OPT_KEY:opt_address},
-                   @{@"image":@"me_12",@"title":@"我的发票",OPT_KEY:opt_invoice},
-                   @{@"image":@"me_13",@"title":@"我的优惠券",OPT_KEY:opt_favorable},
-                   @{@"image":@"me_15_2",@"title":@"分享App",OPT_KEY:opt_share},
-                   @{@"image":@"me_01",@"title":@"应用设置",OPT_KEY:opt_settings}
-                ];
+    if (self = [super init]) {
+        
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            items = @[
+                      @{@"image":@"me_07",@"title":@"我的账户",OPT_KEY:opt_account},
+                      @{@"image":@"me_08",@"title":@"我的积分",OPT_KEY:opt_points},
+                      @{@"image":@"me_09",@"title":@"我的拍卖",OPT_KEY:opt_auction},
+                      @{@"image":@"me_10",@"title":@"我的收藏",OPT_KEY:opt_favorite},
+                      @{@"image":@"me_11",@"title":@"收货地址",OPT_KEY:opt_address},
+                      @{@"image":@"me_12",@"title":@"我的发票",OPT_KEY:opt_invoice},
+                      @{@"image":@"me_13",@"title":@"我的优惠券",OPT_KEY:opt_favorable},
+                      @{@"image":@"me_15_2",@"title":@"分享App",OPT_KEY:opt_share},
+                      @{@"image":@"me_01",@"title":@"应用设置",OPT_KEY:opt_settings}
+                      ];
+
+        });
+        
     }
-    return _items;
+    
+    return self;
 }
 
 - (void)confgiureUI {
     
     self.view.backgroundColor = XHBRGBColor(244, 244, 244);
     self.mineView = [PMMineView mineViewForFullScreen];
-    self.mineView.funcItems = [self.items mutableCopy];
+    self.mineView.funcItems = [items mutableCopy];
     [self.view addSubview:self.mineView];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
@@ -209,18 +218,17 @@ static PMMineVCOptions opt_cancel   = ^(){
             
         }
         
-        options[hmsg]();
+        options[hmsg](self);
         
     }
     
     if ([msg.object isKindOfClass: [NSNumber class]]) {
         
         NSInteger idx = [(NSNumber *)msg.object integerValue];
-        PMMineVCOptions opt = (PMMineVCOptions)self.items[idx][OPT_KEY];
-        opt();
+        PMMineVCOptions opt = (PMMineVCOptions)items[idx][OPT_KEY];
+        opt(self);
         
     }
-
 
 }
 
