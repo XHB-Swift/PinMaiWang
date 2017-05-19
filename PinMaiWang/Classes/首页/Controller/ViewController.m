@@ -148,7 +148,7 @@
 -(UITableView *)homeTableView{
     
     if (!_homeTableView) {
-        _homeTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -64, self.view.bounds.size.width, self.view.bounds.size.height+15) style:UITableViewStylePlain];
+        _homeTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -64, self.view.width, self.view.height+64) style:UITableViewStylePlain];
         _homeTableView.delegate = self;
         _homeTableView.dataSource = self;
         _homeTableView.tableHeaderView = self.headerView;
