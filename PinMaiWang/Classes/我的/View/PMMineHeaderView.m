@@ -8,17 +8,61 @@
 
 #import "PMMineHeaderView.h"
 
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsg =
+@"PMMineHeaderViewMsg";
+
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsgLoginReg =
+@"PMMineHeaderViewMsgLoginReg";
+
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsgIcon =
+@"PMMineHeaderViewMsgIcon";
+
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsgOrder =
+@"PMMineHeaderViewMsgOrder";
+
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsgNotPay =
+@"PMMineHeaderViewMsgNotPay";
+
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsgNotDeliver =
+@"PMMineHeaderViewMsgNotDeliver";
+
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsgNotRecieve =
+@"PMMineHeaderViewMsgNotRecieve";
+
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsgNotComment =
+@"PMMineHeaderViewMsgNotComment";
+
+PMMineHeaderViewMsgType *const PMMineHeaderViewMsgHasCancel =
+@"PMMineHeaderViewMsgHasCancel";
+
+static NSArray<NSDictionary *> *items = nil;
+static NSString *ITEM_IMAGE_KEY = @"ITEM_IMAGE_KEY";
+static NSString *ITEM_TEXT_KEY  = @"ITEM_TEXT_KEY";
+
+#define PMMineHVPostMsg(msg) XHBPostNotification(PMMineHeaderViewMsg, msg)
+
 @implementation PMMineHeaderView
 
 + (NSString *)headerIdentifier {
     
     return NSStringFromClass([PMMineHeaderView class]);
-    
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
     
     if (self = [super initWithFrame:frame]) {
+        
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            // @"待付款",@"待发货",@"待收货",@"待评价",@"已取消"
+            // @"me_03",@"me_04",@"me_05",@"me_06",@"me_15"
+            items = @[@{ITEM_TEXT_KEY:@"待付款",ITEM_IMAGE_KEY:@"me_03"},
+                      @{ITEM_TEXT_KEY:@"待发货",ITEM_IMAGE_KEY:@"me_04"},
+                      @{ITEM_TEXT_KEY:@"待收货",ITEM_IMAGE_KEY:@"me_05"},
+                      @{ITEM_TEXT_KEY:@"待评价",ITEM_IMAGE_KEY:@"me_06"},
+                      @{ITEM_TEXT_KEY:@"已取消",ITEM_IMAGE_KEY:@"me_15"}];
+        });
+        
         [self initializeHeaderView];
     }
     
@@ -87,15 +131,17 @@
     bottomView.backgroundColor = XHBRGBColor(244, 244, 244);
     
 #pragma mark 我的订单功能按钮
-    NSArray *titles = @[@"待付款",@"待发货",@"待收货",@"待评价",@"已取消"];
-    NSArray *imgArray = @[@"me_03",@"me_04",@"me_05",@"me_06",@"me_15"];
-    for (int i = 0; i < 5; i++) {
+    [items enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger i, BOOL * _Nonnull stop) {
+        
+        NSString *txt = obj[ITEM_TEXT_KEY];
+        NSString *img = obj[ITEM_IMAGE_KEY];
+        
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(i*((XHB_SCREEN_WIDTH-30)/5+5)+5, bottomView.maxY+10, (XHB_SCREEN_WIDTH-30)/5, 70);
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         button.titleLabel.font = [UIFont systemFontOfSize:12.0];
-        [button setTitle:titles[i] forState:UIControlStateNormal];
-        [button setImage:[UIImage resizeImage:[UIImage imageNamed:imgArray[i]] toNewSize:CGSizeMake(25, 25)] forState:UIControlStateNormal];
+        [button setTitle:txt forState:UIControlStateNormal];
+        [button setImage:[UIImage resizeImage:[UIImage imageNamed:img] toNewSize:CGSizeMake(25, 25)] forState:UIControlStateNormal];
         if (UI_IS_IPHONE5) {
             button.titleEdgeInsets = UIEdgeInsetsMake(30, -30, 0, 0);
             button.imageEdgeInsets = UIEdgeInsetsMake(-30, 10, 0, 0);
@@ -110,7 +156,9 @@
         button.tag = i;
         [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
         [header addSubview:button];
-    }
+        
+        
+    }];
     
     [header addSubview:bgView];
     [bgView addSubview:headBtn];
@@ -128,39 +176,51 @@
 
 -(void)headBtnAction:(UIButton *)sender{
     
-    NSLog(@"头像");
+    XHBLogObject(@"头像");
+    PMMineHVPostMsg(PMMineHeaderViewMsgIcon);
 }
 
 -(void)loginAction:(UIButton *)sender{
     
-    NSLog(@"登录/注册");
+    XHBLogObject(@"登录/注册");
+    PMMineHVPostMsg(PMMineHeaderViewMsgLoginReg);
 }
 
 -(void)allAction:(UIButton *)sender{
     
-    NSLog(@"查看全部订单");
+    XHBLogObject(@"查看全部订单");
+    PMMineHVPostMsg(PMMineHeaderViewMsgOrder);
 }
 
 -(void)buttonAction:(UIButton *)sender{
     
+    PMMineHeaderViewMsgType *msg = nil;
+    
     switch (sender.tag) {
         case 0:
-            NSLog(@"待付款");
+            XHBLogObject(@"待付款");
+            msg = PMMineHeaderViewMsgNotPay;
             break;
         case 1:
-            NSLog(@"待发货");
+            XHBLogObject(@"待发货");
+            msg = PMMineHeaderViewMsgNotDeliver;
             break;
         case 2:
-            NSLog(@"待收货");
+            XHBLogObject(@"待收货");
+            msg = PMMineHeaderViewMsgNotRecieve;
             break;
         case 3:
-            NSLog(@"待评价");
+            XHBLogObject(@"待评价");
+            msg = PMMineHeaderViewMsgNotComment;
             break;
         case 4:
-            NSLog(@"已取消");
+            XHBLogObject(@"已取消");
+            msg = PMMineHeaderViewMsgHasCancel;
         default:
             break;
     }
+    
+    PMMineHVPostMsg(msg);
 }
 
 
