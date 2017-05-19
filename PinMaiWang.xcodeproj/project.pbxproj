@@ -16,6 +16,8 @@
 		C609A9DE1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9DD1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m */; };
 		C609AA051ECD870A00DDAB6A /* PMGoodsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */; };
 		C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */; };
+		C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */; };
+		C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF38B1ECF2F1700874489 /* PMMineView.m */; };
 		C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F311ECBF6970025457D /* NSArray+Description.m */; };
 		C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F331ECBF6970025457D /* NSArray+Range.m */; };
 		C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F351ECBF6970025457D /* NSCalendar+Utils.m */; };
@@ -96,6 +98,10 @@
 		C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMGoodsDetailView.m; sourceTree = "<group>"; };
 		C609AA091ECD96B000DDAB6A /* PMDetailTitleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDetailTitleViewCell.h; sourceTree = "<group>"; };
 		C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDetailTitleViewCell.m; sourceTree = "<group>"; };
+		C63EF3871ECF2E2100874489 /* PMMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMineHeaderView.h; sourceTree = "<group>"; };
+		C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMineHeaderView.m; sourceTree = "<group>"; };
+		C63EF38A1ECF2F1700874489 /* PMMineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMineView.h; sourceTree = "<group>"; };
+		C63EF38B1ECF2F1700874489 /* PMMineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMineView.m; sourceTree = "<group>"; };
 		C6480F2F1ECBF6970025457D /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		C6480F301ECBF6970025457D /* NSArray+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
 		C6480F311ECBF6970025457D /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
@@ -502,6 +508,10 @@
 			children = (
 				D42E32641ECD7C4100052781 /* PMMineCollectionViewCell.h */,
 				D42E32651ECD7C4100052781 /* PMMineCollectionViewCell.m */,
+				C63EF3871ECF2E2100874489 /* PMMineHeaderView.h */,
+				C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */,
+				C63EF38A1ECF2F1700874489 /* PMMineView.h */,
+				C63EF38B1ECF2F1700874489 /* PMMineView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -787,11 +797,13 @@
 				D4B6178E1EC9A00600CB1AD8 /* AFNetWorkRequest.m in Sources */,
 				C6480F561ECBF6970025457D /* UIView+XHBFrame.m in Sources */,
 				C6E92A6A1ECDD5C00081924A /* WXSTransitionProperty.m in Sources */,
+				C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */,
 				C6E92A5F1ECDD5C00081924A /* WXSTransitionManager+BoomAnimation.m in Sources */,
 				D4B6178A1EC99FC400CB1AD8 /* MineViewController.m in Sources */,
 				C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */,
 				C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */,
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,
+				C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */,
 				C6480F501ECBF6970025457D /* UIButton+XHBCommon.m in Sources */,
 				C6480F551ECBF6970025457D /* UITableViewCell+Identifier.m in Sources */,
 				D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */,
