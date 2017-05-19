@@ -59,7 +59,8 @@
     
     self.backgroundColor = [UIColor whiteColor];
     
-    self.label = [[UILabel alloc]initWithFrame:CGRectMake(10, self.imageView.maxY+5, self.contentView.width-20, 20)];
+    self.imageView =[[UIImageView alloc] init];
+    self.label = [[UILabel alloc] init];
     self.label.textAlignment = NSTextAlignmentCenter;
     self.label.font = [UIFont systemFontOfSize:15.0];
     [self.contentView addSubview:self.imageView];
