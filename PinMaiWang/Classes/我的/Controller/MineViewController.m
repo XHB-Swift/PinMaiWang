@@ -181,9 +181,9 @@ static PMMineVCOptions opt_cancel   = ^(){
     [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self confgiureUI];
     [XHBCenter addObserver:self selector:@selector(handleHeaderViewMsg:) name:PMMineHeaderViewMsg object:nil];
 }
@@ -220,7 +220,8 @@ static PMMineVCOptions opt_cancel   = ^(){
         opt();
         
     }
-    
+
+
 }
 
 - (void)viewWillAppear:(BOOL)animated{
