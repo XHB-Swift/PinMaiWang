@@ -18,6 +18,7 @@
 		C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */; };
 		C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */; };
 		C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF38B1ECF2F1700874489 /* PMMineView.m */; };
+		C63EF3921ECF793B00874489 /* UINavigationBar+DeprecateBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */; };
 		C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F311ECBF6970025457D /* NSArray+Description.m */; };
 		C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F331ECBF6970025457D /* NSArray+Range.m */; };
 		C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F351ECBF6970025457D /* NSCalendar+Utils.m */; };
@@ -108,6 +109,8 @@
 		C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMineHeaderView.m; sourceTree = "<group>"; };
 		C63EF38A1ECF2F1700874489 /* PMMineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMineView.h; sourceTree = "<group>"; };
 		C63EF38B1ECF2F1700874489 /* PMMineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMineView.m; sourceTree = "<group>"; };
+		C63EF3901ECF793B00874489 /* UINavigationBar+DeprecateBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+DeprecateBackground.h"; sourceTree = "<group>"; };
+		C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+DeprecateBackground.m"; sourceTree = "<group>"; };
 		C6480F2F1ECBF6970025457D /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		C6480F301ECBF6970025457D /* NSArray+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
 		C6480F311ECBF6970025457D /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
@@ -632,6 +635,8 @@
 				D4B617C51ECAC95D00CB1AD8 /* XRCarouselView */,
 				D42E32301ECC1D5000052781 /* HomeTableViewCell.h */,
 				D42E32311ECC1D5000052781 /* HomeTableViewCell.m */,
+				C63EF3901ECF793B00874489 /* UINavigationBar+DeprecateBackground.h */,
+				C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -867,6 +872,7 @@
 				C6E92A681ECDD5C00081924A /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */,
 				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
+				C63EF3921ECF793B00874489 /* UINavigationBar+DeprecateBackground.m in Sources */,
 				C6E92A671ECDD5C00081924A /* WXSTransitionManager+TypeTool.m in Sources */,
 				D4BE2EB91ECF36B7009E70C0 /* PMMyAddressViewController.m in Sources */,
 				C6480F4F1ECBF6970025457D /* NSString+Security.m in Sources */,
