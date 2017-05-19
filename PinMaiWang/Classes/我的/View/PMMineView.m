@@ -64,4 +64,22 @@
     return [PMMineCollectionViewCell cellForCollectionView:collectionView atIndexPath:indexPath withDictionary:self.funcItems[indexPath.item]];
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    UICollectionReusableView *rv = nil;
+    
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        
+        rv = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:[PMMineHeaderView headerIdentifier] forIndexPath:indexPath];
+    }
+    
+    return rv;
+    
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+}
+
 @end
