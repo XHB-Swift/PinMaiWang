@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PMMineCollectionViewCell : UICollectionViewCell
-@property (nonatomic,strong) NSDictionary * mineDict;
-
 
 @end
