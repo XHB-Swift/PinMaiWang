@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NSString PMMineViewMsgType;
+
+UIKIT_EXTERN PMMineViewMsgType *const PMMineViewMsg;
+
 @interface PMMineView : UIView
 
 @property (nonatomic, copy) NSMutableArray *funcItems;

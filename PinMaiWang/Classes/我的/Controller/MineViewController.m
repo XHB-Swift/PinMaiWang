@@ -195,6 +195,7 @@ static NSArray<NSDictionary *> *items = nil;
     [super viewDidLoad];
     [self confgiureUI];
     [XHBCenter addObserver:self selector:@selector(handleHeaderViewMsg:) name:PMMineHeaderViewMsg object:nil];
+    [XHBCenter addObserver:self selector:@selector(handleHeaderViewMsg:) name:PMMineViewMsg object:nil];
 }
 
 - (void)handleHeaderViewMsg:(NSNotification *)msg {
