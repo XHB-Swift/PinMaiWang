@@ -171,9 +171,6 @@
     self.navigationItem.titleView = self.searTextField;
     [self.view addSubview:self.homeTableView];
     
-    
-    
-    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -284,14 +281,27 @@
     
 }
 
+#pragma mark 滚动代理方法
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    CGFloat alpha = scrollView.contentOffset.y / self.topScrollView.height;
+    [self.navigationController.navigationBar xhb_setBackgroundColor: XHBHexAColor(0x1E8CEE, alpha > 0 ? alpha : 0)];
+    //XHBLogObject(@(alpha));
+}
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [[self.navigationController.navigationBar subviews] objectAtIndex:0].alpha = 0;
+    
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [self scrollViewDidScroll:self.homeTableView];
+
 }
+
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [[self.navigationController.navigationBar subviews] objectAtIndex:0].alpha = 1;
+    
+    [self.navigationController.navigationBar xhb_resetNavigationBar];
 }
 
 
