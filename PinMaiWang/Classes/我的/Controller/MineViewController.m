@@ -35,6 +35,8 @@ NSString *const OPT_KEY = @"ITEM_OPT_KEY";
 
 #pragma mark 账户
 static PMMineVCOptions opt_account   = ^(MineViewController *mine){
+    PMMyAccountViewController *VC = [[PMMyAccountViewController alloc]init];
+    [mine.navigationController pushViewController:VC animated:YES];
     
 };
 //- (void)opt_account{
