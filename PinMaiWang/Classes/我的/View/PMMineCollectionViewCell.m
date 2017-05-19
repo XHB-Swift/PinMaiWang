@@ -49,7 +49,7 @@
 
 - (void)layoutSubviews {
     
-    self.imageView.size = self.imageView.image.size;
+    self.imageView.size = CGSizeApplyAffineTransform(self.imageView.image.size, CGAffineTransformMakeScale(0.5, 0.5));
     self.imageView.center = CGPointMake(self.contentView.width/2, self.contentView.height/2-10);
     self.label.frame = CGRectMake(10, self.imageView.maxY+10, self.contentView.width-20, 20);
     
