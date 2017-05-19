@@ -19,7 +19,7 @@
 
 #import "UINavigationController+WXSTransition.h"
 #import "UIViewController+WXSTransition.h"
-
+#import <SDImageCache.h>
 
 
 #define UI_IS_LANDSCAPE         ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)

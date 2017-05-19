@@ -64,6 +64,10 @@
 		D4B617C91ECAC95D00CB1AD8 /* XRCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617C71ECAC95D00CB1AD8 /* XRCarouselView.m */; };
 		D4B617CA1ECAC95D00CB1AD8 /* XRPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B617C81ECAC95D00CB1AD8 /* XRPlaceholder.png */; };
 		D4B617D11ECAE80C00CB1AD8 /* SGAdvertScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617D01ECAE80C00CB1AD8 /* SGAdvertScrollView.m */; };
+		D4BE2EA51ECECE1C009E70C0 /* LZHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EA41ECECE1C009E70C0 /* LZHTextField.m */; };
+		D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */; };
+		D4C8CB811ECE8F0300E15121 /* PMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB801ECE8F0300E15121 /* PMAboutViewController.m */; };
+		D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB871ECEBE9C00E15121 /* PMLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +188,14 @@
 		D4B617C81ECAC95D00CB1AD8 /* XRPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XRPlaceholder.png; sourceTree = "<group>"; };
 		D4B617CF1ECAE80C00CB1AD8 /* SGAdvertScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAdvertScrollView.h; sourceTree = "<group>"; };
 		D4B617D01ECAE80C00CB1AD8 /* SGAdvertScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAdvertScrollView.m; sourceTree = "<group>"; };
+		D4BE2EA31ECECE1C009E70C0 /* LZHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTextField.h; sourceTree = "<group>"; };
+		D4BE2EA41ECECE1C009E70C0 /* LZHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHTextField.m; sourceTree = "<group>"; };
+		D4C8CB7C1ECE8AF500E15121 /* PMUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMUpdateViewController.h; sourceTree = "<group>"; };
+		D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMUpdateViewController.m; sourceTree = "<group>"; };
+		D4C8CB7F1ECE8F0300E15121 /* PMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAboutViewController.h; sourceTree = "<group>"; };
+		D4C8CB801ECE8F0300E15121 /* PMAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAboutViewController.m; sourceTree = "<group>"; };
+		D4C8CB861ECEBE9C00E15121 /* PMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMLoginViewController.h; sourceTree = "<group>"; };
+		D4C8CB871ECEBE9C00E15121 /* PMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +317,10 @@
 			children = (
 				D42E326B1ECD940A00052781 /* PMSettingViewController.h */,
 				D42E326C1ECD940A00052781 /* PMSettingViewController.m */,
+				D4C8CB7C1ECE8AF500E15121 /* PMUpdateViewController.h */,
+				D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */,
+				D4C8CB7F1ECE8F0300E15121 /* PMAboutViewController.h */,
+				D4C8CB801ECE8F0300E15121 /* PMAboutViewController.m */,
 			);
 			path = "应用设置";
 			sourceTree = "<group>";
@@ -464,6 +480,7 @@
 			children = (
 				D4B617881EC99FC400CB1AD8 /* MineViewController.h */,
 				D4B617891EC99FC400CB1AD8 /* MineViewController.m */,
+				D4C8CB851ECEBE7600E15121 /* 登录 */,
 				D42E326A1ECD940A00052781 /* 应用设置 */,
 			);
 			path = Controller;
@@ -609,6 +626,17 @@
 			path = NoticeView;
 			sourceTree = "<group>";
 		};
+		D4C8CB851ECEBE7600E15121 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				D4C8CB861ECEBE9C00E15121 /* PMLoginViewController.h */,
+				D4C8CB871ECEBE9C00E15121 /* PMLoginViewController.m */,
+				D4BE2EA31ECECE1C009E70C0 /* LZHTextField.h */,
+				D4BE2EA41ECECE1C009E70C0 /* LZHTextField.m */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -643,7 +671,7 @@
 				TargetAttributes = {
 					D4B617361EC998A200CB1AD8 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = Y4K7BN45NN;
+						DevelopmentTeam = 6F3GE5ULW8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -753,6 +781,7 @@
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,
 				C6480F501ECBF6970025457D /* UIButton+XHBCommon.m in Sources */,
 				C6480F551ECBF6970025457D /* UITableViewCell+Identifier.m in Sources */,
+				D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */,
 				C6E92A5C1ECDD5C00081924A /* UIViewController+WXSTransition.m in Sources */,
 				C609A9D81ECC1C9100DDAB6A /* PMCategoryItemView.m in Sources */,
 				C6E92A611ECDD5C00081924A /* WXSTransitionManager+CoverAnimation.m in Sources */,
@@ -767,11 +796,14 @@
 				C6480F4E1ECBF6970025457D /* NSString+RegularExpression.m in Sources */,
 				C6E92A641ECDD5C00081924A /* WXSTransitionManager+PageAnimation.m in Sources */,
 				C609A9CA1ECC040A00DDAB6A /* PMAppDelegate.m in Sources */,
+				D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */,
 				C609A9DE1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m in Sources */,
 				C6E92A661ECDD5C00081924A /* WXSTransitionManager+SystermAnimation.m in Sources */,
 				C609AA051ECD870A00DDAB6A /* PMGoodsDetailView.m in Sources */,
 				D4B617871EC99FAC00CB1AD8 /* CartViewController.m in Sources */,
+				D4C8CB811ECE8F0300E15121 /* PMAboutViewController.m in Sources */,
 				C6E92A5D1ECDD5C00081924A /* UIViewController+WXSTransitionProperty.m in Sources */,
+				D4BE2EA51ECECE1C009E70C0 /* LZHTextField.m in Sources */,
 				D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */,
 				C6480F541ECBF6970025457D /* UIImage+ReSize.m in Sources */,
 				C6480F531ECBF6970025457D /* UIImage+Crop.m in Sources */,
@@ -886,7 +918,7 @@
 			baseConfigurationReference = 0C30A6D61ADFA2ABD5A87026 /* Pods-PinMaiWang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y4K7BN45NN;
+				DEVELOPMENT_TEAM = 6F3GE5ULW8;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinMaiWang/Classes/其他/View/PrefixHeader.pch";
@@ -903,7 +935,7 @@
 			baseConfigurationReference = 5E10AE7E992B5315B9966992 /* Pods-PinMaiWang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y4K7BN45NN;
+				DEVELOPMENT_TEAM = 6F3GE5ULW8;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinMaiWang/Classes/其他/View/PrefixHeader.pch";

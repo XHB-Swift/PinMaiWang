@@ -9,7 +9,7 @@
 #import "MineViewController.h"
 #import "PMMineCollectionViewCell.h"
 #import "PMSettingViewController.h"
-
+#import "PMLoginViewController.h"
 
 @interface MineViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic,strong) UIView * myHeaderView;
@@ -71,6 +71,9 @@
     
     self.view.backgroundColor = XHBRGBColor(244, 244, 244);
     [self.view addSubview:self.mineCollectionView];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -94,6 +97,7 @@ static NSString *cellID = @"MineCellId";
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
     
     switch (indexPath.row) {
         case 0:
@@ -123,7 +127,9 @@ static NSString *cellID = @"MineCellId";
         case 8:{
             NSLog(@"应用设置");
             PMSettingViewController *VC = [[PMSettingViewController alloc]init];
+            VC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:VC animated:YES];
+            
             
         }
             
@@ -251,6 +257,10 @@ static NSString *header = @"Header";
 -(void)loginAction:(UIButton *)sender{
     
     NSLog(@"登录/注册");
+    PMLoginViewController *VC = [[PMLoginViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:VC animated:YES];
+    
 }
 
 -(void)allAction:(UIButton *)sender{
@@ -287,6 +297,7 @@ static NSString *header = @"Header";
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.navigationController.navigationBar.hidden = YES;
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -295,7 +306,9 @@ static NSString *header = @"Header";
     self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
     self.navigationController.navigationBar.hidden = NO;
     
+    
 }
+
 
 
 

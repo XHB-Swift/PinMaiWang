@@ -197,12 +197,24 @@
 
 -(void)rightBarButtonAction:(UIBarButtonItem *)sender{
     
-    NSLog(@"客服");
+    NSString *callString = [NSString stringWithFormat:@"tel:17620091420"];
+    UIAlertController *VC = [UIAlertController alertControllerWithTitle:callString message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *call = [UIAlertAction actionWithTitle:@"呼叫" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        // 调用系统拨号功能
+        [[UIApplication sharedApplication]openURL:[NSURL URLWithString:callString] options:@{} completionHandler:^(BOOL success) {
+            success = YES;
+        } ];
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    [VC addAction:call];
+    [VC addAction:cancel];
+    [self presentViewController:VC animated:YES completion:nil];
+
 }
 
 -(void)buttonAction:(UIButton *)sender{
     
-    NSLog(@"语音");
+    NSLog(@"语音输入");
 }
 
 #pragma mark XRCarouselViewDelegate
