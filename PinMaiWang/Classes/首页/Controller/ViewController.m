@@ -192,12 +192,12 @@
 
 -(void)leftBarButtonAction:(UIBarButtonItem *)sender{
     
-    NSLog(@"消息");
+    XHBLogObject(@"消息");
 }
 
 -(void)rightBarButtonAction:(UIBarButtonItem *)sender{
     
-    NSString *callString = [NSString stringWithFormat:@"tel:17620091420"];
+    NSString *callString = [NSString stringWithFormat:@"tel:020-81718859"];
     UIAlertController *VC = [UIAlertController alertControllerWithTitle:callString message:nil preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *call = [UIAlertAction actionWithTitle:@"呼叫" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         // 调用系统拨号功能
@@ -214,7 +214,7 @@
 
 -(void)buttonAction:(UIButton *)sender{
     
-    NSLog(@"语音输入");
+    XHBLogObject(@"语音输入");
 }
 
 #pragma mark XRCarouselViewDelegate
@@ -245,34 +245,34 @@
     
     switch (sender.tag) {
         case 0:
-            NSLog(@"龙虾");
+            XHBLogObject(@"龙虾");
             break;
         case 1:
-            NSLog(@"蟹类");
+            XHBLogObject(@"蟹类");
             break;
         case 2:
-            NSLog(@"生蚝");
+            XHBLogObject(@"生蚝");
             break;
         case 3:
-            NSLog(@"鲍鱼");
+            XHBLogObject(@"鲍鱼");
             break;
         case 4:
-            NSLog(@"象拔蚌");
+            XHBLogObject(@"象拔蚌");
             break;
         case 5:
-            NSLog(@"冻虾");
+            XHBLogObject(@"冻虾");
             break;
         case 6:
-            NSLog(@"冻蟹");
+            XHBLogObject(@"冻蟹");
             break;
         case 7:
-            NSLog(@"冻鱼");
+            XHBLogObject(@"冻鱼");
             break;
         case 8:
-            NSLog(@"冻贝");
+            XHBLogObject(@"冻贝");
             break;
         case 9:
-            NSLog(@"冻肉");
+            XHBLogObject(@"冻肉");
         default:
             break;
     }
