@@ -18,7 +18,6 @@
 		C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */; };
 		C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */; };
 		C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF38B1ECF2F1700874489 /* PMMineView.m */; };
-		C63EF3921ECF793B00874489 /* UINavigationBar+DeprecateBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */; };
 		C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F311ECBF6970025457D /* NSArray+Description.m */; };
 		C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F331ECBF6970025457D /* NSArray+Range.m */; };
 		C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F351ECBF6970025457D /* NSCalendar+Utils.m */; };
@@ -75,6 +74,13 @@
 		D4BE2EB91ECF36B7009E70C0 /* PMMyAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EB81ECF36B7009E70C0 /* PMMyAddressViewController.m */; };
 		D4BE2EBD1ECF378C009E70C0 /* PMMyInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EBC1ECF378C009E70C0 /* PMMyInvoiceViewController.m */; };
 		D4BE2EC11ECF38BC009E70C0 /* PMMyCouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EC01ECF38BC009E70C0 /* PMMyCouponViewController.m */; };
+		D4C784561ED28EDC00702958 /* PMNormalInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784551ED28EDC00702958 /* PMNormalInvoiceViewController.m */; };
+		D4C7845A1ED2921B00702958 /* PMNormalInvoiceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784591ED2921B00702958 /* PMNormalInvoiceHeaderView.m */; };
+		D4C7845D1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7845C1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m */; };
+		D4C784611ED2D04B00702958 /* UINavigationBar+DeprecateBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */; };
+		D4C784621ED2D04B00702958 /* PMPrivateInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7845F1ED2B8D900702958 /* PMPrivateInvoiceViewController.m */; };
+		D4C784771ED2DFC700702958 /* LiuXSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784741ED2DFC700702958 /* LiuXSegmentView.m */; };
+		D4C784781ED2DFC700702958 /* LXSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784761ED2DFC700702958 /* LXSegmentScrollView.m */; };
 		D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */; };
 		D4C8CB811ECE8F0300E15121 /* PMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB801ECE8F0300E15121 /* PMAboutViewController.m */; };
 		D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB871ECEBE9C00E15121 /* PMLoginViewController.m */; };
@@ -220,6 +226,18 @@
 		D4BE2EBC1ECF378C009E70C0 /* PMMyInvoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyInvoiceViewController.m; sourceTree = "<group>"; };
 		D4BE2EBF1ECF38BC009E70C0 /* PMMyCouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyCouponViewController.h; sourceTree = "<group>"; };
 		D4BE2EC01ECF38BC009E70C0 /* PMMyCouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyCouponViewController.m; sourceTree = "<group>"; };
+		D4C784541ED28EDC00702958 /* PMNormalInvoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMNormalInvoiceViewController.h; sourceTree = "<group>"; };
+		D4C784551ED28EDC00702958 /* PMNormalInvoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMNormalInvoiceViewController.m; sourceTree = "<group>"; };
+		D4C784581ED2921B00702958 /* PMNormalInvoiceHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMNormalInvoiceHeaderView.h; sourceTree = "<group>"; };
+		D4C784591ED2921B00702958 /* PMNormalInvoiceHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMNormalInvoiceHeaderView.m; sourceTree = "<group>"; };
+		D4C7845B1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPrivateInvoiceHeaderView.h; sourceTree = "<group>"; };
+		D4C7845C1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPrivateInvoiceHeaderView.m; sourceTree = "<group>"; };
+		D4C7845E1ED2B8D900702958 /* PMPrivateInvoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPrivateInvoiceViewController.h; sourceTree = "<group>"; };
+		D4C7845F1ED2B8D900702958 /* PMPrivateInvoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPrivateInvoiceViewController.m; sourceTree = "<group>"; };
+		D4C784731ED2DFC700702958 /* LiuXSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiuXSegmentView.h; sourceTree = "<group>"; };
+		D4C784741ED2DFC700702958 /* LiuXSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiuXSegmentView.m; sourceTree = "<group>"; };
+		D4C784751ED2DFC700702958 /* LXSegmentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSegmentScrollView.h; sourceTree = "<group>"; };
+		D4C784761ED2DFC700702958 /* LXSegmentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSegmentScrollView.m; sourceTree = "<group>"; };
 		D4C8CB7C1ECE8AF500E15121 /* PMUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMUpdateViewController.h; sourceTree = "<group>"; };
 		D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMUpdateViewController.m; sourceTree = "<group>"; };
 		D4C8CB7F1ECE8F0300E15121 /* PMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAboutViewController.h; sourceTree = "<group>"; };
@@ -719,6 +737,11 @@
 			children = (
 				D4BE2EBB1ECF378C009E70C0 /* PMMyInvoiceViewController.h */,
 				D4BE2EBC1ECF378C009E70C0 /* PMMyInvoiceViewController.m */,
+				D4C784541ED28EDC00702958 /* PMNormalInvoiceViewController.h */,
+				D4C784551ED28EDC00702958 /* PMNormalInvoiceViewController.m */,
+				D4C7845E1ED2B8D900702958 /* PMPrivateInvoiceViewController.h */,
+				D4C7845F1ED2B8D900702958 /* PMPrivateInvoiceViewController.m */,
+				D4C784571ED291B000702958 /* View */,
 			);
 			path = "我的发票";
 			sourceTree = "<group>";
@@ -728,8 +751,39 @@
 			children = (
 				D4BE2EBF1ECF38BC009E70C0 /* PMMyCouponViewController.h */,
 				D4BE2EC01ECF38BC009E70C0 /* PMMyCouponViewController.m */,
+				D4C784631ED2D97D00702958 /* View */,
 			);
 			path = "我的优惠券";
+			sourceTree = "<group>";
+		};
+		D4C784571ED291B000702958 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4C784581ED2921B00702958 /* PMNormalInvoiceHeaderView.h */,
+				D4C784591ED2921B00702958 /* PMNormalInvoiceHeaderView.m */,
+				D4C7845B1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.h */,
+				D4C7845C1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C784631ED2D97D00702958 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4C784721ED2DFC700702958 /* LXSegment */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C784721ED2DFC700702958 /* LXSegment */ = {
+			isa = PBXGroup;
+			children = (
+				D4C784731ED2DFC700702958 /* LiuXSegmentView.h */,
+				D4C784741ED2DFC700702958 /* LiuXSegmentView.m */,
+				D4C784751ED2DFC700702958 /* LXSegmentScrollView.h */,
+				D4C784761ED2DFC700702958 /* LXSegmentScrollView.m */,
+			);
+			path = LXSegment;
 			sourceTree = "<group>";
 		};
 		D4C8CB851ECEBE7600E15121 /* 登录 */ = {
@@ -865,14 +919,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C784611ED2D04B00702958 /* UINavigationBar+DeprecateBackground.m in Sources */,
+				D4C784621ED2D04B00702958 /* PMPrivateInvoiceViewController.m in Sources */,
 				C6E92A621ECDD5C00081924A /* WXSTransitionManager+FragmentAnimation.m in Sources */,
 				C6E92A5E1ECDD5C00081924A /* WXSPercentDrivenInteractiveTransition.m in Sources */,
 				C6E92A361ECDD5920081924A /* PMCategoryRightViewCell.m in Sources */,
 				C6E92A371ECDD5920081924A /* UICollectionViewCell+Identifier.m in Sources */,
+				D4C784561ED28EDC00702958 /* PMNormalInvoiceViewController.m in Sources */,
 				C6E92A681ECDD5C00081924A /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */,
 				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
-				C63EF3921ECF793B00874489 /* UINavigationBar+DeprecateBackground.m in Sources */,
 				C6E92A671ECDD5C00081924A /* WXSTransitionManager+TypeTool.m in Sources */,
 				D4BE2EB91ECF36B7009E70C0 /* PMMyAddressViewController.m in Sources */,
 				C6480F4F1ECBF6970025457D /* NSString+Security.m in Sources */,
@@ -895,13 +951,16 @@
 				D4BE2EB51ECF35DD009E70C0 /* PMMyFavoriteViewController.m in Sources */,
 				C6480F551ECBF6970025457D /* UITableViewCell+Identifier.m in Sources */,
 				D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */,
+				D4C7845D1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m in Sources */,
 				C6E92A5C1ECDD5C00081924A /* UIViewController+WXSTransition.m in Sources */,
 				C609A9D81ECC1C9100DDAB6A /* PMCategoryItemView.m in Sources */,
 				D4BE2EC11ECF38BC009E70C0 /* PMMyCouponViewController.m in Sources */,
 				C6E92A611ECDD5C00081924A /* WXSTransitionManager+CoverAnimation.m in Sources */,
+				D4C784781ED2DFC700702958 /* LXSegmentScrollView.m in Sources */,
 				D4B617941EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m in Sources */,
 				C6480F511ECBF6970025457D /* UIColor+RGB.m in Sources */,
 				D4B617971ECA83D600CB1AD8 /* UIBarButtonItem+Custom.m in Sources */,
+				D4C7845A1ED2921B00702958 /* PMNormalInvoiceHeaderView.m in Sources */,
 				C6E92A631ECDD5C00081924A /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
 				D42E32321ECC1D5000052781 /* HomeTableViewCell.m in Sources */,
 				D4B617C91ECAC95D00CB1AD8 /* XRCarouselView.m in Sources */,
@@ -931,6 +990,7 @@
 				D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */,
 				D42E326D1ECD940A00052781 /* PMSettingViewController.m in Sources */,
 				C6E92A601ECDD5C00081924A /* WXSTransitionManager+BrickAnimation.m in Sources */,
+				D4C784771ED2DFC700702958 /* LiuXSegmentView.m in Sources */,
 				D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */,
 				D4BE2EA91ECEE7C8009E70C0 /* PMMyAccountViewController.m in Sources */,
 			);
