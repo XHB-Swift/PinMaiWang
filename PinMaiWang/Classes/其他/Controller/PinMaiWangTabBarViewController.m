@@ -22,15 +22,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpControllers];
-    
-    
 }
 
 - (void)setUpOneChildController:(UINavigationController *)controller Title:(NSString *)title Image:(NSString *)image SelectedImage:(NSString *)selectedimage{
     
+    CGSize imgSize = CGSizeMake(25, 25);
+    
+    UIImage *norImg = [[[UIImage imageNamed:image] resizeImageToSize:imgSize] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *selImg = [[[UIImage imageNamed:selectedimage] resizeImageToSize:imgSize] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
     controller.tabBarItem.title = title;
-    controller.tabBarItem.image = [UIImage resizeImage:[UIImage imageNamed:image] toNewSize:CGSizeMake(20, 20)];
-    controller.tabBarItem.selectedImage = [[UIImage resizeImage:[UIImage imageNamed:selectedimage] toNewSize:CGSizeMake(20, 20)]imageWithRenderingMode:UIImageRenderingModeAutomatic];
+    controller.tabBarItem.image = norImg;
+    controller.tabBarItem.selectedImage = selImg;//[[UIImage resizeImage:[UIImage imageNamed:selectedimage] toNewSize:CGSizeMake(20, 20)]imageWithRenderingMode:UIImageRenderingModeAutomatic];
     controller.viewControllers.firstObject.title = title;
     [self addChildViewController:controller];
     
