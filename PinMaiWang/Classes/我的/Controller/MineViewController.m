@@ -21,6 +21,7 @@
 #import "PMMineView.h"
 #import "PMMineHeaderView.h"
 
+
 @class MineViewController;
 typedef void(^PMMineVCOptions)(MineViewController *mine);
 NSString *const OPT_KEY = @"ITEM_OPT_KEY";
@@ -37,13 +38,7 @@ NSString *const OPT_KEY = @"ITEM_OPT_KEY";
 static PMMineVCOptions opt_account   = ^(MineViewController *mine){
     PMMyAccountViewController *VC = [[PMMyAccountViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-       
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
-    
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_account{
 //    
@@ -52,13 +47,7 @@ static PMMineVCOptions opt_account   = ^(MineViewController *mine){
 static PMMineVCOptions opt_points    = ^(MineViewController *mine){
     PMMyIntegrateViewController  *VC = [[PMMyIntegrateViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
-    
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_points{
 //    
@@ -67,12 +56,7 @@ static PMMineVCOptions opt_points    = ^(MineViewController *mine){
 static PMMineVCOptions opt_auction   = ^(MineViewController *mine){
     PMMyAuctionViewController *VC = [[PMMyAuctionViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
+    [mine.navigationController pushViewController:VC animated:YES];
 
     
     
@@ -84,12 +68,7 @@ static PMMineVCOptions opt_auction   = ^(MineViewController *mine){
 static PMMineVCOptions opt_favorite  = ^(MineViewController *mine){
     PMMyFavoriteViewController *VC = [[PMMyFavoriteViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
+    [mine.navigationController pushViewController:VC animated:YES];
     
 };
 //- (void)opt_favorite{
@@ -99,12 +78,7 @@ static PMMineVCOptions opt_favorite  = ^(MineViewController *mine){
 static PMMineVCOptions opt_address   = ^(MineViewController *mine){
     PMMyAddressViewController *VC = [[PMMyAddressViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_address{
 //    
@@ -113,12 +87,7 @@ static PMMineVCOptions opt_address   = ^(MineViewController *mine){
 static PMMineVCOptions opt_invoice   = ^(MineViewController *mine){
     PMMyInvoiceViewController *VC = [[PMMyInvoiceViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
+    [mine.navigationController pushViewController:VC animated:YES];
     
 };
 //- (void)opt_invoice{
@@ -128,12 +97,7 @@ static PMMineVCOptions opt_invoice   = ^(MineViewController *mine){
 static PMMineVCOptions opt_favorable = ^(MineViewController *mine){
     PMMyCouponViewController *VC = [[PMMyCouponViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
+    [mine.navigationController pushViewController:VC animated:YES];
     
 };
 //- (void)opt_favorable{
@@ -150,12 +114,7 @@ static PMMineVCOptions opt_share     = ^(MineViewController *mine){
 static PMMineVCOptions opt_settings  = ^(MineViewController *mine){
     PMSettingViewController *VC = [[PMSettingViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_settings{
 //    
@@ -164,12 +123,7 @@ static PMMineVCOptions opt_settings  = ^(MineViewController *mine){
 static PMMineVCOptions opt_loginreg = ^(MineViewController *mine){
     PMLoginViewController *VC = [[PMLoginViewController alloc]init];
     VC.hidesBottomBarWhenPushed = YES;
-    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-    }];
+    [mine.navigationController pushViewController:VC animated:YES];
     
 };
 //- (void)opt_loginreg{
@@ -259,7 +213,7 @@ static NSArray<NSDictionary *> *items = nil;
     self.mineView.funcItems = [items mutableCopy];
     [self.view addSubview:self.mineView];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+
 }
 
 
@@ -269,6 +223,7 @@ static NSArray<NSDictionary *> *items = nil;
     [XHBCenter addObserver:self selector:@selector(handleHeaderViewMsg:) name:PMMineHeaderViewMsg object:nil];
     [XHBCenter addObserver:self selector:@selector(handleHeaderViewMsg:) name:PMMineViewMsg object:nil];
 }
+
 
 - (void)handleHeaderViewMsg:(NSNotification *)msg {
     
@@ -307,21 +262,33 @@ static NSArray<NSDictionary *> *items = nil;
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    self.navigationController.navigationBar.hidden = YES;
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillAppear:animated];
-
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-    self.navigationController.navigationBar.hidden = NO;
     
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
     
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    [super viewDidDisappear:animated];
 
+}
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    
+    return UIStatusBarStyleLightContent;
+}
 
 @end
