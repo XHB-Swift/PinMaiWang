@@ -11,7 +11,6 @@
 @interface AuctionViewController ()
 @property (nonatomic,strong) UISegmentedControl * segment;
 @property (nonatomic,strong) UIView * oneView;
-
 @property (nonatomic,strong) UIView * twoView;
 @property (nonatomic,strong) UIView * threeView;
 
