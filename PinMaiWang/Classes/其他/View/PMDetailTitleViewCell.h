@@ -10,10 +10,10 @@
 
 //用于将字典的key统一命名
 
-typedef NSString * PMDetailTitleKeyName;
-
-PMDetailTitleKeyName const PMDetailTitleCountryKey = @"PMDetailTitleCountryKey";
-PMDetailTitleKeyName const PMDetailTitleContentKey = @"PMDetailTitleContentKey";
+UIKIT_EXTERN NSString *const PMDetailViewCellImageKey; //国旗
+UIKIT_EXTERN NSString *const PMDetailViewCellTitleKey; //商品名
+UIKIT_EXTERN NSString *const PMDetailViewCellDescKey;  //商品描述
+UIKIT_EXTERN NSString *const PMDetailViewCellPriceKey; //价格
 
 @interface PMDetailTitleViewCell : UITableViewCell
 
