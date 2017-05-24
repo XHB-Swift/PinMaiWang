@@ -25,7 +25,7 @@
     [self.view addSubview:self.headerView];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(XHB_SCREEN_WIDTH/4, self.headerView.maxY+20, XHB_SCREEN_WIDTH-((XHB_SCREEN_WIDTH/4)*2), 30);
+    button.frame = CGRectMake(XHB_SCREEN_WIDTH/4, self.headerView.maxY+15, XHB_SCREEN_WIDTH-((XHB_SCREEN_WIDTH/4)*2), 40);
     button.layer.cornerRadius = 5.0;
     button.layer.masksToBounds = YES;
     button.backgroundColor = XHBRGBColor(58, 148, 243);
