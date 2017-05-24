@@ -7,6 +7,9 @@
 //
 
 #import "PMMyAccountViewController.h"
+#import "PMRechargeViewController.h"
+#import "PMWithdrawViewController.h"
+#import "PMWatercourseViewController.h"
 
 @interface PMMyAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UIView * topView;
@@ -50,11 +53,7 @@
 -(UITableView *)myAccountTbaleView{
     
     if (!_myAccountTbaleView) {
-        
-        if ([[[UIDevice currentDevice]systemName]floatValue] >= 7.0 ? YES:NO) {
-            self.automaticallyAdjustsScrollViewInsets = NO;
-        }
-        _myAccountTbaleView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.7+10) style:UITableViewStyleGrouped];
+        _myAccountTbaleView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT) style:UITableViewStyleGrouped];
         _myAccountTbaleView.delegate = self;
         _myAccountTbaleView.dataSource = self;
         _myAccountTbaleView.tableHeaderView = self.topView;
@@ -69,11 +68,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view .backgroundColor = XHBRGBColor(244, 244, 244);
+    
+    self.view.backgroundColor = XHBRGBColor(244, 244, 244);
     self.title = @"我的账户";
     [self.view addSubview:self.myAccountTbaleView];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
 
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -97,7 +100,7 @@ static NSString *account = @"accountCell";
     cell.backgroundColor = [UIColor whiteColor];
     NSArray *array = self.dataSource[indexPath.section];
     cell.textLabel.text = array[indexPath.row];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if (indexPath.section == 0) {
         cell.detailTextLabel.text = [NSString stringWithFormat:@"%@%@",@"¥",@"0.00"];
         if (indexPath.row == 0) {
@@ -114,6 +117,24 @@ static NSString *account = @"accountCell";
     return cell;
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.section == 1 &&indexPath.row == 0) {
+        XHBLogObject(@"充值");
+        PMRechargeViewController *VC = [[PMRechargeViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+        
+    }else if (indexPath.section == 1 && indexPath.row == 1){
+        XHBLogObject(@"提现");
+        PMWithdrawViewController *VC = [[PMWithdrawViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if(indexPath.section == 1 && indexPath.row == 2){
+        XHBLogObject(@"流水");
+        PMWatercourseViewController *VC = [[PMWatercourseViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];    }
+    
+}
 
 
 @end
