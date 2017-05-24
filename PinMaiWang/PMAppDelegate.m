@@ -13,11 +13,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-<<<<<<< Updated upstream
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-=======
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
->>>>>>> Stashed changes
+
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[PinMaiWangTabBarViewController alloc]init];
     [self.window makeKeyAndVisible];
