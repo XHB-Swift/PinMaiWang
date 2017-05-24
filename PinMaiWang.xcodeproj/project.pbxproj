@@ -83,6 +83,11 @@
 		D4C784621ED2D04B00702958 /* PMPrivateInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7845F1ED2B8D900702958 /* PMPrivateInvoiceViewController.m */; };
 		D4C784771ED2DFC700702958 /* LiuXSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784741ED2DFC700702958 /* LiuXSegmentView.m */; };
 		D4C784781ED2DFC700702958 /* LXSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784761ED2DFC700702958 /* LXSegmentScrollView.m */; };
+		D4C784801ED32CD900702958 /* IntegrateTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7847F1ED32CD900702958 /* IntegrateTopView.m */; };
+		D4C784831ED3DBEB00702958 /* PMRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784821ED3DBEB00702958 /* PMRechargeViewController.m */; };
+		D4C784861ED3DC4600702958 /* PMWithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784851ED3DC4600702958 /* PMWithdrawViewController.m */; };
+		D4C784891ED3DEE200702958 /* PMWatercourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784881ED3DEE200702958 /* PMWatercourseViewController.m */; };
+		D4C7848C1ED40A1300702958 /* PMPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7848B1ED40A1300702958 /* PMPayViewController.m */; };
 		D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */; };
 		D4C8CB811ECE8F0300E15121 /* PMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB801ECE8F0300E15121 /* PMAboutViewController.m */; };
 		D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB871ECEBE9C00E15121 /* PMLoginViewController.m */; };
@@ -244,6 +249,16 @@
 		D4C784741ED2DFC700702958 /* LiuXSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiuXSegmentView.m; sourceTree = "<group>"; };
 		D4C784751ED2DFC700702958 /* LXSegmentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSegmentScrollView.h; sourceTree = "<group>"; };
 		D4C784761ED2DFC700702958 /* LXSegmentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSegmentScrollView.m; sourceTree = "<group>"; };
+		D4C7847E1ED32CD900702958 /* IntegrateTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegrateTopView.h; sourceTree = "<group>"; };
+		D4C7847F1ED32CD900702958 /* IntegrateTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegrateTopView.m; sourceTree = "<group>"; };
+		D4C784811ED3DBEB00702958 /* PMRechargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMRechargeViewController.h; sourceTree = "<group>"; };
+		D4C784821ED3DBEB00702958 /* PMRechargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMRechargeViewController.m; sourceTree = "<group>"; };
+		D4C784841ED3DC4600702958 /* PMWithdrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMWithdrawViewController.h; sourceTree = "<group>"; };
+		D4C784851ED3DC4600702958 /* PMWithdrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMWithdrawViewController.m; sourceTree = "<group>"; };
+		D4C784871ED3DEE200702958 /* PMWatercourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMWatercourseViewController.h; sourceTree = "<group>"; };
+		D4C784881ED3DEE200702958 /* PMWatercourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMWatercourseViewController.m; sourceTree = "<group>"; };
+		D4C7848A1ED40A1300702958 /* PMPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPayViewController.h; sourceTree = "<group>"; };
+		D4C7848B1ED40A1300702958 /* PMPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPayViewController.m; sourceTree = "<group>"; };
 		D4C8CB7C1ECE8AF500E15121 /* PMUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMUpdateViewController.h; sourceTree = "<group>"; };
 		D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMUpdateViewController.m; sourceTree = "<group>"; };
 		D4C8CB7F1ECE8F0300E15121 /* PMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAboutViewController.h; sourceTree = "<group>"; };
@@ -702,6 +717,14 @@
 			children = (
 				D4BE2EA71ECEE7C8009E70C0 /* PMMyAccountViewController.h */,
 				D4BE2EA81ECEE7C8009E70C0 /* PMMyAccountViewController.m */,
+				D4C784811ED3DBEB00702958 /* PMRechargeViewController.h */,
+				D4C784821ED3DBEB00702958 /* PMRechargeViewController.m */,
+				D4C7848A1ED40A1300702958 /* PMPayViewController.h */,
+				D4C7848B1ED40A1300702958 /* PMPayViewController.m */,
+				D4C784841ED3DC4600702958 /* PMWithdrawViewController.h */,
+				D4C784851ED3DC4600702958 /* PMWithdrawViewController.m */,
+				D4C784871ED3DEE200702958 /* PMWatercourseViewController.h */,
+				D4C784881ED3DEE200702958 /* PMWatercourseViewController.m */,
 			);
 			path = "我的账户";
 			sourceTree = "<group>";
@@ -711,6 +734,7 @@
 			children = (
 				D4BE2EAB1ECF286F009E70C0 /* PMMyIntegrateViewController.h */,
 				D4BE2EAC1ECF286F009E70C0 /* PMMyIntegrateViewController.m */,
+				D4C784791ED32B6600702958 /* View */,
 			);
 			path = "我的积分";
 			sourceTree = "<group>";
@@ -794,6 +818,15 @@
 				D4C784761ED2DFC700702958 /* LXSegmentScrollView.m */,
 			);
 			path = LXSegment;
+			sourceTree = "<group>";
+		};
+		D4C784791ED32B6600702958 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4C7847E1ED32CD900702958 /* IntegrateTopView.h */,
+				D4C7847F1ED32CD900702958 /* IntegrateTopView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D4C8CB851ECEBE7600E15121 /* 登录 */ = {
@@ -951,6 +984,7 @@
 				C6480F561ECBF6970025457D /* UIView+XHBFrame.m in Sources */,
 				D4BE2EB11ECF3436009E70C0 /* PMMyAuctionViewController.m in Sources */,
 				C6E92A6A1ECDD5C00081924A /* WXSTransitionProperty.m in Sources */,
+				D4C784891ED3DEE200702958 /* PMWatercourseViewController.m in Sources */,
 				C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */,
 				C6E92A5F1ECDD5C00081924A /* WXSTransitionManager+BoomAnimation.m in Sources */,
 				D4B6178A1EC99FC400CB1AD8 /* MineViewController.m in Sources */,
@@ -961,8 +995,10 @@
 				C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */,
 				C6480F501ECBF6970025457D /* UIButton+XHBCommon.m in Sources */,
 				D4BE2EB51ECF35DD009E70C0 /* PMMyFavoriteViewController.m in Sources */,
+				D4C7848C1ED40A1300702958 /* PMPayViewController.m in Sources */,
 				C6480F551ECBF6970025457D /* UITableViewCell+Identifier.m in Sources */,
 				D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */,
+				D4C784801ED32CD900702958 /* IntegrateTopView.m in Sources */,
 				D4C7845D1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m in Sources */,
 				C6E92A5C1ECDD5C00081924A /* UIViewController+WXSTransition.m in Sources */,
 				C609A9D81ECC1C9100DDAB6A /* PMCategoryItemView.m in Sources */,
@@ -972,6 +1008,7 @@
 				D4B617941EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m in Sources */,
 				C6480F511ECBF6970025457D /* UIColor+RGB.m in Sources */,
 				D4B617971ECA83D600CB1AD8 /* UIBarButtonItem+Custom.m in Sources */,
+				D4C784831ED3DBEB00702958 /* PMRechargeViewController.m in Sources */,
 				D4C7845A1ED2921B00702958 /* PMNormalInvoiceHeaderView.m in Sources */,
 				C6E92A631ECDD5C00081924A /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
 				D42E32321ECC1D5000052781 /* HomeTableViewCell.m in Sources */,
@@ -1005,6 +1042,7 @@
 				D4C784771ED2DFC700702958 /* LiuXSegmentView.m in Sources */,
 				D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */,
 				D4BE2EA91ECEE7C8009E70C0 /* PMMyAccountViewController.m in Sources */,
+				D4C784861ED3DC4600702958 /* PMWithdrawViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1111,7 +1149,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinMaiWang/Classes/其他/View/PrefixHeader.pch";
 				INFOPLIST_FILE = PinMaiWang/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LZH.PinMaiWang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1128,7 +1166,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinMaiWang/Classes/其他/View/PrefixHeader.pch";
 				INFOPLIST_FILE = PinMaiWang/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LZH.PinMaiWang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
