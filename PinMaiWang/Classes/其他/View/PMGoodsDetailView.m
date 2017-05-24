@@ -7,14 +7,24 @@
 //
 
 #import "PMGoodsDetailView.h"
+#import "PMDetailViewModel.h"
+#import "PMDetailTitleViewCell.h"
+#import "PMDetailAdsViewCell.h"
 
 typedef NSInteger PMDetailSubViewTag;
+
+NSString *const PMDetailPushMessage = @"PMDetailPushMessage";
+NSString *const PMDetailShowMessage = @"PMDetailShowMessage";
 
 const PMDetailSubViewTag SVMainScrollViewTag = 1000;
 const PMDetailSubViewTag SVTableViewTag      = SVMainScrollViewTag * 2;
 const PMDetailSubViewTag SVViceScrollViewTag = SVMainScrollViewTag * 3;
 
 @interface PMGoodsDetailView () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UIScrollView *container;
+@property (nonatomic, strong) UITableView  *tableView;
+@property (nonatomic, strong) UIView       *detailView;
 
 @end
 
@@ -34,28 +44,37 @@ const PMDetailSubViewTag SVViceScrollViewTag = SVMainScrollViewTag * 3;
     return self;
 }
 
+- (void)setMenus:(NSArray<PMDetailViewModel *> *)menus {
+    
+    _menus = [menus copy];
+    [self.tableView reloadData];
+}
+
 - (void)initializeMainScrollView {
     
-    UIScrollView *mainScroll = [[UIScrollView alloc] initWithFrame:self.bounds];
-    mainScroll.contentSize = CGSizeMake(self.width, self.height * 2);
-    mainScroll.scrollEnabled = NO;
-    mainScroll.pagingEnabled = YES;
-    mainScroll.bounces = YES;
-    mainScroll.tag = SVMainScrollViewTag;
+    self.container = [[UIScrollView alloc] initWithFrame:self.bounds];
+    self.container.contentSize = CGSizeMake(self.width, self.height * 2);
+    self.container.scrollEnabled = NO;
+    self.container.pagingEnabled = YES;
+    self.container.bounces = YES;
+    self.container.tag = SVMainScrollViewTag;
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, mainScroll.width, mainScroll.height) style:UITableViewStylePlain];
-    tableView.tag = SVTableViewTag;
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    tableView.backgroundColor = [UIColor cyanColor];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.container.width, self.container.height) style:UITableViewStylePlain];
+    self.tableView.tag = SVTableViewTag;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [UIView new];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.tableView registerClass:[PMDetailTitleViewCell class] forCellReuseIdentifier:[PMDetailTitleViewCell cellIdentifier]];
+    [self.tableView registerClass:[PMDetailAdsViewCell class] forCellReuseIdentifier:[PMDetailAdsViewCell cellIdentifier]];
     
     MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         
-        if (mainScroll.contentOffset.y != mainScroll.height) {
-            [mainScroll setContentOffset:CGPointMake(0, mainScroll.height) animated:YES];
+        if (self.container.contentOffset.y != self.container.height) {
+            [self.container setContentOffset:CGPointMake(0, self.container.height) animated:YES];
         }
         
-        [tableView.mj_footer endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
         
     }];
     
@@ -65,20 +84,17 @@ const PMDetailSubViewTag SVViceScrollViewTag = SVMainScrollViewTag * 3;
     [footer setTitle:nil forState:MJRefreshStateWillRefresh];
     footer.pullingPercent = 0.2;
     
-    tableView.mj_footer = footer;
+    self.tableView.mj_footer = footer;
     
-    UIScrollView *viceScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(mainScroll.x, mainScroll.maxY, mainScroll.width, mainScroll.height)];
+    UIScrollView *viceScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(self.container.x, self.container.maxY, self.container.width, self.container.height)];
     viceScroll.tag = SVViceScrollViewTag;
-//    viceScroll.contentSize = CGSizeMake(mainScroll.width*2, mainScroll.height);
     viceScroll.backgroundColor = [UIColor orangeColor];
-//    viceScroll.pagingEnabled = YES;
-//    viceScroll.bounces = YES;
     
     
     MJRefreshStateHeader *header = [MJRefreshStateHeader headerWithRefreshingBlock:^{
         
-        if (mainScroll.contentOffset.y != 0) {
-            [mainScroll setContentOffset:CGPointMake(0, 0) animated:YES];
+        if (self.container.contentOffset.y != 0) {
+            [self.container setContentOffset:CGPointMake(0, 0) animated:YES];
         }
         
         [viceScroll.mj_header endRefreshing];
@@ -94,21 +110,56 @@ const PMDetailSubViewTag SVViceScrollViewTag = SVMainScrollViewTag * 3;
     
     viceScroll.mj_header = header;
     
-    [self addSubview:mainScroll];
-    [mainScroll addSubview:tableView];
-    [mainScroll addSubview:viceScroll];
+    [self addSubview:self.container];
+    [self.container addSubview:self.tableView];
+    [self.container addSubview:viceScroll];
 }
 
 #pragma mark TableView数据源方法
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 0;
+    return self.menus.count;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *cellType = self.menus[indexPath.row].curCellType;
+    id cellData = self.menus[indexPath.row].cellTypeOfData[cellType];
+    [cell configureCellWithAnyData:cellData];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return nil;
+    return [tableView dequeueReusableCellWithIdentifier:self.menus[indexPath.row].cellIdentifier forIndexPath:indexPath];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return self.menus[indexPath.row].cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSArray *clickedItems = nil;
+    PMDetailViewModel *dtvm = self.menus[indexPath.row];
+    
+    if (!clickedItems) {
+        
+        NSPredicate *clickedPred = [NSPredicate predicateWithFormat:@"SELF.canClicked == %d", YES];
+        clickedItems = [self.menus filteredArrayUsingPredicate:clickedPred];
+        XHBLogObject(clickedItems);
+    }
+    
+    if ([clickedItems containsObject:dtvm]) {
+        
+        BOOL msgType = [dtvm.curCellType isEqualToString:PMDetailViewCellTypeComment];
+        NSString *msg = msgType ? PMDetailPushMessage : PMDetailShowMessage;
+        NSDictionary *msgDict = @{msg:dtvm};
+        XHBPostNotification(PM_DETAIL_CONTENT_NOTIFICATION, msgDict);
+    }
+    
 }
 
 @end
