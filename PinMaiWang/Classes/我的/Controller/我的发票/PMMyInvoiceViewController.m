@@ -54,24 +54,14 @@
     
     XHBLogObject(@"增值税普通发票");
     PMNormalInvoiceViewController *VC = [[PMNormalInvoiceViewController alloc]init];
-    [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-
-    }];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 -(void)privateBtnAction:(UIButton *)sender{
     
     XHBLogObject(@"增值税专用发票");
     PMPrivateInvoiceViewController *VC = [[PMPrivateInvoiceViewController alloc]init];
-    [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-        transition.animationTime = 0.5;
-        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.autoShowAndHideNavBar = YES;
-        
-    }];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 @end
