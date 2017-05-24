@@ -286,7 +286,7 @@
     
     CGFloat alpha = scrollView.contentOffset.y / self.topScrollView.height;
     [self.navigationController.navigationBar xhb_setBackgroundColor: XHBHexAColor(0x1E8CEE, alpha > 0 ? alpha : 0)];
-    //XHBLogObject(@(alpha));
+//    XHBLogObject(@(alpha));
 }
 
 - (void)viewWillAppear:(BOOL)animated{
