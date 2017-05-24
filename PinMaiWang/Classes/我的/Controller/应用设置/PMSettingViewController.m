@@ -22,11 +22,16 @@
 -(UITableView *)setingTableView{
     
     if (!_setingTableView) {
-        _setingTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT *0.55) style:UITableViewStylePlain];
+        _setingTableView = [[UITableView alloc]init];
+        if (UI_IS_IPHONE5) {
+            _setingTableView.frame =CGRectMake(0, 0, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.55);
+        }else if (UI_IS_IPHONE6){
+            _setingTableView.frame =CGRectMake(0, 0, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.47);
+        }else if (UI_IS_IPHONE6PLUS){
+            _setingTableView.frame =CGRectMake(0, 0, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.42);
+        }
         _setingTableView.delegate = self;
         _setingTableView.dataSource = self;
-        
-        _setingTableView.backgroundColor = [UIColor whiteColor];
         _setingTableView.separatorColor = [UIColor grayColor];
         
     }
@@ -45,7 +50,7 @@
     [super viewDidLoad];
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.view.backgroundColor = XHBRGBColor(244, 244, 244);
+    self.view.backgroundColor = XHBRGBColor(255, 255, 255);
     self.title = @"设置";
     [self.view addSubview:self.setingTableView];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
@@ -56,7 +61,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return self.dataSource.count;
+    return 7;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -124,11 +129,7 @@
             XHBLogObject(@"软件更新");
             PMUpdateViewController *VC = [[PMUpdateViewController alloc]init];
             VC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-                transition.animationTime = 0.5;
-                transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-                transition.autoShowAndHideNavBar = YES;
-            }];
+            [self.navigationController pushViewController:VC animated:YES];
         }
             break;
         case 5:
@@ -138,12 +139,7 @@
             XHBLogObject(@"关于拼买网");
             PMAboutViewController *VC = [[PMAboutViewController alloc]init];
             VC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
-                transition.animationTime = 0.5;
-                transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-                transition.autoShowAndHideNavBar = YES;
-            }];
-
+            [self.navigationController pushViewController:VC animated:YES];
         }
             break;
         default:
