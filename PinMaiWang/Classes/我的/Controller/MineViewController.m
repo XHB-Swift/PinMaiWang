@@ -36,7 +36,13 @@ NSString *const OPT_KEY = @"ITEM_OPT_KEY";
 #pragma mark 账户
 static PMMineVCOptions opt_account   = ^(MineViewController *mine){
     PMMyAccountViewController *VC = [[PMMyAccountViewController alloc]init];
-    [mine.navigationController pushViewController:VC animated:YES];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+       
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
     
 };
 //- (void)opt_account{
@@ -44,6 +50,14 @@ static PMMineVCOptions opt_account   = ^(MineViewController *mine){
 //}
 #pragma mark 积分
 static PMMineVCOptions opt_points    = ^(MineViewController *mine){
+    PMMyIntegrateViewController  *VC = [[PMMyIntegrateViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+        
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
     
 };
 //- (void)opt_points{
@@ -51,6 +65,16 @@ static PMMineVCOptions opt_points    = ^(MineViewController *mine){
 //}
 #pragma mark 拍卖
 static PMMineVCOptions opt_auction   = ^(MineViewController *mine){
+    PMMyAuctionViewController *VC = [[PMMyAuctionViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+        
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
+
+    
     
 };
 //- (void)opt_auction{
@@ -58,6 +82,14 @@ static PMMineVCOptions opt_auction   = ^(MineViewController *mine){
 //}
 #pragma mark 收藏
 static PMMineVCOptions opt_favorite  = ^(MineViewController *mine){
+    PMMyFavoriteViewController *VC = [[PMMyFavoriteViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+        
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
     
 };
 //- (void)opt_favorite{
@@ -65,13 +97,28 @@ static PMMineVCOptions opt_favorite  = ^(MineViewController *mine){
 //}
 #pragma mark 收货地址
 static PMMineVCOptions opt_address   = ^(MineViewController *mine){
-    
+    PMMyAddressViewController *VC = [[PMMyAddressViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+        
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
 };
 //- (void)opt_address{
 //    
 //}
 #pragma mark 发票
 static PMMineVCOptions opt_invoice   = ^(MineViewController *mine){
+    PMMyInvoiceViewController *VC = [[PMMyInvoiceViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+        
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
     
 };
 //- (void)opt_invoice{
@@ -79,6 +126,14 @@ static PMMineVCOptions opt_invoice   = ^(MineViewController *mine){
 //}
 #pragma mark 优惠卷
 static PMMineVCOptions opt_favorable = ^(MineViewController *mine){
+    PMMyCouponViewController *VC = [[PMMyCouponViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+        
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
     
 };
 //- (void)opt_favorable{
@@ -93,13 +148,28 @@ static PMMineVCOptions opt_share     = ^(MineViewController *mine){
 //}
 #pragma mark 设置
 static PMMineVCOptions opt_settings  = ^(MineViewController *mine){
-    
+    PMSettingViewController *VC = [[PMSettingViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+        
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
 };
 //- (void)opt_settings{
 //    
 //}
 #pragma mark 登录注册
 static PMMineVCOptions opt_loginreg = ^(MineViewController *mine){
+    PMLoginViewController *VC = [[PMLoginViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController wxs_pushViewController:VC makeTransition:^(WXSTransitionProperty *transition) {
+        
+        transition.animationTime = 0.5;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.autoShowAndHideNavBar = YES;
+    }];
     
 };
 //- (void)opt_loginreg{
