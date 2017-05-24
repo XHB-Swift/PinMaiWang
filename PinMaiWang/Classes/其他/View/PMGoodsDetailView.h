@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#define PM_DETAIL_CONTENT_NOTIFICATION @"PM_DETAIL_CONTENT_NOTIFICATION"
+
+// Push到评价页面
+UIKIT_EXTERN NSString *const PMDetailPushMessage;
+// 从底部弹出View
+UIKIT_EXTERN NSString *const PMDetailShowMessage;
+
+@class PMDetailViewModel;
 @interface PMGoodsDetailView : UIView
+
+@property (nonatomic, copy) NSArray<PMDetailViewModel *> *menus;
 
 + (instancetype)goodsDetailViewWithoutTop;
 

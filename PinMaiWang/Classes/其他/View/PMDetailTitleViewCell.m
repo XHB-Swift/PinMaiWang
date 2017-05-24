@@ -8,10 +8,15 @@
 
 #import "PMDetailTitleViewCell.h"
 
-typedef NSInteger PMDetailTitleViewCellTag;
+NSString *const PMDetailViewCellImageKey = @"PMDetailViewCellImageKey";
+NSString *const PMDetailViewCellTitleKey = @"PMDetailViewCellTitleKey";
+NSString *const PMDetailViewCellDescKey  = @"PMDetailViewCellDescKey";
+NSString *const PMDetailViewCellPriceKey = @"PMDetailViewCellPriceKey";
 
-const PMDetailTitleViewCellTag PMDetailCountryViewTag = 1000;
-const PMDetailTitleViewCellTag PMDetailContentViewTag = PMDetailCountryViewTag * 2;
+const NSInteger PM_CELL_COUNTRY_TAG = 1000;
+const NSInteger PM_CELL_GOODS_TAG   = PM_CELL_COUNTRY_TAG*2;
+const NSInteger PM_CELL_DESC_TAG    = PM_CELL_COUNTRY_TAG*3;
+const NSInteger PM_CELL_PRICE_TAG   = PM_CELL_COUNTRY_TAG*4;
 
 @implementation PMDetailTitleViewCell
 
@@ -20,6 +25,15 @@ const PMDetailTitleViewCellTag PMDetailContentViewTag = PMDetailCountryViewTag *
     PMDetailTitleViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[PMDetailTitleViewCell cellIdentifier] forIndexPath: indexPath];
     
     [cell configureCellWithDictionary:dict];
+    
+    return cell;
+}
+
++ (UITableViewCell *)cellForTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath withAnyData:(id)anyData {
+    
+    PMDetailTitleViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[PMDetailTitleViewCell cellIdentifier] forIndexPath:indexPath];
+    
+    [cell configureCellWithAnyData:anyData];
     
     return cell;
 }
@@ -35,31 +49,68 @@ const PMDetailTitleViewCellTag PMDetailContentViewTag = PMDetailCountryViewTag *
 
 - (void)initializeContentView {
     
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     UIImageView *countryFlag = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 30, 30)];
-    countryFlag.tag = PMDetailCountryViewTag;
+    countryFlag.tag = PM_CELL_COUNTRY_TAG;
     
-    UILabel *titleLbl = [[UILabel alloc] initWithFrame:CGRectMake(countryFlag.maxX, countryFlag.y, self.width-countryFlag.maxX*2, 75)];
-    titleLbl.numberOfLines = 3;
-    titleLbl.tag = PMDetailContentViewTag;
+    UILabel *goodsNameLbl = [[UILabel alloc] initWithFrame:CGRectMake(countryFlag.maxX, countryFlag.y, self.width-countryFlag.maxX*2, 30)];
+    goodsNameLbl.textAlignment = NSTextAlignmentCenter;
+    goodsNameLbl.font = XHBSystemFont(18.f);
+    goodsNameLbl.tag = PM_CELL_GOODS_TAG;
+    
+    UILabel *descLbl = [[UILabel alloc] initWithFrame:CGRectMake(goodsNameLbl.x, goodsNameLbl.maxY, goodsNameLbl.width, goodsNameLbl.height)];
+    descLbl.textAlignment = NSTextAlignmentCenter;
+    descLbl.font = XHBSystemFont(15.f);
+    descLbl.tag = PM_CELL_DESC_TAG;
+    
+    UILabel *priceLbl = [[UILabel alloc] initWithFrame:CGRectMake(descLbl.x, descLbl.maxY, descLbl.width, descLbl.height)];
+    priceLbl.textAlignment = NSTextAlignmentCenter;
+    priceLbl.font = XHBSystemFont(18.f);
+    priceLbl.tag = PM_CELL_PRICE_TAG;
+    
+    UIView *seperator = [[UIView alloc] initWithFrame:CGRectMake(0, priceLbl.maxY, self.width, 2)];
+    seperator.backgroundColor = PM_DETAIL_BRANCH_COLOR;
     
     [self.contentView addSubview:countryFlag];
+    [self.contentView addSubview:goodsNameLbl];
+    [self.contentView addSubview:descLbl];
+    [self.contentView addSubview:priceLbl];
+    [self.contentView addSubview:seperator];
+}
+
+- (void)configureCellWithAnyData:(id)anyData {
     
+    [self configureCellWithDictionary:anyData];
 }
 
 - (void)configureCellWithDictionary:(NSDictionary *)dict {
     
-    UIImageView *countryFlag = [self.contentView viewWithTag:PMDetailCountryViewTag];
-    UILabel *titleLbl = [self.contentView viewWithTag:PMDetailContentViewTag];
+    UIImageView *countryFlag = [self.contentView viewWithTag:PM_CELL_COUNTRY_TAG];
+    UILabel *goodsNameLbl = [self.contentView viewWithTag:PM_CELL_GOODS_TAG];
+    UILabel *descLbl = [self.contentView viewWithTag:PM_CELL_DESC_TAG];
+    UILabel *priceLbl = [self.contentView viewWithTag:PM_CELL_PRICE_TAG];
     
-    if ([dict[PMDetailTitleCountryKey] isKindOfClass:[NSString class]]) {
-        countryFlag.image = [UIImage imageNamed:dict[PMDetailTitleCountryKey]];
+    static NSDictionary *imgHandleMap = nil;
+    
+    if (!imgHandleMap) {
+        
+        NSString *strClass = NSStringFromClass([NSString class]);
+        NSString *imgClass = NSStringFromClass([UIImage class]);
+        
+        UIImage *image = ({
+            UIImage *img = [UIImage imageNamed:dict[PMDetailViewCellImageKey]];
+            img ? img : [UIImage new];
+        });
+        
+        imgHandleMap = @{strClass:image,imgClass:dict[PMDetailViewCellImageKey]};
+        
     }
     
-    if ([dict[PMDetailTitleCountryKey] isKindOfClass:[UIImage class]]) {
-        countryFlag.image = dict[PMDetailTitleCountryKey];
-    }
-    
-    titleLbl.attributedText = dict[PMDetailTitleContentKey];
+    id unknowObjClass = NSStringFromClass([dict[PMDetailViewCellImageKey] class]);
+    countryFlag.image = imgHandleMap[unknowObjClass];
+    goodsNameLbl.text = dict[PMDetailViewCellTitleKey];
+    descLbl.text = dict[PMDetailViewCellDescKey];
+    priceLbl.text = dict[PMDetailViewCellPriceKey];
     
 }
 

@@ -19,6 +19,8 @@
 		C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */; };
 		C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF38B1ECF2F1700874489 /* PMMineView.m */; };
 		C63EF3921ECF793B00874489 /* UINavigationBar+DeprecateBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */; };
+		C63EF3951ED014F800874489 /* PMDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3941ED014F800874489 /* PMDetailViewModel.m */; };
+		C63EF3981ED07BB400874489 /* PMDetailAdsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3971ED07BB400874489 /* PMDetailAdsViewCell.m */; };
 		C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F311ECBF6970025457D /* NSArray+Description.m */; };
 		C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F331ECBF6970025457D /* NSArray+Range.m */; };
 		C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F351ECBF6970025457D /* NSCalendar+Utils.m */; };
@@ -111,6 +113,10 @@
 		C63EF38B1ECF2F1700874489 /* PMMineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMineView.m; sourceTree = "<group>"; };
 		C63EF3901ECF793B00874489 /* UINavigationBar+DeprecateBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+DeprecateBackground.h"; sourceTree = "<group>"; };
 		C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+DeprecateBackground.m"; sourceTree = "<group>"; };
+		C63EF3931ED014F800874489 /* PMDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDetailViewModel.h; sourceTree = "<group>"; };
+		C63EF3941ED014F800874489 /* PMDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDetailViewModel.m; sourceTree = "<group>"; };
+		C63EF3961ED07BB400874489 /* PMDetailAdsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDetailAdsViewCell.h; sourceTree = "<group>"; };
+		C63EF3971ED07BB400874489 /* PMDetailAdsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDetailAdsViewCell.m; sourceTree = "<group>"; };
 		C6480F2F1ECBF6970025457D /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		C6480F301ECBF6970025457D /* NSArray+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
 		C6480F311ECBF6970025457D /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
@@ -434,6 +440,8 @@
 		D4B617541EC99D4900CB1AD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C63EF3931ED014F800874489 /* PMDetailViewModel.h */,
+				C63EF3941ED014F800874489 /* PMDetailViewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,6 +456,8 @@
 				C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */,
 				C609AA091ECD96B000DDAB6A /* PMDetailTitleViewCell.h */,
 				C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */,
+				C63EF3961ED07BB400874489 /* PMDetailAdsViewCell.h */,
+				C63EF3971ED07BB400874489 /* PMDetailAdsViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -869,6 +879,7 @@
 				C6E92A5E1ECDD5C00081924A /* WXSPercentDrivenInteractiveTransition.m in Sources */,
 				C6E92A361ECDD5920081924A /* PMCategoryRightViewCell.m in Sources */,
 				C6E92A371ECDD5920081924A /* UICollectionViewCell+Identifier.m in Sources */,
+				C63EF3951ED014F800874489 /* PMDetailViewModel.m in Sources */,
 				C6E92A681ECDD5C00081924A /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */,
 				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
@@ -889,6 +900,7 @@
 				D4BE2EAD1ECF286F009E70C0 /* PMMyIntegrateViewController.m in Sources */,
 				C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */,
 				C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */,
+				C63EF3981ED07BB400874489 /* PMDetailAdsViewCell.m in Sources */,
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,
 				C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */,
 				C6480F501ECBF6970025457D /* UIButton+XHBCommon.m in Sources */,
