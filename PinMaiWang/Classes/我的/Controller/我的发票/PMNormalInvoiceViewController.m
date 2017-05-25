@@ -22,9 +22,19 @@
     self.view.backgroundColor = XHBRGBColor(244, 244, 244);
     self.title = @"增值税普通发票";
     
-    self.normlHeaderView = [PMNormalInvoiceHeaderView initializeWithSuperView:self.view  WithFrame:CGRectMake(10, 74, XHB_SCREEN_WIDTH-20, XHB_SCREEN_HEIGHT/2.5)];
-    self.normlHeaderView.backgroundColor = XHBRGBColor(255, 255, 255);
-    [self.view addSubview:self.normlHeaderView];
+    if (UI_IS_IPHONE5) {
+        self.normlHeaderView = [PMNormalInvoiceHeaderView initializeWithSuperView:self.view  WithFrame:CGRectMake(10, 74, XHB_SCREEN_WIDTH-20, XHB_SCREEN_HEIGHT/2.5)];
+        self.normlHeaderView.backgroundColor = XHBRGBColor(255, 255, 255);
+        [self.view addSubview:self.normlHeaderView];
+    }else if (UI_IS_IPHONE6){
+        self.normlHeaderView = [PMNormalInvoiceHeaderView initializeWithSuperView:self.view  WithFrame:CGRectMake(10, 74, XHB_SCREEN_WIDTH-20, XHB_SCREEN_HEIGHT/3)];
+        self.normlHeaderView.backgroundColor = XHBRGBColor(255, 255, 255);
+        [self.view addSubview:self.normlHeaderView];
+    }else if (UI_IS_IPHONE6PLUS){
+        self.normlHeaderView = [PMNormalInvoiceHeaderView initializeWithSuperView:self.view  WithFrame:CGRectMake(10, 74, XHB_SCREEN_WIDTH-20, XHB_SCREEN_HEIGHT/3.5)];
+        self.normlHeaderView.backgroundColor = XHBRGBColor(255, 255, 255);
+        [self.view addSubview:self.normlHeaderView];
+    }
     
     UIButton *OK = [UIButton buttonWithType:UIButtonTypeCustom];
     OK.frame = CGRectMake(XHB_SCREEN_WIDTH/4, self.normlHeaderView.maxY+20, XHB_SCREEN_WIDTH-((XHB_SCREEN_WIDTH/4)*2), 40);

@@ -88,6 +88,10 @@
 		D4C784861ED3DC4600702958 /* PMWithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784851ED3DC4600702958 /* PMWithdrawViewController.m */; };
 		D4C784891ED3DEE200702958 /* PMWatercourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784881ED3DEE200702958 /* PMWatercourseViewController.m */; };
 		D4C7848C1ED40A1300702958 /* PMPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7848B1ED40A1300702958 /* PMPayViewController.m */; };
+		D4C784E91ED5669000702958 /* PMPayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784E81ED5669000702958 /* PMPayTableViewCell.m */; };
+		D4C785401ED6692600702958 /* PMBusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7853F1ED6692600702958 /* PMBusinessViewController.m */; };
+		D4C785431ED6697300702958 /* PMCommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C785421ED6697300702958 /* PMCommodityViewController.m */; };
+		D4C785461ED6788D00702958 /* PMCommditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C785451ED6788D00702958 /* PMCommditTableViewCell.m */; };
 		D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */; };
 		D4C8CB811ECE8F0300E15121 /* PMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB801ECE8F0300E15121 /* PMAboutViewController.m */; };
 		D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB871ECEBE9C00E15121 /* PMLoginViewController.m */; };
@@ -259,6 +263,14 @@
 		D4C784881ED3DEE200702958 /* PMWatercourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMWatercourseViewController.m; sourceTree = "<group>"; };
 		D4C7848A1ED40A1300702958 /* PMPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPayViewController.h; sourceTree = "<group>"; };
 		D4C7848B1ED40A1300702958 /* PMPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPayViewController.m; sourceTree = "<group>"; };
+		D4C784E71ED5669000702958 /* PMPayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPayTableViewCell.h; sourceTree = "<group>"; };
+		D4C784E81ED5669000702958 /* PMPayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPayTableViewCell.m; sourceTree = "<group>"; };
+		D4C7853E1ED6692600702958 /* PMBusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMBusinessViewController.h; sourceTree = "<group>"; };
+		D4C7853F1ED6692600702958 /* PMBusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMBusinessViewController.m; sourceTree = "<group>"; };
+		D4C785411ED6697300702958 /* PMCommodityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCommodityViewController.h; sourceTree = "<group>"; };
+		D4C785421ED6697300702958 /* PMCommodityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCommodityViewController.m; sourceTree = "<group>"; };
+		D4C785441ED6788D00702958 /* PMCommditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCommditTableViewCell.h; sourceTree = "<group>"; };
+		D4C785451ED6788D00702958 /* PMCommditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCommditTableViewCell.m; sourceTree = "<group>"; };
 		D4C8CB7C1ECE8AF500E15121 /* PMUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMUpdateViewController.h; sourceTree = "<group>"; };
 		D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMUpdateViewController.m; sourceTree = "<group>"; };
 		D4C8CB7F1ECE8F0300E15121 /* PMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAboutViewController.h; sourceTree = "<group>"; };
@@ -721,6 +733,8 @@
 				D4C784821ED3DBEB00702958 /* PMRechargeViewController.m */,
 				D4C7848A1ED40A1300702958 /* PMPayViewController.h */,
 				D4C7848B1ED40A1300702958 /* PMPayViewController.m */,
+				D4C784E71ED5669000702958 /* PMPayTableViewCell.h */,
+				D4C784E81ED5669000702958 /* PMPayTableViewCell.m */,
 				D4C784841ED3DC4600702958 /* PMWithdrawViewController.h */,
 				D4C784851ED3DC4600702958 /* PMWithdrawViewController.m */,
 				D4C784871ED3DEE200702958 /* PMWatercourseViewController.h */,
@@ -753,6 +767,8 @@
 			children = (
 				D4BE2EB31ECF35DD009E70C0 /* PMMyFavoriteViewController.h */,
 				D4BE2EB41ECF35DD009E70C0 /* PMMyFavoriteViewController.m */,
+				D4C785361ED668E200702958 /* 商家收藏 */,
+				D4C7853A1ED668E200702958 /* 商品收藏 */,
 			);
 			path = "我的收藏";
 			sourceTree = "<group>";
@@ -825,6 +841,74 @@
 			children = (
 				D4C7847E1ED32CD900702958 /* IntegrateTopView.h */,
 				D4C7847F1ED32CD900702958 /* IntegrateTopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C785361ED668E200702958 /* 商家收藏 */ = {
+			isa = PBXGroup;
+			children = (
+				D4C785371ED668E200702958 /* Controller */,
+				D4C785381ED668E200702958 /* Model */,
+				D4C785391ED668E200702958 /* View */,
+			);
+			path = "商家收藏";
+			sourceTree = "<group>";
+		};
+		D4C785371ED668E200702958 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4C7853E1ED6692600702958 /* PMBusinessViewController.h */,
+				D4C7853F1ED6692600702958 /* PMBusinessViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4C785381ED668E200702958 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C785391ED668E200702958 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C7853A1ED668E200702958 /* 商品收藏 */ = {
+			isa = PBXGroup;
+			children = (
+				D4C7853B1ED668E200702958 /* Controller */,
+				D4C7853C1ED668E200702958 /* Model */,
+				D4C7853D1ED668E200702958 /* View */,
+			);
+			path = "商品收藏";
+			sourceTree = "<group>";
+		};
+		D4C7853B1ED668E200702958 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4C785411ED6697300702958 /* PMCommodityViewController.h */,
+				D4C785421ED6697300702958 /* PMCommodityViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4C7853C1ED668E200702958 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4C7853D1ED668E200702958 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4C785441ED6788D00702958 /* PMCommditTableViewCell.h */,
+				D4C785451ED6788D00702958 /* PMCommditTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -972,6 +1056,7 @@
 				C6E92A361ECDD5920081924A /* PMCategoryRightViewCell.m in Sources */,
 				C6E92A371ECDD5920081924A /* UICollectionViewCell+Identifier.m in Sources */,
 				C6E92A681ECDD5C00081924A /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
+				D4C785461ED6788D00702958 /* PMCommditTableViewCell.m in Sources */,
 				C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */,
 				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
 				C6E92A671ECDD5C00081924A /* WXSTransitionManager+TypeTool.m in Sources */,
@@ -989,6 +1074,7 @@
 				C6E92A5F1ECDD5C00081924A /* WXSTransitionManager+BoomAnimation.m in Sources */,
 				D4B6178A1EC99FC400CB1AD8 /* MineViewController.m in Sources */,
 				D4BE2EAD1ECF286F009E70C0 /* PMMyIntegrateViewController.m in Sources */,
+				D4C784E91ED5669000702958 /* PMPayTableViewCell.m in Sources */,
 				C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */,
 				C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */,
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,
@@ -1007,6 +1093,7 @@
 				D4C784781ED2DFC700702958 /* LXSegmentScrollView.m in Sources */,
 				D4B617941EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m in Sources */,
 				C6480F511ECBF6970025457D /* UIColor+RGB.m in Sources */,
+				D4C785401ED6692600702958 /* PMBusinessViewController.m in Sources */,
 				D4B617971ECA83D600CB1AD8 /* UIBarButtonItem+Custom.m in Sources */,
 				D4C784831ED3DBEB00702958 /* PMRechargeViewController.m in Sources */,
 				D4C7845A1ED2921B00702958 /* PMNormalInvoiceHeaderView.m in Sources */,
@@ -1019,6 +1106,7 @@
 				C6E92A641ECDD5C00081924A /* WXSTransitionManager+PageAnimation.m in Sources */,
 				C609A9CA1ECC040A00DDAB6A /* PMAppDelegate.m in Sources */,
 				D4BE2EBD1ECF378C009E70C0 /* PMMyInvoiceViewController.m in Sources */,
+				D4C785431ED6697300702958 /* PMCommodityViewController.m in Sources */,
 				D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */,
 				C609A9DE1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m in Sources */,
 				C6E92A661ECDD5C00081924A /* WXSTransitionManager+SystermAnimation.m in Sources */,

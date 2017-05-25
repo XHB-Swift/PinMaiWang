@@ -7,12 +7,15 @@
 //
 
 #import "PMPayViewController.h"
+#import "PMPayTableViewCell.h"
 
 @interface PMPayViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * payTableView;
 @property (nonatomic,strong) UILabel * label;
 @property (nonatomic,strong) NSArray<NSDictionary *> * dataSource;
 @property (nonatomic,strong) UIButton * payBtn;
+@property (nonatomic,assign) int  selectCell;
+
 @end
 
 @implementation PMPayViewController
@@ -26,10 +29,11 @@
         _payTableView.delegate = self;
         _payTableView.dataSource = self;
         _payTableView.backgroundColor = [UIColor whiteColor];
-        [_payTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+        [_payTableView registerClass:[PMPayTableViewCell class] forCellReuseIdentifier:NSStringFromClass([PMPayTableViewCell class])];
         _payTableView.showsVerticalScrollIndicator = NO;
         _payTableView.showsHorizontalScrollIndicator = NO;
         _payTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
         [self.view addSubview:self.payTableView];
     }
     return _payTableView;
@@ -61,6 +65,7 @@
     
     self.view.backgroundColor = XHBRGBColor(244, 244, 244);
     self.title = @"充值-我的账户";
+    self.selectCell = -1;
     UILabel *rmbLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 64, XHB_SCREEN_WIDTH, 40)];
     rmbLabel.numberOfLines = 0;
     rmbLabel .backgroundColor = [UIColor whiteColor];
@@ -91,12 +96,39 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([PMPayTableViewCell class]) forIndexPath:indexPath];
     
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    indexPath.row == self.selectCell ?(cell.accessoryType = UITableViewCellAccessoryCheckmark):(cell.accessoryType = UITableViewCellAccessoryNone);
     cell.imageView.image =[UIImage resizeImage:[UIImage imageNamed:self.dataSource[indexPath.row][@"img"]] toNewSize:CGSizeMake(24, 24)];
     cell.textLabel.text = self.dataSource[indexPath.row][@"title"];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    self.selectCell = (int)indexPath.row;
+    PMPayTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    switch (indexPath.row) {
+        case 0:
+            XHBLogObject(@"银行卡");
+            break;
+        case 1:
+            XHBLogObject(@"支付宝");
+            break;
+        case 2:
+            XHBLogObject(@"微信");
+        default:
+            break;
+    }
+    
+}
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryNone;
 }
 
 
