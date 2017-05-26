@@ -40,13 +40,37 @@
 }
 
 -(void)setUpControllers{
-    [self setUpOneChildController:[[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]] Title:@"首页" Image:@"footer_01" SelectedImage:@"footer_01_1"];
-    [self setUpOneChildController:[[UINavigationController alloc]initWithRootViewController:[[CategoryViewController alloc]init]] Title:@"分类" Image:@"footer_02" SelectedImage:@"footer_02_1"];
     
-    [self setUpOneChildController:[[UINavigationController alloc]initWithRootViewController:[[AuctionViewController alloc]init]] Title:@"拍卖场" Image:@"footer_03" SelectedImage:@"footer_03_1"];
+    typedef struct PMTabBarStruct{
+        
+        char *title;
+        char *norImage;
+        char *selImage;
+        char *vcClassName;
+        
+    }PMTabBarStruct;
     
-    [self setUpOneChildController:[[UINavigationController alloc]initWithRootViewController:[[CartViewController alloc]init]] Title:@"购物车" Image:@"footer_04" SelectedImage:@"footer_04_1"];
-     [self setUpOneChildController:[[UINavigationController alloc]initWithRootViewController:[[MineViewController alloc]init]] Title:@"我的" Image:@"footer_05" SelectedImage:@"footer_05_1"];
+    PMTabBarStruct tabBarStructs[] = {
+        {"首页","footer_01","footer_01_1","ViewController"},
+        {"分类","footer_02","footer_02_1","CategoryViewController"},
+        {"拍卖场","footer_03","footer_03_1","AuctionViewController"},
+        {"购物车","footer_04","footer_04_1","CartViewController"},
+        {"我的","footer_05","footer_05_1","MineViewController"}};
+    
+    int count = sizeof(tabBarStructs)/sizeof(PMTabBarStruct);
+    for (int i = 0; i < count; i++) {
+        
+        NSString *title = [NSString stringWithUTF8String:tabBarStructs[i].title];
+        NSString *norImage = [NSString stringWithUTF8String:tabBarStructs[i].norImage];
+        NSString *selImage = [NSString stringWithUTF8String:tabBarStructs[i].selImage];
+        NSString *vcClass  = [NSString stringWithUTF8String:tabBarStructs[i].vcClassName];
+        
+        __kindof UIViewController *vc = [[NSClassFromString(vcClass) alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        
+        [self setUpOneChildController:nav Title:title Image:norImage SelectedImage:selImage];
+        
+    }
 }
 
 
