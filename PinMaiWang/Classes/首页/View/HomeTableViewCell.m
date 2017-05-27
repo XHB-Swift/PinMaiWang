@@ -35,7 +35,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         self.iconView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 100, 100)];
-        self.iconView.image = [UIImage imageNamed:@"order_01"];
+        self.iconView.image = [UIImage imageNamed:@"lobster"];
         [self.contentView addSubview:self.iconView];
         
         self.title = [[UILabel alloc]initWithFrame:CGRectMake(self.iconView.maxX+10, 10, XHB_SCREEN_WIDTH-self.iconView.width-10 - 40, 30)];
