@@ -24,20 +24,24 @@
     [self setUpControllers];
 }
 
-- (void)setUpOneChildController:(UINavigationController *)controller Title:(NSString *)title Image:(NSString *)image SelectedImage:(NSString *)selectedimage{
+- (UINavigationController *)navControllerWithClass:(NSString *)clsName Title:(NSString *)title NormalImage:(NSString *)normalImg HighlightedImage:(NSString *)highlightedImg {
     
+    UIImage *norImg = [UIImage imageNamed:normalImg];
+    UIImage *selImg = [UIImage imageNamed:highlightedImg];
     
-    UIImage *norImg = [UIImage imageNamed:image];
-    UIImage *selImg = [UIImage imageNamed:selectedimage];
-    controller.tabBarItem.title = title;
-    controller.tabBarItem.image = norImg;
-    controller.tabBarItem.selectedImage = selImg;
-    controller.viewControllers.firstObject.title = title;
-    [self addChildViewController:controller];
+    __kindof UIViewController *vc = [[NSClassFromString(clsName) alloc] init];
+    vc.tabBarItem.title = title;
+    vc.tabBarItem.image = norImg;
+    vc.tabBarItem.selectedImage = selImg;
+    vc.title = title;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     
+    return nav;
 }
 
 -(void)setUpControllers{
+    
+    [self.tabBar setTintColor:PM_HOME_TOP_COLOR];
     
     typedef struct PMTabBarStruct{
         
@@ -56,6 +60,7 @@
         {"我的","mine_01","mine_02","MineViewController"}};
     
     int count = sizeof(tabBarStructs)/sizeof(PMTabBarStruct);
+    NSMutableArray<UINavigationController *> *navs = [NSMutableArray array];
     for (int i = 0; i < count; i++) {
         
         NSString *title = [NSString stringWithUTF8String:tabBarStructs[i].title];
@@ -63,12 +68,13 @@
         NSString *selImage = [NSString stringWithUTF8String:tabBarStructs[i].selImage];
         NSString *vcClass  = [NSString stringWithUTF8String:tabBarStructs[i].vcClassName];
         
-        __kindof UIViewController *vc = [[NSClassFromString(vcClass) alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-        
-        [self setUpOneChildController:nav Title:title Image:norImage SelectedImage:selImage];
-        
+        UINavigationController *nav = [self navControllerWithClass:vcClass Title:title NormalImage:norImage HighlightedImage:selImage];
+        [navs addObject:nav];
     }
+    
+    self.viewControllers = navs;
+    navs = nil;
+    
 }
 
 
