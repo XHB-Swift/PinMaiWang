@@ -1,5 +1,5 @@
 //
-//  PMCommodityViewController.h
+//  PMBusinessTableViewCell.h
 //  PinMaiWang
 //
 //  Created by 嚼华先森 on 2017/5/25.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PMCommodityViewController : UIViewController
+@interface PMBusinessTableViewCell : UITableViewCell
 
+@property (nonatomic,strong) NSDictionary * dictionary;
 
 
 @end

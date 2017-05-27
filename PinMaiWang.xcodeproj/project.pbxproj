@@ -61,6 +61,11 @@
 		D42E32321ECC1D5000052781 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E32311ECC1D5000052781 /* HomeTableViewCell.m */; };
 		D42E32661ECD7C4100052781 /* PMMineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E32651ECD7C4100052781 /* PMMineCollectionViewCell.m */; };
 		D42E326D1ECD940A00052781 /* PMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E326C1ECD940A00052781 /* PMSettingViewController.m */; };
+		D45D34601ED91638009505FB /* areaArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = D45D345D1ED91638009505FB /* areaArray.plist */; };
+		D45D34611ED91638009505FB /* BLAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D345F1ED91638009505FB /* BLAreaPickerView.m */; };
+		D45D34651ED9DBCF009505FB /* PMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D34641ED9DBCF009505FB /* PMUser.m */; };
+		D45D34681ED9DCE8009505FB /* PMMyAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D34671ED9DCE8009505FB /* PMMyAddressTableViewCell.m */; };
+		D45D346B1ED9DEC6009505FB /* PMAddNewAddresssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D346A1ED9DEC6009505FB /* PMAddNewAddresssViewController.m */; };
 		D4B617471EC998A200CB1AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B617461EC998A200CB1AD8 /* Assets.xcassets */; };
 		D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617801EC99F6B00CB1AD8 /* CategoryViewController.m */; };
 		D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617831EC99F8900CB1AD8 /* AuctionViewController.m */; };
@@ -95,6 +100,7 @@
 		D4C785401ED6692600702958 /* PMBusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7853F1ED6692600702958 /* PMBusinessViewController.m */; };
 		D4C785431ED6697300702958 /* PMCommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C785421ED6697300702958 /* PMCommodityViewController.m */; };
 		D4C785461ED6788D00702958 /* PMCommditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C785451ED6788D00702958 /* PMCommditTableViewCell.m */; };
+		D4C785491ED6C0E100702958 /* PMBusinessTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C785481ED6C0E100702958 /* PMBusinessTableViewCell.m */; };
 		D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */; };
 		D4C8CB811ECE8F0300E15121 /* PMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB801ECE8F0300E15121 /* PMAboutViewController.m */; };
 		D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8CB871ECEBE9C00E15121 /* PMLoginViewController.m */; };
@@ -211,6 +217,15 @@
 		D42E32651ECD7C4100052781 /* PMMineCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMineCollectionViewCell.m; sourceTree = "<group>"; };
 		D42E326B1ECD940A00052781 /* PMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMSettingViewController.h; sourceTree = "<group>"; };
 		D42E326C1ECD940A00052781 /* PMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMSettingViewController.m; sourceTree = "<group>"; };
+		D45D345D1ED91638009505FB /* areaArray.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = areaArray.plist; sourceTree = "<group>"; };
+		D45D345E1ED91638009505FB /* BLAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAreaPickerView.h; sourceTree = "<group>"; };
+		D45D345F1ED91638009505FB /* BLAreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAreaPickerView.m; sourceTree = "<group>"; };
+		D45D34631ED9DBCF009505FB /* PMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMUser.h; sourceTree = "<group>"; };
+		D45D34641ED9DBCF009505FB /* PMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMUser.m; sourceTree = "<group>"; };
+		D45D34661ED9DCE8009505FB /* PMMyAddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMyAddressTableViewCell.h; sourceTree = "<group>"; };
+		D45D34671ED9DCE8009505FB /* PMMyAddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyAddressTableViewCell.m; sourceTree = "<group>"; };
+		D45D34691ED9DEC6009505FB /* PMAddNewAddresssViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAddNewAddresssViewController.h; sourceTree = "<group>"; };
+		D45D346A1ED9DEC6009505FB /* PMAddNewAddresssViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAddNewAddresssViewController.m; sourceTree = "<group>"; };
 		D4B617371EC998A200CB1AD8 /* PinMaiWang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinMaiWang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B617461EC998A200CB1AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B6174B1EC998A200CB1AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,6 +295,8 @@
 		D4C785421ED6697300702958 /* PMCommodityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCommodityViewController.m; sourceTree = "<group>"; };
 		D4C785441ED6788D00702958 /* PMCommditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCommditTableViewCell.h; sourceTree = "<group>"; };
 		D4C785451ED6788D00702958 /* PMCommditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCommditTableViewCell.m; sourceTree = "<group>"; };
+		D4C785471ED6C0E100702958 /* PMBusinessTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMBusinessTableViewCell.h; sourceTree = "<group>"; };
+		D4C785481ED6C0E100702958 /* PMBusinessTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMBusinessTableViewCell.m; sourceTree = "<group>"; };
 		D4C8CB7C1ECE8AF500E15121 /* PMUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMUpdateViewController.h; sourceTree = "<group>"; };
 		D4C8CB7D1ECE8AF500E15121 /* PMUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMUpdateViewController.m; sourceTree = "<group>"; };
 		D4C8CB7F1ECE8F0300E15121 /* PMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAboutViewController.h; sourceTree = "<group>"; };
@@ -415,6 +432,25 @@
 			path = "应用设置";
 			sourceTree = "<group>";
 		};
+		D45D345C1ED91638009505FB /* BLAreaPickView */ = {
+			isa = PBXGroup;
+			children = (
+				D45D345D1ED91638009505FB /* areaArray.plist */,
+				D45D345E1ED91638009505FB /* BLAreaPickerView.h */,
+				D45D345F1ED91638009505FB /* BLAreaPickerView.m */,
+			);
+			path = BLAreaPickView;
+			sourceTree = "<group>";
+		};
+		D45D34621ED9DBCF009505FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D45D34631ED9DBCF009505FB /* PMUser.h */,
+				D45D34641ED9DBCF009505FB /* PMUser.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D4B6172E1EC998A200CB1AD8 = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +506,7 @@
 		D4B617521EC99D4900CB1AD8 /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
+				D45D345C1ED91638009505FB /* BLAreaPickView */,
 				C6E92A391ECDD5C00081924A /* WXSTransition */,
 				C6480F2E1ECBF6970025457D /* Utils */,
 				D4B6178B1EC9A00600CB1AD8 /* NetWorkRequest */,
@@ -793,6 +830,11 @@
 			children = (
 				D4BE2EB71ECF36B7009E70C0 /* PMMyAddressViewController.h */,
 				D4BE2EB81ECF36B7009E70C0 /* PMMyAddressViewController.m */,
+				D45D34661ED9DCE8009505FB /* PMMyAddressTableViewCell.h */,
+				D45D34671ED9DCE8009505FB /* PMMyAddressTableViewCell.m */,
+				D45D34691ED9DEC6009505FB /* PMAddNewAddresssViewController.h */,
+				D45D346A1ED9DEC6009505FB /* PMAddNewAddresssViewController.m */,
+				D45D34621ED9DBCF009505FB /* View */,
 			);
 			path = "收货地址";
 			sourceTree = "<group>";
@@ -889,6 +931,8 @@
 		D4C785391ED668E200702958 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D4C785471ED6C0E100702958 /* PMBusinessTableViewCell.h */,
+				D4C785481ED6C0E100702958 /* PMBusinessTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -973,7 +1017,7 @@
 				TargetAttributes = {
 					D4B617361EC998A200CB1AD8 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = Y4K7BN45NN;
+						DevelopmentTeam = 6F3GE5ULW8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1003,6 +1047,7 @@
 			files = (
 				D4B617CA1ECAC95D00CB1AD8 /* XRPlaceholder.png in Resources */,
 				D4B617471EC998A200CB1AD8 /* Assets.xcassets in Resources */,
+				D45D34601ED91638009505FB /* areaArray.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1074,6 +1119,7 @@
 				D4C785461ED6788D00702958 /* PMCommditTableViewCell.m in Sources */,
 				C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */,
 				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
+				D45D34681ED9DCE8009505FB /* PMMyAddressTableViewCell.m in Sources */,
 				C6E92A671ECDD5C00081924A /* WXSTransitionManager+TypeTool.m in Sources */,
 				D4BE2EB91ECF36B7009E70C0 /* PMMyAddressViewController.m in Sources */,
 				C6480F4F1ECBF6970025457D /* NSString+Security.m in Sources */,
@@ -1086,6 +1132,7 @@
 				C6E92A6A1ECDD5C00081924A /* WXSTransitionProperty.m in Sources */,
 				D4C784891ED3DEE200702958 /* PMWatercourseViewController.m in Sources */,
 				C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */,
+				D45D34611ED91638009505FB /* BLAreaPickerView.m in Sources */,
 				C6E92A5F1ECDD5C00081924A /* WXSTransitionManager+BoomAnimation.m in Sources */,
 				D4B6178A1EC99FC400CB1AD8 /* MineViewController.m in Sources */,
 				D4BE2EAD1ECF286F009E70C0 /* PMMyIntegrateViewController.m in Sources */,
@@ -1106,6 +1153,7 @@
 				C609A9D81ECC1C9100DDAB6A /* PMCategoryItemView.m in Sources */,
 				D4BE2EC11ECF38BC009E70C0 /* PMMyCouponViewController.m in Sources */,
 				C6E92A611ECDD5C00081924A /* WXSTransitionManager+CoverAnimation.m in Sources */,
+				D4C785491ED6C0E100702958 /* PMBusinessTableViewCell.m in Sources */,
 				D4C784781ED2DFC700702958 /* LXSegmentScrollView.m in Sources */,
 				D4B617941EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m in Sources */,
 				C6480F511ECBF6970025457D /* UIColor+RGB.m in Sources */,
@@ -1139,6 +1187,7 @@
 				C6D794E71ED87FD7005820F8 /* PMPopupView.m in Sources */,
 				C6E92A691ECDD5C00081924A /* WXSTransitionManager.m in Sources */,
 				C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */,
+				D45D34651ED9DBCF009505FB /* PMUser.m in Sources */,
 				C6E92A651ECDD5C00081924A /* WXSTransitionManager+SpreadAnimation.m in Sources */,
 				C6480F521ECBF6970025457D /* UIImage+Color.m in Sources */,
 				D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */,
@@ -1148,6 +1197,7 @@
 				D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */,
 				C6D794EA1ED885AC005820F8 /* PMShareView.m in Sources */,
 				D4BE2EA91ECEE7C8009E70C0 /* PMMyAccountViewController.m in Sources */,
+				D45D346B1ED9DEC6009505FB /* PMAddNewAddresssViewController.m in Sources */,
 				D4C784861ED3DC4600702958 /* PMWithdrawViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1251,7 +1301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = Y4K7BN45NN;
+				DEVELOPMENT_TEAM = 6F3GE5ULW8;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinMaiWang/Classes/其他/View/PrefixHeader.pch";
@@ -1269,7 +1319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = Y4K7BN45NN;
+				DEVELOPMENT_TEAM = 6F3GE5ULW8;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PinMaiWang/Classes/其他/View/PrefixHeader.pch";
