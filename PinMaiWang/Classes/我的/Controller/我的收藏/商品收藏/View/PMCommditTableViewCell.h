@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PMCommditTableViewCell : UITableViewCell
-
+@property (nonatomic,strong) NSDictionary * dict;
 @end
