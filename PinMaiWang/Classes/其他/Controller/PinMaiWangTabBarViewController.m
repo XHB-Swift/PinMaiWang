@@ -51,11 +51,11 @@
     }PMTabBarStruct;
     
     PMTabBarStruct tabBarStructs[] = {
-        {"首页","footer_01","footer_01_1","ViewController"},
-        {"分类","footer_02","footer_02_1","CategoryViewController"},
-        {"拍卖场","footer_03","footer_03_1","AuctionViewController"},
-        {"购物车","footer_04","footer_04_1","CartViewController"},
-        {"我的","footer_05","footer_05_1","MineViewController"}};
+        {"首页","home_01","home_02","ViewController"},
+        {"分类","category_01","category_02","CategoryViewController"},
+        {"拍卖场","auction_01","auction_02","AuctionViewController"},
+        {"购物车","cart_01","cart_02","CartViewController"},
+        {"我的","mine_01","mine_02","MineViewController"}};
     
     int count = sizeof(tabBarStructs)/sizeof(PMTabBarStruct);
     for (int i = 0; i < count; i++) {
