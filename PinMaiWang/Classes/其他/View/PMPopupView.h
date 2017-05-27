@@ -10,7 +10,7 @@
 
 @interface PMPopupView : UIView
 
-+ (void)show;
++ (void)showWithContentView:(__kindof UIView *)contentView;
 + (void)hide;
 
 @end
