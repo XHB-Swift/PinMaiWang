@@ -35,6 +35,8 @@
 		C6480F551ECBF6970025457D /* UITableViewCell+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F471ECBF6970025457D /* UITableViewCell+Identifier.m */; };
 		C6480F561ECBF6970025457D /* UIView+XHBFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F491ECBF6970025457D /* UIView+XHBFrame.m */; };
 		C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F591ECBF6AC0025457D /* ViewController.m */; };
+		C6D794E71ED87FD7005820F8 /* PMPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D794E61ED87FD7005820F8 /* PMPopupView.m */; };
+		C6D794EA1ED885AC005820F8 /* PMShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D794E91ED885AC005820F8 /* PMShareView.m */; };
 		C6E92A361ECDD5920081924A /* PMCategoryRightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9E01ECD2F8400DDAB6A /* PMCategoryRightViewCell.m */; };
 		C6E92A371ECDD5920081924A /* UICollectionViewCell+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9E31ECD302300DDAB6A /* UICollectionViewCell+Identifier.m */; };
 		C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA011ECD86E700DDAB6A /* PMGoodsDetailViewController.m */; };
@@ -161,6 +163,10 @@
 		C6480F491ECBF6970025457D /* UIView+XHBFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XHBFrame.m"; sourceTree = "<group>"; };
 		C6480F581ECBF6AC0025457D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C6480F591ECBF6AC0025457D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C6D794E51ED87FD7005820F8 /* PMPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPopupView.h; sourceTree = "<group>"; };
+		C6D794E61ED87FD7005820F8 /* PMPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPopupView.m; sourceTree = "<group>"; };
+		C6D794E81ED885AC005820F8 /* PMShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMShareView.h; sourceTree = "<group>"; };
+		C6D794E91ED885AC005820F8 /* PMShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMShareView.m; sourceTree = "<group>"; };
 		C6E92A3A1ECDD5C00081924A /* UINavigationController+WXSTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WXSTransition.h"; sourceTree = "<group>"; };
 		C6E92A3B1ECDD5C00081924A /* UINavigationController+WXSTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WXSTransition.m"; sourceTree = "<group>"; };
 		C6E92A3C1ECDD5C00081924A /* UIViewController+WXSTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WXSTransition.h"; sourceTree = "<group>"; };
@@ -503,6 +509,10 @@
 				C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */,
 				C63EF3961ED07BB400874489 /* PMDetailAdsViewCell.h */,
 				C63EF3971ED07BB400874489 /* PMDetailAdsViewCell.m */,
+				C6D794E51ED87FD7005820F8 /* PMPopupView.h */,
+				C6D794E61ED87FD7005820F8 /* PMPopupView.m */,
+				C6D794E81ED885AC005820F8 /* PMShareView.h */,
+				C6D794E91ED885AC005820F8 /* PMShareView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1120,6 +1130,7 @@
 				C6480F531ECBF6970025457D /* UIImage+Crop.m in Sources */,
 				C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */,
 				D4B617D11ECAE80C00CB1AD8 /* SGAdvertScrollView.m in Sources */,
+				C6D794E71ED87FD7005820F8 /* PMPopupView.m in Sources */,
 				C6E92A691ECDD5C00081924A /* WXSTransitionManager.m in Sources */,
 				C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */,
 				C6E92A651ECDD5C00081924A /* WXSTransitionManager+SpreadAnimation.m in Sources */,
@@ -1129,6 +1140,7 @@
 				C6E92A601ECDD5C00081924A /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				D4C784771ED2DFC700702958 /* LiuXSegmentView.m in Sources */,
 				D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */,
+				C6D794EA1ED885AC005820F8 /* PMShareView.m in Sources */,
 				D4BE2EA91ECEE7C8009E70C0 /* PMMyAccountViewController.m in Sources */,
 				D4C784861ED3DC4600702958 /* PMWithdrawViewController.m in Sources */,
 			);
