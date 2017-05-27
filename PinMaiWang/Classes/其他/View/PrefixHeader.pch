@@ -21,6 +21,9 @@
 #import "UINavigationBar+DeprecateBackground.h"
 #import "UIViewController+WXSTransition.h"
 #import <SDImageCache.h>
+#import "BLAreaPickerView.h"
+
+
 
 
 #define UI_IS_LANDSCAPE         ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
@@ -33,7 +36,7 @@
 #define UI_IS_IOS8_AND_HIGHER   ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
 
 // 首页颜色
-#define PM_HOME_TOP_COLOR XHBHexColor(0x00BCFF)
+#define PM_HOME_TOP_COLOR XHBHexColor(0x0096D9)
 
 // 分类页面颜色
 #define PM_CATEGORY_NORMAL_COLOR XHBHexColor(0x000000)
