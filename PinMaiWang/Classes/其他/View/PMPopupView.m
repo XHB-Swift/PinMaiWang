@@ -10,22 +10,13 @@
 
 NSInteger const PMPopupViewTag = NSNotFound;
 NSInteger const PMPopupCoverViewTag = PMPopupViewTag - 100;
+NSInteger const PMPopupContentViewTag = PMPopupViewTag - 1000;
 
 @implementation PMPopupView
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    
-    if (self = [super initWithFrame:frame]) {
-        
-        [self setupCoverView];
-        
-    }
-    
-    return self;
-}
-
 - (void)setupCoverView {
     
+    self.tag = PMPopupViewTag;
     UIView *coverView = [[UIView alloc] initWithFrame:XHB_SCREEN_BOUDNS];
     coverView.tag = PMPopupCoverViewTag;
     coverView.backgroundColor = XHBRGBAColor(0, 0, 0, 0.5);
@@ -42,21 +33,26 @@ NSInteger const PMPopupCoverViewTag = PMPopupViewTag - 100;
     
 }
 
-+ (void)show {
++ (void)showWithContentView:(__kindof UIView *)contentView {
     
     UIWindow *mainWindow = [UIApplication sharedApplication].keyWindow;
     PMPopupView *popView = [mainWindow viewWithTag:PMPopupViewTag];
     if (!popView) {
         
         popView = [[PMPopupView alloc] initWithFrame:XHB_SCREEN_BOUDNS];
+        [popView setupCoverView];
+        contentView.y = popView.height;
+        contentView.tag = PMPopupContentViewTag;
+        [popView addSubview:contentView];
         [mainWindow addSubview:popView];
         [mainWindow bringSubviewToFront:popView];
     }
     
     UIView *coverView = [popView viewWithTag:PMPopupCoverViewTag];
-    [UIView animateWithDuration:0.5f animations:^{
+    [UIView animateWithDuration:0.25f animations:^{
         
         coverView.alpha = 1;
+        contentView.y = popView.height - contentView.height;
         
     }];
     
@@ -66,14 +62,22 @@ NSInteger const PMPopupCoverViewTag = PMPopupViewTag - 100;
     
     UIWindow *mainWindow = [UIApplication sharedApplication].keyWindow;
     PMPopupView *popView = [mainWindow viewWithTag:PMPopupViewTag];
-    
     if (popView) {
+        
         UIView *coverView = [popView viewWithTag:PMPopupCoverViewTag];
-        [UIView animateWithDuration:0.5f animations:^{
+        __kindof UIView *contentView = [popView viewWithTag:PMPopupContentViewTag];
+        [UIView animateWithDuration:0.25f animations:^{
             
+            contentView.y = popView.height;
             coverView.alpha = 0;
             
+        } completion:^(BOOL finished) {
+            
+            //[mainWindow sendSubviewToBack:popView];
+            [popView removeFromSuperview];
+            
         }];
+        
     }
     
 }
