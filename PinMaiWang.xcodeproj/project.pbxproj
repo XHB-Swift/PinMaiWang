@@ -37,6 +37,7 @@
 		C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F591ECBF6AC0025457D /* ViewController.m */; };
 		C6D794E71ED87FD7005820F8 /* PMPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D794E61ED87FD7005820F8 /* PMPopupView.m */; };
 		C6D794EA1ED885AC005820F8 /* PMShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D794E91ED885AC005820F8 /* PMShareView.m */; };
+		C6D794ED1ED96778005820F8 /* PMShareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D794EC1ED96778005820F8 /* PMShareCollectionViewCell.m */; };
 		C6E92A361ECDD5920081924A /* PMCategoryRightViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9E01ECD2F8400DDAB6A /* PMCategoryRightViewCell.m */; };
 		C6E92A371ECDD5920081924A /* UICollectionViewCell+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9E31ECD302300DDAB6A /* UICollectionViewCell+Identifier.m */; };
 		C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA011ECD86E700DDAB6A /* PMGoodsDetailViewController.m */; };
@@ -167,6 +168,8 @@
 		C6D794E61ED87FD7005820F8 /* PMPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPopupView.m; sourceTree = "<group>"; };
 		C6D794E81ED885AC005820F8 /* PMShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMShareView.h; sourceTree = "<group>"; };
 		C6D794E91ED885AC005820F8 /* PMShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMShareView.m; sourceTree = "<group>"; };
+		C6D794EB1ED96778005820F8 /* PMShareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMShareCollectionViewCell.h; sourceTree = "<group>"; };
+		C6D794EC1ED96778005820F8 /* PMShareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMShareCollectionViewCell.m; sourceTree = "<group>"; };
 		C6E92A3A1ECDD5C00081924A /* UINavigationController+WXSTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WXSTransition.h"; sourceTree = "<group>"; };
 		C6E92A3B1ECDD5C00081924A /* UINavigationController+WXSTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WXSTransition.m"; sourceTree = "<group>"; };
 		C6E92A3C1ECDD5C00081924A /* UIViewController+WXSTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WXSTransition.h"; sourceTree = "<group>"; };
@@ -513,6 +516,8 @@
 				C6D794E61ED87FD7005820F8 /* PMPopupView.m */,
 				C6D794E81ED885AC005820F8 /* PMShareView.h */,
 				C6D794E91ED885AC005820F8 /* PMShareView.m */,
+				C6D794EB1ED96778005820F8 /* PMShareCollectionViewCell.h */,
+				C6D794EC1ED96778005820F8 /* PMShareCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1085,6 +1090,7 @@
 				D4B6178A1EC99FC400CB1AD8 /* MineViewController.m in Sources */,
 				D4BE2EAD1ECF286F009E70C0 /* PMMyIntegrateViewController.m in Sources */,
 				D4C784E91ED5669000702958 /* PMPayTableViewCell.m in Sources */,
+				C6D794ED1ED96778005820F8 /* PMShareCollectionViewCell.m in Sources */,
 				C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */,
 				C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */,
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,

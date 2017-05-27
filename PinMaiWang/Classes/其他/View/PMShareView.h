@@ -6,8 +6,23 @@
 //  Copyright © 2017年 嚼华. All rights reserved.
 //
 
-#import "PMPopupView.h"
+#import <UIKit/UIKit.h>
 
-@interface PMShareView : PMPopupView
+@class PMShareView;
+
+@protocol PMShareViewDelegate <NSObject>
+
+@optional
+
+- (void)shareActionDidCancelInView:(PMShareView *)share;
+- (void)shareView:(PMShareView *)share didClickWithTitle:(NSString *)title;
+
+@end
+
+@interface PMShareView : UIView
+
+@property (nonatomic, assign) id<PMShareViewDelegate> delegate;
+
++ (instancetype)shareViewWithAutoFrame;
 
 @end

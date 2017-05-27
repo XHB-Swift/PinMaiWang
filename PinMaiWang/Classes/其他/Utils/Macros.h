@@ -32,6 +32,8 @@
 #define UTF8FILEPATH      [NSString stringWithUTF8String: __FILE__]
 //UTF8编码过的文件名
 #define UTF8FILE          [UTF8FILEPATH  lastPathComponent]
+//char *类型字符转NSString *字符
+#define XHBUTF8String(ch)    [NSString stringWithUTF8String: ch]
 
 //在DEBUG模式下使用Log
 #if DEBUG

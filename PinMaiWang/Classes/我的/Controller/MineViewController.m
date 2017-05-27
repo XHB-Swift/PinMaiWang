@@ -21,12 +21,15 @@
 #import "PMMineView.h"
 #import "PMMineHeaderView.h"
 
+#import "PMPopupView.h"
+#import "PMShareView.h"
+
 
 @class MineViewController;
 typedef void(^PMMineVCOptions)(MineViewController *mine);
 NSString *const OPT_KEY = @"ITEM_OPT_KEY";
 
-@interface MineViewController ()
+@interface MineViewController () <PMShareViewDelegate>
 
 @property (nonatomic,strong) PMMineView *mineView;
 
@@ -105,6 +108,10 @@ static PMMineVCOptions opt_favorable = ^(MineViewController *mine){
 //}
 #pragma mark 分享
 static PMMineVCOptions opt_share     = ^(MineViewController *mine){
+    
+    PMShareView *share = [PMShareView shareViewWithAutoFrame];
+    share.delegate = mine;
+    [PMPopupView showWithContentView:share];
     
 };
 //- (void)opt_share{
@@ -258,6 +265,18 @@ static NSArray<NSDictionary *> *items = nil;
         
     }
 
+}
+
+#pragma mark 点击分享的类目
+- (void)shareView:(PMShareView *)share didClickWithTitle:(NSString *)title {
+    
+    XHBLogObject(XHBFormatString(@"点击选择分享的平台：%@", title));
+}
+
+#pragma mark 点击取消分享
+- (void)shareActionDidCancelInView:(PMShareView *)share {
+    
+    [PMPopupView hide];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
