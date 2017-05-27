@@ -32,12 +32,12 @@
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"商品收藏",@"商家收藏"]];
     segment.frame = CGRectMake(40, 74, self.view.bounds.size.width-80, 30);
     segment.selectedSegmentIndex = 0;
-    segment.layer.borderColor = XHBRGBColor(234, 30, 74).CGColor;
-    segment.tintColor = XHBRGBColor(234, 30, 74);
+    segment.layer.borderColor = XHBRGBColor(252, 75, 78).CGColor;
+    segment.tintColor = XHBRGBColor(252, 75, 78);
     segment.backgroundColor = [UIColor whiteColor];
     NSDictionary* selectedTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0],NSForegroundColorAttributeName: [UIColor whiteColor]};
     [segment setTitleTextAttributes:selectedTextAttributes forState:UIControlStateSelected];
-    NSDictionary* unselectedTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0],NSForegroundColorAttributeName: XHBRGBColor(234, 30, 74)};
+    NSDictionary* unselectedTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0],NSForegroundColorAttributeName: XHBRGBColor(252, 75, 78)};
     [segment setTitleTextAttributes:unselectedTextAttributes forState:UIControlStateNormal];
     [segment addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:segment];
@@ -45,11 +45,10 @@
     
     self.commdity = [PMCommodityViewController new];
     self.commdity.view.frame = CGRectMake(0, segment.maxY+10, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT-114);
-    self.commdity.view.backgroundColor = [UIColor yellowColor];
     
     self.businwss = [PMBusinessViewController new];
     self.businwss.view.frame = self.commdity.view.frame;
-    self.businwss.view.backgroundColor =[UIColor greenColor];
+    self.businwss.view.backgroundColor =XHBRGBColor(244, 244, 244);
     [self.view addSubview:self.commdity.view];
     
     
