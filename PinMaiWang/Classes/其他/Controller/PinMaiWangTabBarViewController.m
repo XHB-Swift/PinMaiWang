@@ -42,7 +42,7 @@
 -(void)setUpControllers{
     
     [self.tabBar setTintColor:PM_HOME_TOP_COLOR];
-    
+
     typedef struct PMTabBarStruct{
         
         char *title;
