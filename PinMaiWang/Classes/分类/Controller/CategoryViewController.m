@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"商品分类";
+    self.navigationItem.title = @"商品分类";
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupHeaderView];
     [self setupContentView];
