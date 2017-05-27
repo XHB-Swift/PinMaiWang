@@ -76,14 +76,14 @@
     self.segment.layer.masksToBounds = YES;
     
     self.segment.selectedSegmentIndex = 0;
-    self.segment.layer.borderColor = XHBRGBColor(245, 30, 75).CGColor;
+    self.segment.layer.borderColor = XHBRGBColor(252, 75, 78).CGColor;
     self.segment.layer.borderWidth = 1.0;
     
-    self.segment.tintColor = XHBRGBColor(245, 30, 75);
+    self.segment.tintColor = XHBRGBColor(252, 75, 78);
     self.segment.backgroundColor = [UIColor whiteColor];
     NSDictionary* selectedTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0],NSForegroundColorAttributeName: [UIColor whiteColor]};
     [self.segment setTitleTextAttributes:selectedTextAttributes forState:UIControlStateSelected];
-    NSDictionary* unselectedTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0],NSForegroundColorAttributeName: XHBRGBColor(245, 30, 75)};
+    NSDictionary* unselectedTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0],NSForegroundColorAttributeName: XHBRGBColor(252, 75, 78)};
     [self.segment setTitleTextAttributes:unselectedTextAttributes forState:UIControlStateNormal];
     [self.segment addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:self.segment];
