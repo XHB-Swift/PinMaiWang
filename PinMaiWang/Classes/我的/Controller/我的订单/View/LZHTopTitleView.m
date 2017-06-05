@@ -60,18 +60,30 @@
     self.lineView.backgroundColor = [UIColor redColor];
     [self addSubview:self.lineView];
     
-
+    //初始化默认为第一页
+    self.curPage = 0;
 }
 
+- (void)setCurPage:(NSInteger)curPage {
+    
+    if (curPage>=self.titleSegment.numberOfSegments) {
+        return;
+    }
+    
+    _curPage = curPage;
+    self.titleSegment.selectedSegmentIndex = curPage;
+    [self pageChange:self.titleSegment];
+}
 
 -(void)setTitles:(NSArray *)titles{
     
     if (titles.count>0) {
+        
         for (NSInteger i = 0; i < titles.count; i++) {
             [self.titleSegment insertSegmentWithTitle:[titles objectAtIndex:i] atIndex:i animated:NO];
         }
     }
-    self.titleSegment.selectedSegmentIndex = 0;
+    
 }
 
 -(void)SetUpViewControllerWithFatherVC:(UIViewController *)fatherVC ChildVC:(NSArray<UIViewController *> *)childVC{
@@ -93,10 +105,9 @@
 // 联动
 -(void)pageChange:(UISegmentedControl *)sender{
     
-    NSLog(@"%ld",sender.selectedSegmentIndex);
     [self changeWithPage:sender.selectedSegmentIndex];
-    [self.pageScrollerView setContentOffset:CGPointMake(self.frame.size.width*sender.selectedSegmentIndex, 0) animated:YES];
-    
+    [self.pageScrollerView setContentOffset:CGPointMake(self.width*sender.selectedSegmentIndex, 0) animated:YES];
+    XHBLogObject(@"改变页数");
 }
 
 
