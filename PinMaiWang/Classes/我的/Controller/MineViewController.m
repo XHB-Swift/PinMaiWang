@@ -148,7 +148,7 @@ static PMMineVCOptions opt_icon     = ^(MineViewController *mine){
 #pragma mark 查看订单
 static PMMineVCOptions opt_order    = ^(MineViewController *mine){
     
-    MyOrdersViewController *VC = [[MyOrdersViewController alloc]init];
+    MyOrdersViewController *VC = [[MyOrdersViewController alloc] initWithOrderStatus:MyOrderStatusAll];
     VC.hidesBottomBarWhenPushed = YES;
     [mine.navigationController pushViewController:VC animated:YES];
     
@@ -159,6 +159,9 @@ static PMMineVCOptions opt_order    = ^(MineViewController *mine){
 #pragma mark 待付款
 static PMMineVCOptions opt_pay      = ^(MineViewController *mine){
   
+    MyOrdersViewController *VC = [[MyOrdersViewController alloc] initWithOrderStatus:MyOrderStatusNotPay];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_pay{
 //    
@@ -166,6 +169,9 @@ static PMMineVCOptions opt_pay      = ^(MineViewController *mine){
 #pragma mark 待发货
 static PMMineVCOptions opt_delivery = ^(MineViewController *mine){
     
+    MyOrdersViewController *VC = [[MyOrdersViewController alloc] initWithOrderStatus:MyOrderStatusNotDeliver];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_delivery{
 //    
@@ -173,6 +179,9 @@ static PMMineVCOptions opt_delivery = ^(MineViewController *mine){
 #pragma mark 待收货
 static PMMineVCOptions opt_recieve  = ^(MineViewController *mine){
     
+    MyOrdersViewController *VC = [[MyOrdersViewController alloc] initWithOrderStatus:MyOrderStatusNotRecieve];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_recieve{
 //    
@@ -180,6 +189,9 @@ static PMMineVCOptions opt_recieve  = ^(MineViewController *mine){
 #pragma mark 待评价
 static PMMineVCOptions opt_comment  = ^(MineViewController *mine){
     
+    MyOrdersViewController *VC = [[MyOrdersViewController alloc] initWithOrderStatus:MyOrderStatusNotComment];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_comment{
 //    
@@ -187,6 +199,9 @@ static PMMineVCOptions opt_comment  = ^(MineViewController *mine){
 #pragma mark 已取消
 static PMMineVCOptions opt_cancel   = ^(MineViewController *mine){
     
+    MyOrdersViewController *VC = [[MyOrdersViewController alloc] initWithOrderStatus:MyOrderStatusHasCancel];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController pushViewController:VC animated:YES];
 };
 //- (void)opt_cancel{
 //    

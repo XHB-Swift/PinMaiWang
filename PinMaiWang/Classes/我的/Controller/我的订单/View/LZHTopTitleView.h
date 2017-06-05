@@ -13,6 +13,11 @@
 // title数组
 @property (nonatomic,strong) NSArray * titles;
 
+/**
+ 当前页
+ */
+@property (nonatomic,assign) NSInteger curPage;
+
 // 父控制器和子控制器数组
 
 -(void)SetUpViewControllerWithFatherVC:(UIViewController *)fatherVC ChildVC:(NSArray<UIViewController *>*)childVC;
