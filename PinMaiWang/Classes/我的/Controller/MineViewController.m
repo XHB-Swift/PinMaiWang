@@ -17,6 +17,8 @@
 #import "PMMyAddressViewController.h"
 #import "PMMyInvoiceViewController.h"
 #import "PMMyCouponViewController.h"
+#import "MyOrdersViewController.h"
+
 
 #import "PMMineView.h"
 #import "PMMineHeaderView.h"
@@ -146,13 +148,17 @@ static PMMineVCOptions opt_icon     = ^(MineViewController *mine){
 #pragma mark 查看订单
 static PMMineVCOptions opt_order    = ^(MineViewController *mine){
     
+    MyOrdersViewController *VC = [[MyOrdersViewController alloc]init];
+    VC.hidesBottomBarWhenPushed = YES;
+    [mine.navigationController pushViewController:VC animated:YES];
+    
 };
 //- (void)opt_order{
 //    
 //}
 #pragma mark 待付款
 static PMMineVCOptions opt_pay      = ^(MineViewController *mine){
-    
+  
 };
 //- (void)opt_pay{
 //    
@@ -271,6 +277,15 @@ static NSArray<NSDictionary *> *items = nil;
 - (void)shareView:(PMShareView *)share didClickWithTitle:(NSString *)title {
     
     XHBLogObject(XHBFormatString(@"点击选择分享的平台：%@", title));
+    if ([title isEqualToString:@"朋友圈"]) {
+        XHBLogObject(@"分享到朋友圈");
+    }else if ([title isEqualToString:@"微信"]){
+        XHBLogObject(@"分享到微信");
+    }else if ([title isEqualToString:@"QQ"]){
+        XHBLogObject(@"分享到QQ");
+    }else if ([title isEqualToString:@"QQ空间"]){
+        XHBLogObject(@"分享到QQ空间");
+    }
 }
 
 #pragma mark 点击取消分享

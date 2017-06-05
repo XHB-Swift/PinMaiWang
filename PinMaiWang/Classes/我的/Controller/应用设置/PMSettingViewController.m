@@ -14,6 +14,7 @@
 
 @property (nonatomic,strong) UITableView * setingTableView;
 @property (nonatomic,strong) NSArray * dataSource;
+@property (nonatomic,strong) UIButton * LogOut;
 
 @end
 
@@ -56,12 +57,19 @@
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
 
+    self.LogOut = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.LogOut.frame = CGRectMake(XHB_SCREEN_WIDTH/4, self.setingTableView.maxY+20, XHB_SCREEN_WIDTH/2, 40);
+    self.LogOut.backgroundColor = XHBRGBColor(58, 148, 243);
+    [self.LogOut setTitle:@"退出登录" forState:UIControlStateNormal];
+    [self.LogOut addTarget:self action:@selector(LogOutAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self .view addSubview:self.LogOut];
+    
     
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 7;
+    return self.dataSource.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -147,6 +155,11 @@
     }
 }
 
+
+-(void)LogOutAction:(UIButton *)sender{
+    
+    XHBLogObject(@"退出登录");
+}
 
 
 @end

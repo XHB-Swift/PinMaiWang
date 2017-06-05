@@ -24,7 +24,13 @@
 -(UIView *)oneView{
     
     if (!_oneView) {
-        self.oneView = [[UIView alloc]initWithFrame:CGRectMake(0, 210, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.6)];
+        if (UI_IS_IPHONE5) {
+            self.oneView = [[UIView alloc]initWithFrame:CGRectMake(0, 210, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.6)];
+        }else if (UI_IS_IPHONE6){
+            self.oneView = [[UIView alloc]initWithFrame:CGRectMake(0, 220, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.6)];
+        }else if (UI_IS_IPHONE6PLUS){
+            self.oneView = [[UIView alloc]initWithFrame:CGRectMake(0, 230, XHB_SCREEN_WIDTH, XHB_SCREEN_HEIGHT*0.6)];
+        }
         self.oneView.backgroundColor = XHBRGBColor(244, 244, 244);
         NSArray *titles = @[@"品种",@"站内品种排名",@"排名升降",@"积分"];
         [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

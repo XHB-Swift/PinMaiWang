@@ -66,6 +66,14 @@
 		D45D34651ED9DBCF009505FB /* PMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D34641ED9DBCF009505FB /* PMUser.m */; };
 		D45D34681ED9DCE8009505FB /* PMMyAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D34671ED9DCE8009505FB /* PMMyAddressTableViewCell.m */; };
 		D45D346B1ED9DEC6009505FB /* PMAddNewAddresssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D346A1ED9DEC6009505FB /* PMAddNewAddresssViewController.m */; };
+		D49E08B01EE50957006B2979 /* MyOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08AF1EE50957006B2979 /* MyOrdersViewController.m */; };
+		D49E08B41EE5098C006B2979 /* LZHTopTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08B31EE5098C006B2979 /* LZHTopTitleView.m */; };
+		D49E08B71EE509BE006B2979 /* AllOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08B61EE509BE006B2979 /* AllOrdersViewController.m */; };
+		D49E08BA1EE509E1006B2979 /* ObligationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08B91EE509E1006B2979 /* ObligationViewController.m */; };
+		D49E08BD1EE50A25006B2979 /* ShipmentPendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08BC1EE50A25006B2979 /* ShipmentPendingViewController.m */; };
+		D49E08C01EE50AB9006B2979 /* RecipientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08BF1EE50AB9006B2979 /* RecipientViewController.m */; };
+		D49E08C31EE50AD8006B2979 /* PendingEvaluationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08C21EE50AD8006B2979 /* PendingEvaluationViewController.m */; };
+		D49E08C61EE50B08006B2979 /* CanceledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08C51EE50B08006B2979 /* CanceledViewController.m */; };
 		D4B617471EC998A200CB1AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B617461EC998A200CB1AD8 /* Assets.xcassets */; };
 		D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617801EC99F6B00CB1AD8 /* CategoryViewController.m */; };
 		D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617831EC99F8900CB1AD8 /* AuctionViewController.m */; };
@@ -226,6 +234,22 @@
 		D45D34671ED9DCE8009505FB /* PMMyAddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyAddressTableViewCell.m; sourceTree = "<group>"; };
 		D45D34691ED9DEC6009505FB /* PMAddNewAddresssViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAddNewAddresssViewController.h; sourceTree = "<group>"; };
 		D45D346A1ED9DEC6009505FB /* PMAddNewAddresssViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAddNewAddresssViewController.m; sourceTree = "<group>"; };
+		D49E08AE1EE50957006B2979 /* MyOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrdersViewController.h; sourceTree = "<group>"; };
+		D49E08AF1EE50957006B2979 /* MyOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrdersViewController.m; sourceTree = "<group>"; };
+		D49E08B21EE5098C006B2979 /* LZHTopTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTopTitleView.h; sourceTree = "<group>"; };
+		D49E08B31EE5098C006B2979 /* LZHTopTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHTopTitleView.m; sourceTree = "<group>"; };
+		D49E08B51EE509BE006B2979 /* AllOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllOrdersViewController.h; sourceTree = "<group>"; };
+		D49E08B61EE509BE006B2979 /* AllOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllOrdersViewController.m; sourceTree = "<group>"; };
+		D49E08B81EE509E1006B2979 /* ObligationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObligationViewController.h; sourceTree = "<group>"; };
+		D49E08B91EE509E1006B2979 /* ObligationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObligationViewController.m; sourceTree = "<group>"; };
+		D49E08BB1EE50A25006B2979 /* ShipmentPendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipmentPendingViewController.h; sourceTree = "<group>"; };
+		D49E08BC1EE50A25006B2979 /* ShipmentPendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShipmentPendingViewController.m; sourceTree = "<group>"; };
+		D49E08BE1EE50AB9006B2979 /* RecipientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipientViewController.h; sourceTree = "<group>"; };
+		D49E08BF1EE50AB9006B2979 /* RecipientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipientViewController.m; sourceTree = "<group>"; };
+		D49E08C11EE50AD8006B2979 /* PendingEvaluationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingEvaluationViewController.h; sourceTree = "<group>"; };
+		D49E08C21EE50AD8006B2979 /* PendingEvaluationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingEvaluationViewController.m; sourceTree = "<group>"; };
+		D49E08C41EE50B08006B2979 /* CanceledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanceledViewController.h; sourceTree = "<group>"; };
+		D49E08C51EE50B08006B2979 /* CanceledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanceledViewController.m; sourceTree = "<group>"; };
 		D4B617371EC998A200CB1AD8 /* PinMaiWang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinMaiWang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B617461EC998A200CB1AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B6174B1EC998A200CB1AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -451,6 +475,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D49E08AD1EE50933006B2979 /* 我的订单 */ = {
+			isa = PBXGroup;
+			children = (
+				D49E08AE1EE50957006B2979 /* MyOrdersViewController.h */,
+				D49E08AF1EE50957006B2979 /* MyOrdersViewController.m */,
+				D49E08B51EE509BE006B2979 /* AllOrdersViewController.h */,
+				D49E08B61EE509BE006B2979 /* AllOrdersViewController.m */,
+				D49E08B81EE509E1006B2979 /* ObligationViewController.h */,
+				D49E08B91EE509E1006B2979 /* ObligationViewController.m */,
+				D49E08BB1EE50A25006B2979 /* ShipmentPendingViewController.h */,
+				D49E08BC1EE50A25006B2979 /* ShipmentPendingViewController.m */,
+				D49E08BE1EE50AB9006B2979 /* RecipientViewController.h */,
+				D49E08BF1EE50AB9006B2979 /* RecipientViewController.m */,
+				D49E08C11EE50AD8006B2979 /* PendingEvaluationViewController.h */,
+				D49E08C21EE50AD8006B2979 /* PendingEvaluationViewController.m */,
+				D49E08C41EE50B08006B2979 /* CanceledViewController.h */,
+				D49E08C51EE50B08006B2979 /* CanceledViewController.m */,
+				D49E08B11EE50971006B2979 /* View */,
+			);
+			path = "我的订单";
+			sourceTree = "<group>";
+		};
+		D49E08B11EE50971006B2979 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D49E08B21EE5098C006B2979 /* LZHTopTitleView.h */,
+				D49E08B31EE5098C006B2979 /* LZHTopTitleView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D4B6172E1EC998A200CB1AD8 = {
 			isa = PBXGroup;
 			children = (
@@ -617,6 +672,7 @@
 			children = (
 				D4B617881EC99FC400CB1AD8 /* MineViewController.h */,
 				D4B617891EC99FC400CB1AD8 /* MineViewController.m */,
+				D49E08AD1EE50933006B2979 /* 我的订单 */,
 				D4BE2EBE1ECF38AB009E70C0 /* 我的优惠券 */,
 				D4BE2EBA1ECF375D009E70C0 /* 我的发票 */,
 				D4BE2EB61ECF368D009E70C0 /* 收货地址 */,
@@ -1115,9 +1171,12 @@
 				C6E92A5E1ECDD5C00081924A /* WXSPercentDrivenInteractiveTransition.m in Sources */,
 				C6E92A361ECDD5920081924A /* PMCategoryRightViewCell.m in Sources */,
 				C6E92A371ECDD5920081924A /* UICollectionViewCell+Identifier.m in Sources */,
+				D49E08B01EE50957006B2979 /* MyOrdersViewController.m in Sources */,
 				C6E92A681ECDD5C00081924A /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				D4C785461ED6788D00702958 /* PMCommditTableViewCell.m in Sources */,
 				C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */,
+				D49E08C01EE50AB9006B2979 /* RecipientViewController.m in Sources */,
+				D49E08BA1EE509E1006B2979 /* ObligationViewController.m in Sources */,
 				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
 				D45D34681ED9DCE8009505FB /* PMMyAddressTableViewCell.m in Sources */,
 				C6E92A671ECDD5C00081924A /* WXSTransitionManager+TypeTool.m in Sources */,
@@ -1126,17 +1185,21 @@
 				D42E32661ECD7C4100052781 /* PMMineCollectionViewCell.m in Sources */,
 				C609A9D51ECC1BCC00DDAB6A /* PMCategoryHeaderView.m in Sources */,
 				C6480F4D1ECBF6970025457D /* NSDictionary+Description.m in Sources */,
+				D49E08BD1EE50A25006B2979 /* ShipmentPendingViewController.m in Sources */,
 				D4B6178E1EC9A00600CB1AD8 /* AFNetWorkRequest.m in Sources */,
 				C6480F561ECBF6970025457D /* UIView+XHBFrame.m in Sources */,
 				D4BE2EB11ECF3436009E70C0 /* PMMyAuctionViewController.m in Sources */,
 				C6E92A6A1ECDD5C00081924A /* WXSTransitionProperty.m in Sources */,
 				D4C784891ED3DEE200702958 /* PMWatercourseViewController.m in Sources */,
 				C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */,
+				D49E08B71EE509BE006B2979 /* AllOrdersViewController.m in Sources */,
 				D45D34611ED91638009505FB /* BLAreaPickerView.m in Sources */,
+				D49E08C61EE50B08006B2979 /* CanceledViewController.m in Sources */,
 				C6E92A5F1ECDD5C00081924A /* WXSTransitionManager+BoomAnimation.m in Sources */,
 				D4B6178A1EC99FC400CB1AD8 /* MineViewController.m in Sources */,
 				D4BE2EAD1ECF286F009E70C0 /* PMMyIntegrateViewController.m in Sources */,
 				D4C784E91ED5669000702958 /* PMPayTableViewCell.m in Sources */,
+				D49E08C31EE50AD8006B2979 /* PendingEvaluationViewController.m in Sources */,
 				C6D794ED1ED96778005820F8 /* PMShareCollectionViewCell.m in Sources */,
 				C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */,
 				C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */,
@@ -1150,6 +1213,7 @@
 				D4C784801ED32CD900702958 /* IntegrateTopView.m in Sources */,
 				D4C7845D1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m in Sources */,
 				C6E92A5C1ECDD5C00081924A /* UIViewController+WXSTransition.m in Sources */,
+				D49E08B41EE5098C006B2979 /* LZHTopTitleView.m in Sources */,
 				C609A9D81ECC1C9100DDAB6A /* PMCategoryItemView.m in Sources */,
 				D4BE2EC11ECF38BC009E70C0 /* PMMyCouponViewController.m in Sources */,
 				C6E92A611ECDD5C00081924A /* WXSTransitionManager+CoverAnimation.m in Sources */,

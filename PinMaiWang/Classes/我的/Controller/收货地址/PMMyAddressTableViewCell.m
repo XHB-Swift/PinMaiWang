@@ -33,22 +33,26 @@
         [self addSubview:self.address];
         
         UIView *centre = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.address.frame), self.bounds.size.width, 1)];
-        centre.backgroundColor = [UIColor grayColor];
+        centre.backgroundColor = XHBRGBColor(244, 244, 244);
         [self addSubview:centre];
         
         self.btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        self.btn.frame = CGRectMake(self.bounds.size.width/2, CGRectGetMaxY(centre.frame)+10, self.bounds.size.width/3, 30);
+        self.btn.frame = CGRectMake(self.bounds.size.width-self.bounds.size.width/4, CGRectGetMaxY(centre.frame)+10, self.bounds.size.width/4-10, 30);
         [self.btn setTitle:@"编辑" forState:UIControlStateNormal];
         self.btn.tag = 100101011;
         [self.btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn];
         
-        self.delecet = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        self.delecet.frame = CGRectMake(CGRectGetMaxX(self.btn.frame), CGRectGetMaxY(self.address.frame)+10, self.btn.bounds.size.width-5, self.btn.bounds.size.height);
-        [self.delecet setTitle:@"删除" forState:UIControlStateNormal];
-        //        [self addSubview:self.delecet];
+        self.defaultBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        self.defaultBtn.frame = CGRectMake(self.address.x, centre.maxY+10, self.bounds.size.width/2, 30);
+        [self.defaultBtn setTitle:@"设为默认" forState:UIControlStateNormal];
+        [self.defaultBtn setTitle:@"默认地址" forState:UIControlStateSelected];
+        [self.defaultBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+        [self.defaultBtn addTarget:self action:@selector(defaultBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:self.defaultBtn];
         
-        UIView *bottom = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.delecet.frame), self.bounds.size.width, 9)];
+        
+        UIView *bottom = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.btn.frame), self.bounds.size.width, 9)];
         bottom.backgroundColor = XHBRGBColor(244, 244, 244);
         [self addSubview:bottom];
         
@@ -61,6 +65,12 @@
     [[NSNotificationCenter defaultCenter]postNotificationName:@"userEditAddress" object:nil userInfo:@{@"Value":@(sender.tag)}];
     
     
+}
+
+-(void)defaultBtnAction:(UIButton *)sender{
+    
+    sender.selected =! sender.selected;
+    XHBLogObject(@"你敢动我试试?");
 }
 
 

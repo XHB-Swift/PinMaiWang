@@ -14,7 +14,7 @@
 @property (nonatomic,strong) UILabel * name;
 @property (nonatomic,strong) UILabel * number;
 @property (nonatomic,strong) UILabel * address;
-@property (nonatomic,strong) UIButton * delecet;
+@property (nonatomic,strong) UIButton * defaultBtn;// 默认地址
 @property (nonatomic,strong) UIButton * btn;
 
 @end
