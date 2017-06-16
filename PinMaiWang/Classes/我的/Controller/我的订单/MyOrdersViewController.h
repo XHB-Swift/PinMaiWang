@@ -23,4 +23,6 @@ typedef NS_ENUM(NSInteger, MyOrderStatus){
 
 - (instancetype)initWithOrderStatus:(MyOrderStatus)status;
 
+
+
 @end

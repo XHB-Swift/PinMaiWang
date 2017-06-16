@@ -66,6 +66,9 @@
 		D45D34651ED9DBCF009505FB /* PMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D34641ED9DBCF009505FB /* PMUser.m */; };
 		D45D34681ED9DCE8009505FB /* PMMyAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D34671ED9DCE8009505FB /* PMMyAddressTableViewCell.m */; };
 		D45D346B1ED9DEC6009505FB /* PMAddNewAddresssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D346A1ED9DEC6009505FB /* PMAddNewAddresssViewController.m */; };
+		D47B792A1EF2217B006C6703 /* PMCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D47B79291EF2217B006C6703 /* PMCategoryCollectionViewCell.m */; };
+		D47B792D1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D47B792C1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.m */; };
+		D47C57201EF3703700C4E0DF /* PMProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47C571F1EF3703700C4E0DF /* PMProductViewController.m */; };
 		D49E08B01EE50957006B2979 /* MyOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08AF1EE50957006B2979 /* MyOrdersViewController.m */; };
 		D49E08B41EE5098C006B2979 /* LZHTopTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08B31EE5098C006B2979 /* LZHTopTitleView.m */; };
 		D49E08B71EE509BE006B2979 /* AllOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08B61EE509BE006B2979 /* AllOrdersViewController.m */; };
@@ -234,6 +237,12 @@
 		D45D34671ED9DCE8009505FB /* PMMyAddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMyAddressTableViewCell.m; sourceTree = "<group>"; };
 		D45D34691ED9DEC6009505FB /* PMAddNewAddresssViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAddNewAddresssViewController.h; sourceTree = "<group>"; };
 		D45D346A1ED9DEC6009505FB /* PMAddNewAddresssViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAddNewAddresssViewController.m; sourceTree = "<group>"; };
+		D47B79281EF2217B006C6703 /* PMCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		D47B79291EF2217B006C6703 /* PMCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		D47B792B1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCategoryCollectionViewHeaderView.h; sourceTree = "<group>"; };
+		D47B792C1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCategoryCollectionViewHeaderView.m; sourceTree = "<group>"; };
+		D47C571E1EF3703700C4E0DF /* PMProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMProductViewController.h; sourceTree = "<group>"; };
+		D47C571F1EF3703700C4E0DF /* PMProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMProductViewController.m; sourceTree = "<group>"; };
 		D49E08AE1EE50957006B2979 /* MyOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrdersViewController.h; sourceTree = "<group>"; };
 		D49E08AF1EE50957006B2979 /* MyOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrdersViewController.m; sourceTree = "<group>"; };
 		D49E08B21EE5098C006B2979 /* LZHTopTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTopTitleView.h; sourceTree = "<group>"; };
@@ -390,6 +399,8 @@
 			children = (
 				C6480F581ECBF6AC0025457D /* ViewController.h */,
 				C6480F591ECBF6AC0025457D /* ViewController.m */,
+				D47C571E1EF3703700C4E0DF /* PMProductViewController.h */,
+				D47C571F1EF3703700C4E0DF /* PMProductViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -653,6 +664,10 @@
 				C609A9DD1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m */,
 				C609A9DF1ECD2F8400DDAB6A /* PMCategoryRightViewCell.h */,
 				C609A9E01ECD2F8400DDAB6A /* PMCategoryRightViewCell.m */,
+				D47B79281EF2217B006C6703 /* PMCategoryCollectionViewCell.h */,
+				D47B79291EF2217B006C6703 /* PMCategoryCollectionViewCell.m */,
+				D47B792B1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.h */,
+				D47B792C1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1210,6 +1225,8 @@
 				D4C7848C1ED40A1300702958 /* PMPayViewController.m in Sources */,
 				C6480F551ECBF6970025457D /* UITableViewCell+Identifier.m in Sources */,
 				D4C8CB7E1ECE8AF500E15121 /* PMUpdateViewController.m in Sources */,
+				D47B792D1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.m in Sources */,
+				D47C57201EF3703700C4E0DF /* PMProductViewController.m in Sources */,
 				D4C784801ED32CD900702958 /* IntegrateTopView.m in Sources */,
 				D4C7845D1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m in Sources */,
 				C6E92A5C1ECDD5C00081924A /* UIViewController+WXSTransition.m in Sources */,
@@ -1257,6 +1274,7 @@
 				D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */,
 				D42E326D1ECD940A00052781 /* PMSettingViewController.m in Sources */,
 				C6E92A601ECDD5C00081924A /* WXSTransitionManager+BrickAnimation.m in Sources */,
+				D47B792A1EF2217B006C6703 /* PMCategoryCollectionViewCell.m in Sources */,
 				D4C784771ED2DFC700702958 /* LiuXSegmentView.m in Sources */,
 				D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */,
 				C6D794EA1ED885AC005820F8 /* PMShareView.m in Sources */,

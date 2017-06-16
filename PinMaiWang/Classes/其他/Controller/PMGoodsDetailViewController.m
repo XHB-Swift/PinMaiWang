@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"商品详情";
     [self configureUI];
     
     [XHBCenter addObserver:self selector:@selector(handleDetailContentMsg:) name:PM_DETAIL_CONTENT_NOTIFICATION object:nil];

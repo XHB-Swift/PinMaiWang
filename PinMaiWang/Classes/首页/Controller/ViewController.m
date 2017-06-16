@@ -11,6 +11,8 @@
 #import "SGAdvertScrollView.h"
 #import "HomeModel.h"
 #import "HomeTableViewCell.h"
+#import "PMProductViewController.h"
+#import "PMGoodsDetailViewController.h"
 
 @interface ViewController ()<XRCarouselViewDelegate,SGAdvertScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITextField * searTextField;
@@ -171,6 +173,7 @@
     self.navigationItem.titleView = self.searTextField;
     [self.view addSubview:self.homeTableView];
     
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -183,6 +186,13 @@
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HomeTableViewCell class]) forIndexPath:indexPath];
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    PMGoodsDetailViewController *VC = [PMGoodsDetailViewController new];
+    [self.navigationController pushViewController:VC animated:YES];
+    
 }
 
 
@@ -239,7 +249,7 @@
 
 
 -(void)titleBtnAction:(UIButton *)sender{
-    
+    /*
     switch (sender.tag) {
         case 0:
             XHBLogObject(@"龙虾");
@@ -272,7 +282,11 @@
             XHBLogObject(@"冻肉");
         default:
             break;
-    }
+    }*/
+    PMProductViewController *VC = [PMProductViewController new];
+    [self.navigationController pushViewController:VC animated:YES];
+    
+    
 }
 
 
@@ -299,14 +313,25 @@
     [self.navigationController.navigationBar xhb_setBackgroundColor:XHBHexColor(0x1E8CEE)];
     //[self.navigationController.navigationBar setShadowImage:[UIImage new]];
     [self scrollViewDidScroll:self.homeTableView];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
 
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     
+<<<<<<< Updated upstream
     [self.navigationController.navigationBar xhb_resetNavigationBar];
     self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+=======
+//    [self.navigationController.navigationBar xhb_resetNavigationBar];
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
+    
+>>>>>>> Stashed changes
 }
 
 
