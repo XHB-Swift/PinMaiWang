@@ -40,6 +40,21 @@ static char overlayKey;
     [self overLay].backgroundColor = color;
 }
 
+- (void)xhb_setBackgroundAlpha:(CGFloat)alpha {
+    
+    if (![self overLay]) {
+        
+        [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+        [self setShadowImage:[UIImage new]];
+        [self setOverLay:[[UIView alloc] initWithFrame:CGRectMake(0, 0, XHB_SCREEN_WIDTH, 64)]];
+        [self overLay].userInteractionEnabled = NO;
+        [self overLay].autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.subviews.firstObject addSubview:[self overLay]];
+        
+    }
+    [self overLay].alpha = alpha;
+}
+
 - (void)xhb_setBackgroundHidden:(BOOL)hidden {
     
     [self overLay].hidden = hidden;

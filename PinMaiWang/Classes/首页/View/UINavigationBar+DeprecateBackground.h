@@ -11,6 +11,7 @@
 @interface UINavigationBar (DeprecateBackground)
 
 - (void)xhb_setBackgroundColor:(UIColor *)color;
+- (void)xhb_setBackgroundAlpha:(CGFloat)alpha;
 - (void)xhb_setBackgroundHidden:(BOOL)hidden;
 - (void)xhb_resetNavigationBar;
 
