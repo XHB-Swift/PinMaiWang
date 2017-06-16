@@ -299,11 +299,15 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGFloat alpha = scrollView.contentOffset.y / self.topScrollView.height;
-    if (alpha >= 0 || alpha <= 1) {
-        [self.navigationController.navigationBar xhb_setBackgroundAlpha:alpha];
+    if (alpha < 0) {
+        alpha = 0;
     }
-//    [self.navigationController.navigationBar xhb_setBackgroundColor: XHBHexAColor(0x1E8CEE, alpha > 0 ? alpha : 0)];
-//    XHBLogObject(@(alpha));
+    
+    if (alpha > 1) {
+        alpha = 1;
+    }
+    
+    [self.navigationController.navigationBar xhb_setBackgroundAlpha:alpha];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -311,30 +315,23 @@
     
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     [self.navigationController.navigationBar xhb_setBackgroundColor:XHBHexColor(0x1E8CEE)];
-    //[self.navigationController.navigationBar setShadowImage:[UIImage new]];
     [self scrollViewDidScroll:self.homeTableView];
-    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
 
 }
 
-- (void)viewWillDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-<<<<<<< Updated upstream
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
     [self.navigationController.navigationBar xhb_resetNavigationBar];
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-=======
-//    [self.navigationController.navigationBar xhb_resetNavigationBar];
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
-    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:nil];
-    
->>>>>>> Stashed changes
 }
 
-
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+    [self.navigationController.navigationBar xhb_resetNavigationBar];
+}
 
 
 @end
