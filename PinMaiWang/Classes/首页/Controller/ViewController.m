@@ -285,7 +285,10 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGFloat alpha = scrollView.contentOffset.y / self.topScrollView.height;
-    [self.navigationController.navigationBar xhb_setBackgroundColor: XHBHexAColor(0x1E8CEE, alpha > 0 ? alpha : 0)];
+    if (alpha >= 0 || alpha <= 1) {
+        [self.navigationController.navigationBar xhb_setBackgroundAlpha:alpha];
+    }
+//    [self.navigationController.navigationBar xhb_setBackgroundColor: XHBHexAColor(0x1E8CEE, alpha > 0 ? alpha : 0)];
 //    XHBLogObject(@(alpha));
 }
 
@@ -293,7 +296,8 @@
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationController.navigationBar xhb_setBackgroundColor:XHBHexColor(0x1E8CEE)];
+    //[self.navigationController.navigationBar setShadowImage:[UIImage new]];
     [self scrollViewDidScroll:self.homeTableView];
 
 }
@@ -302,6 +306,7 @@
     [super viewWillDisappear:animated];
     
     [self.navigationController.navigationBar xhb_resetNavigationBar];
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
 }
 
 
