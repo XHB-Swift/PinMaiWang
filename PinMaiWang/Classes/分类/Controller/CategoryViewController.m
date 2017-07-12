@@ -291,11 +291,11 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
-            NSLog(@"别摸我");
-        }
-    }
+//    if (indexPath.section == 0) {
+//        if (indexPath.row == 0) {
+//            NSLog(@"别摸我");
+//        }
+//    }
     NSLog(@"%ld分组 %ld单元格",indexPath.section,indexPath.row);
     
     PMGoodsDetailViewController *vc = [[PMGoodsDetailViewController alloc] init];
