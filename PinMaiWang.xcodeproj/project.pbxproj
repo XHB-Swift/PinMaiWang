@@ -14,13 +14,9 @@
 		C609A9D81ECC1C9100DDAB6A /* PMCategoryItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9D71ECC1C9100DDAB6A /* PMCategoryItemView.m */; };
 		C609A9DB1ECC3E2E00DDAB6A /* PMCategoryContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9DA1ECC3E2E00DDAB6A /* PMCategoryContentView.m */; };
 		C609A9DE1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609A9DD1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m */; };
-		C609AA051ECD870A00DDAB6A /* PMGoodsDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */; };
-		C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */; };
 		C63EF3891ECF2E2100874489 /* PMMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */; };
 		C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF38B1ECF2F1700874489 /* PMMineView.m */; };
 		C63EF3E31ED53B2300874489 /* PMNormalInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784551ED28EDC00702958 /* PMNormalInvoiceViewController.m */; };
-		C63EF3E41ED53B2300874489 /* PMDetailAdsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3971ED07BB400874489 /* PMDetailAdsViewCell.m */; };
-		C63EF3E51ED53B3B00874489 /* PMDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3941ED014F800874489 /* PMDetailViewModel.m */; };
 		C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F311ECBF6970025457D /* NSArray+Description.m */; };
 		C6480F4B1ECBF6970025457D /* NSArray+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F331ECBF6970025457D /* NSArray+Range.m */; };
 		C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6480F351ECBF6970025457D /* NSCalendar+Utils.m */; };
@@ -57,6 +53,7 @@
 		C6E92A681ECDD5C00081924A /* WXSTransitionManager+ViewMoveAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E92A551ECDD5C00081924A /* WXSTransitionManager+ViewMoveAnimation.m */; };
 		C6E92A691ECDD5C00081924A /* WXSTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E92A571ECDD5C00081924A /* WXSTransitionManager.m */; };
 		C6E92A6A1ECDD5C00081924A /* WXSTransitionProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E92A591ECDD5C00081924A /* WXSTransitionProperty.m */; };
+		D4173D8E1F1328FC00A9C12E /* NSString+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = D4173D8D1F1328FC00A9C12E /* NSString+AttributedString.m */; };
 		D425DF2B1ECBE40800B8B80E /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D425DF2A1ECBE40800B8B80E /* HomeModel.m */; };
 		D42E32321ECC1D5000052781 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E32311ECC1D5000052781 /* HomeTableViewCell.m */; };
 		D42E32661ECD7C4100052781 /* PMMineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E32651ECD7C4100052781 /* PMMineCollectionViewCell.m */; };
@@ -69,6 +66,10 @@
 		D47B792A1EF2217B006C6703 /* PMCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D47B79291EF2217B006C6703 /* PMCategoryCollectionViewCell.m */; };
 		D47B792D1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D47B792C1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.m */; };
 		D47C57201EF3703700C4E0DF /* PMProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47C571F1EF3703700C4E0DF /* PMProductViewController.m */; };
+		D47C577E1EF79D8C00C4E0DF /* PMProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D47C577D1EF79D8C00C4E0DF /* PMProductTableViewCell.m */; };
+		D47C57811EF79DA000C4E0DF /* PMProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D47C57801EF79DA000C4E0DF /* PMProductModel.m */; };
+		D47C58001EF8F43100C4E0DF /* PMHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D47C57FF1EF8F43100C4E0DF /* PMHomeHeaderView.m */; };
+		D47C58061EF9069300C4E0DF /* UINavigationBar+ChangeNavigationBarColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D47C58051EF9069300C4E0DF /* UINavigationBar+ChangeNavigationBarColor.m */; };
 		D49E08B01EE50957006B2979 /* MyOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08AF1EE50957006B2979 /* MyOrdersViewController.m */; };
 		D49E08B41EE5098C006B2979 /* LZHTopTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08B31EE5098C006B2979 /* LZHTopTitleView.m */; };
 		D49E08B71EE509BE006B2979 /* AllOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08B61EE509BE006B2979 /* AllOrdersViewController.m */; };
@@ -77,6 +78,16 @@
 		D49E08C01EE50AB9006B2979 /* RecipientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08BF1EE50AB9006B2979 /* RecipientViewController.m */; };
 		D49E08C31EE50AD8006B2979 /* PendingEvaluationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08C21EE50AD8006B2979 /* PendingEvaluationViewController.m */; };
 		D49E08C61EE50B08006B2979 /* CanceledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E08C51EE50B08006B2979 /* CanceledViewController.m */; };
+		D4AFC9981F09D906000D1A6F /* LZHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC9951F09D906000D1A6F /* LZHCollectionViewCell.m */; };
+		D4AFC9991F09D906000D1A6F /* LZHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC9971F09D906000D1A6F /* LZHScrollView.m */; };
+		D4AFC99F1F09D951000D1A6F /* MJDIYAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC99C1F09D951000D1A6F /* MJDIYAutoFooter.m */; };
+		D4AFC9A01F09D951000D1A6F /* MJDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC99E1F09D951000D1A6F /* MJDIYHeader.m */; };
+		D4AFC9A31F09D970000D1A6F /* UILabel+LabelHeightAndWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC9A21F09D970000D1A6F /* UILabel+LabelHeightAndWidth.m */; };
+		D4AFC9A61F09DF2A000D1A6F /* PMDeatilModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC9A51F09DF2A000D1A6F /* PMDeatilModel.m */; };
+		D4AFC9A91F09DF4F000D1A6F /* PMDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC9A81F09DF4F000D1A6F /* PMDetailTableViewCell.m */; };
+		D4AFC9AC1F09DF6C000D1A6F /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC9AB1F09DF6C000D1A6F /* SelectView.m */; };
+		D4AFC9AF1F09DF8A000D1A6F /* BottomBuyCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC9AE1F09DF8A000D1A6F /* BottomBuyCartView.m */; };
+		D4AFC9B21F09DFB1000D1A6F /* SelectSizeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AFC9B11F09DFB1000D1A6F /* SelectSizeCollectionViewCell.m */; };
 		D4B617471EC998A200CB1AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B617461EC998A200CB1AD8 /* Assets.xcassets */; };
 		D4B617811EC99F6B00CB1AD8 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617801EC99F6B00CB1AD8 /* CategoryViewController.m */; };
 		D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B617831EC99F8900CB1AD8 /* AuctionViewController.m */; };
@@ -98,7 +109,6 @@
 		D4BE2EC11ECF38BC009E70C0 /* PMMyCouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BE2EC01ECF38BC009E70C0 /* PMMyCouponViewController.m */; };
 		D4C7845A1ED2921B00702958 /* PMNormalInvoiceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784591ED2921B00702958 /* PMNormalInvoiceHeaderView.m */; };
 		D4C7845D1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7845C1ED2B84B00702958 /* PMPrivateInvoiceHeaderView.m */; };
-		D4C784611ED2D04B00702958 /* UINavigationBar+DeprecateBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */; };
 		D4C784621ED2D04B00702958 /* PMPrivateInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C7845F1ED2B8D900702958 /* PMPrivateInvoiceViewController.m */; };
 		D4C784771ED2DFC700702958 /* LiuXSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784741ED2DFC700702958 /* LiuXSegmentView.m */; };
 		D4C784781ED2DFC700702958 /* LXSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C784761ED2DFC700702958 /* LXSegmentScrollView.m */; };
@@ -138,20 +148,10 @@
 		C609A9E31ECD302300DDAB6A /* UICollectionViewCell+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Identifier.m"; sourceTree = "<group>"; };
 		C609AA001ECD86E700DDAB6A /* PMGoodsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMGoodsDetailViewController.h; sourceTree = "<group>"; };
 		C609AA011ECD86E700DDAB6A /* PMGoodsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMGoodsDetailViewController.m; sourceTree = "<group>"; };
-		C609AA031ECD870A00DDAB6A /* PMGoodsDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMGoodsDetailView.h; sourceTree = "<group>"; };
-		C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMGoodsDetailView.m; sourceTree = "<group>"; };
-		C609AA091ECD96B000DDAB6A /* PMDetailTitleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDetailTitleViewCell.h; sourceTree = "<group>"; };
-		C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDetailTitleViewCell.m; sourceTree = "<group>"; };
 		C63EF3871ECF2E2100874489 /* PMMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMineHeaderView.h; sourceTree = "<group>"; };
 		C63EF3881ECF2E2100874489 /* PMMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMineHeaderView.m; sourceTree = "<group>"; };
 		C63EF38A1ECF2F1700874489 /* PMMineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMineView.h; sourceTree = "<group>"; };
 		C63EF38B1ECF2F1700874489 /* PMMineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMineView.m; sourceTree = "<group>"; };
-		C63EF3901ECF793B00874489 /* UINavigationBar+DeprecateBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+DeprecateBackground.h"; sourceTree = "<group>"; };
-		C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+DeprecateBackground.m"; sourceTree = "<group>"; };
-		C63EF3931ED014F800874489 /* PMDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDetailViewModel.h; sourceTree = "<group>"; };
-		C63EF3941ED014F800874489 /* PMDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDetailViewModel.m; sourceTree = "<group>"; };
-		C63EF3961ED07BB400874489 /* PMDetailAdsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDetailAdsViewCell.h; sourceTree = "<group>"; };
-		C63EF3971ED07BB400874489 /* PMDetailAdsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDetailAdsViewCell.m; sourceTree = "<group>"; };
 		C6480F2F1ECBF6970025457D /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		C6480F301ECBF6970025457D /* NSArray+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
 		C6480F311ECBF6970025457D /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
@@ -220,6 +220,8 @@
 		C6E92A581ECDD5C00081924A /* WXSTransitionProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSTransitionProperty.h; sourceTree = "<group>"; };
 		C6E92A591ECDD5C00081924A /* WXSTransitionProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSTransitionProperty.m; sourceTree = "<group>"; };
 		C6E92A5A1ECDD5C00081924A /* WXSTypedefConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSTypedefConfig.h; sourceTree = "<group>"; };
+		D4173D8C1F1328FC00A9C12E /* NSString+AttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AttributedString.h"; sourceTree = "<group>"; };
+		D4173D8D1F1328FC00A9C12E /* NSString+AttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AttributedString.m"; sourceTree = "<group>"; };
 		D425DF291ECBE40800B8B80E /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		D425DF2A1ECBE40800B8B80E /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		D42E32301ECC1D5000052781 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
@@ -243,6 +245,14 @@
 		D47B792C1EF221A1006C6703 /* PMCategoryCollectionViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCategoryCollectionViewHeaderView.m; sourceTree = "<group>"; };
 		D47C571E1EF3703700C4E0DF /* PMProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMProductViewController.h; sourceTree = "<group>"; };
 		D47C571F1EF3703700C4E0DF /* PMProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMProductViewController.m; sourceTree = "<group>"; };
+		D47C577C1EF79D8C00C4E0DF /* PMProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMProductTableViewCell.h; sourceTree = "<group>"; };
+		D47C577D1EF79D8C00C4E0DF /* PMProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMProductTableViewCell.m; sourceTree = "<group>"; };
+		D47C577F1EF79DA000C4E0DF /* PMProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMProductModel.h; sourceTree = "<group>"; };
+		D47C57801EF79DA000C4E0DF /* PMProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMProductModel.m; sourceTree = "<group>"; };
+		D47C57FE1EF8F43100C4E0DF /* PMHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMHomeHeaderView.h; sourceTree = "<group>"; };
+		D47C57FF1EF8F43100C4E0DF /* PMHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMHomeHeaderView.m; sourceTree = "<group>"; };
+		D47C58041EF9069300C4E0DF /* UINavigationBar+ChangeNavigationBarColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ChangeNavigationBarColor.h"; sourceTree = "<group>"; };
+		D47C58051EF9069300C4E0DF /* UINavigationBar+ChangeNavigationBarColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ChangeNavigationBarColor.m"; sourceTree = "<group>"; };
 		D49E08AE1EE50957006B2979 /* MyOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrdersViewController.h; sourceTree = "<group>"; };
 		D49E08AF1EE50957006B2979 /* MyOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrdersViewController.m; sourceTree = "<group>"; };
 		D49E08B21EE5098C006B2979 /* LZHTopTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTopTitleView.h; sourceTree = "<group>"; };
@@ -259,6 +269,26 @@
 		D49E08C21EE50AD8006B2979 /* PendingEvaluationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingEvaluationViewController.m; sourceTree = "<group>"; };
 		D49E08C41EE50B08006B2979 /* CanceledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanceledViewController.h; sourceTree = "<group>"; };
 		D49E08C51EE50B08006B2979 /* CanceledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanceledViewController.m; sourceTree = "<group>"; };
+		D4AFC9941F09D906000D1A6F /* LZHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHCollectionViewCell.h; sourceTree = "<group>"; };
+		D4AFC9951F09D906000D1A6F /* LZHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHCollectionViewCell.m; sourceTree = "<group>"; };
+		D4AFC9961F09D906000D1A6F /* LZHScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHScrollView.h; sourceTree = "<group>"; };
+		D4AFC9971F09D906000D1A6F /* LZHScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHScrollView.m; sourceTree = "<group>"; };
+		D4AFC99B1F09D951000D1A6F /* MJDIYAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDIYAutoFooter.h; sourceTree = "<group>"; };
+		D4AFC99C1F09D951000D1A6F /* MJDIYAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDIYAutoFooter.m; sourceTree = "<group>"; };
+		D4AFC99D1F09D951000D1A6F /* MJDIYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDIYHeader.h; sourceTree = "<group>"; };
+		D4AFC99E1F09D951000D1A6F /* MJDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDIYHeader.m; sourceTree = "<group>"; };
+		D4AFC9A11F09D970000D1A6F /* UILabel+LabelHeightAndWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LabelHeightAndWidth.h"; sourceTree = "<group>"; };
+		D4AFC9A21F09D970000D1A6F /* UILabel+LabelHeightAndWidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabelHeightAndWidth.m"; sourceTree = "<group>"; };
+		D4AFC9A41F09DF2A000D1A6F /* PMDeatilModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDeatilModel.h; sourceTree = "<group>"; };
+		D4AFC9A51F09DF2A000D1A6F /* PMDeatilModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDeatilModel.m; sourceTree = "<group>"; };
+		D4AFC9A71F09DF4F000D1A6F /* PMDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDetailTableViewCell.h; sourceTree = "<group>"; };
+		D4AFC9A81F09DF4F000D1A6F /* PMDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDetailTableViewCell.m; sourceTree = "<group>"; };
+		D4AFC9AA1F09DF6C000D1A6F /* SelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectView.h; sourceTree = "<group>"; };
+		D4AFC9AB1F09DF6C000D1A6F /* SelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectView.m; sourceTree = "<group>"; };
+		D4AFC9AD1F09DF8A000D1A6F /* BottomBuyCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomBuyCartView.h; sourceTree = "<group>"; };
+		D4AFC9AE1F09DF8A000D1A6F /* BottomBuyCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomBuyCartView.m; sourceTree = "<group>"; };
+		D4AFC9B01F09DFB1000D1A6F /* SelectSizeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSizeCollectionViewCell.h; sourceTree = "<group>"; };
+		D4AFC9B11F09DFB1000D1A6F /* SelectSizeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectSizeCollectionViewCell.m; sourceTree = "<group>"; };
 		D4B617371EC998A200CB1AD8 /* PinMaiWang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinMaiWang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B617461EC998A200CB1AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B6174B1EC998A200CB1AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -517,6 +547,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D4AFC9931F09D906000D1A6F /* LZHScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D4AFC9941F09D906000D1A6F /* LZHCollectionViewCell.h */,
+				D4AFC9951F09D906000D1A6F /* LZHCollectionViewCell.m */,
+				D4AFC9961F09D906000D1A6F /* LZHScrollView.h */,
+				D4AFC9971F09D906000D1A6F /* LZHScrollView.m */,
+			);
+			path = LZHScrollView;
+			sourceTree = "<group>";
+		};
+		D4AFC99A1F09D951000D1A6F /* MJ */ = {
+			isa = PBXGroup;
+			children = (
+				D4AFC99B1F09D951000D1A6F /* MJDIYAutoFooter.h */,
+				D4AFC99C1F09D951000D1A6F /* MJDIYAutoFooter.m */,
+				D4AFC99D1F09D951000D1A6F /* MJDIYHeader.h */,
+				D4AFC99E1F09D951000D1A6F /* MJDIYHeader.m */,
+			);
+			path = MJ;
+			sourceTree = "<group>";
+		};
 		D4B6172E1EC998A200CB1AD8 = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +624,8 @@
 		D4B617521EC99D4900CB1AD8 /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
+				D4AFC99A1F09D951000D1A6F /* MJ */,
+				D4AFC9931F09D906000D1A6F /* LZHScrollView */,
 				D45D345C1ED91638009505FB /* BLAreaPickView */,
 				C6E92A391ECDD5C00081924A /* WXSTransition */,
 				C6480F2E1ECBF6970025457D /* Utils */,
@@ -597,8 +651,8 @@
 		D4B617541EC99D4900CB1AD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C63EF3931ED014F800874489 /* PMDetailViewModel.h */,
-				C63EF3941ED014F800874489 /* PMDetailViewModel.m */,
+				D4AFC9A41F09DF2A000D1A6F /* PMDeatilModel.h */,
+				D4AFC9A51F09DF2A000D1A6F /* PMDeatilModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -606,15 +660,21 @@
 		D4B617631EC99D4900CB1AD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D4AFC9B01F09DFB1000D1A6F /* SelectSizeCollectionViewCell.h */,
+				D4AFC9B11F09DFB1000D1A6F /* SelectSizeCollectionViewCell.m */,
+				D4AFC9AD1F09DF8A000D1A6F /* BottomBuyCartView.h */,
+				D4AFC9AE1F09DF8A000D1A6F /* BottomBuyCartView.m */,
+				D4AFC9AA1F09DF6C000D1A6F /* SelectView.h */,
+				D4AFC9AB1F09DF6C000D1A6F /* SelectView.m */,
+				D4AFC9A71F09DF4F000D1A6F /* PMDetailTableViewCell.h */,
+				D4AFC9A81F09DF4F000D1A6F /* PMDetailTableViewCell.m */,
+				D4173D8C1F1328FC00A9C12E /* NSString+AttributedString.h */,
+				D4173D8D1F1328FC00A9C12E /* NSString+AttributedString.m */,
+				D4AFC9A11F09D970000D1A6F /* UILabel+LabelHeightAndWidth.h */,
+				D4AFC9A21F09D970000D1A6F /* UILabel+LabelHeightAndWidth.m */,
 				D4B617951ECA83D600CB1AD8 /* UIBarButtonItem+Custom.h */,
 				D4B617961ECA83D600CB1AD8 /* UIBarButtonItem+Custom.m */,
 				D4B6177E1EC99DFB00CB1AD8 /* PrefixHeader.pch */,
-				C609AA031ECD870A00DDAB6A /* PMGoodsDetailView.h */,
-				C609AA041ECD870A00DDAB6A /* PMGoodsDetailView.m */,
-				C609AA091ECD96B000DDAB6A /* PMDetailTitleViewCell.h */,
-				C609AA0A1ECD96B000DDAB6A /* PMDetailTitleViewCell.m */,
-				C63EF3961ED07BB400874489 /* PMDetailAdsViewCell.h */,
-				C63EF3971ED07BB400874489 /* PMDetailAdsViewCell.m */,
 				C6D794E51ED87FD7005820F8 /* PMPopupView.h */,
 				C6D794E61ED87FD7005820F8 /* PMPopupView.m */,
 				C6D794E81ED885AC005820F8 /* PMShareView.h */,
@@ -802,6 +862,8 @@
 			children = (
 				D425DF291ECBE40800B8B80E /* HomeModel.h */,
 				D425DF2A1ECBE40800B8B80E /* HomeModel.m */,
+				D47C577F1EF79DA000C4E0DF /* PMProductModel.h */,
+				D47C57801EF79DA000C4E0DF /* PMProductModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -813,8 +875,12 @@
 				D4B617C51ECAC95D00CB1AD8 /* XRCarouselView */,
 				D42E32301ECC1D5000052781 /* HomeTableViewCell.h */,
 				D42E32311ECC1D5000052781 /* HomeTableViewCell.m */,
-				C63EF3901ECF793B00874489 /* UINavigationBar+DeprecateBackground.h */,
-				C63EF3911ECF793B00874489 /* UINavigationBar+DeprecateBackground.m */,
+				D47C57FE1EF8F43100C4E0DF /* PMHomeHeaderView.h */,
+				D47C57FF1EF8F43100C4E0DF /* PMHomeHeaderView.m */,
+				D47C577C1EF79D8C00C4E0DF /* PMProductTableViewCell.h */,
+				D47C577D1EF79D8C00C4E0DF /* PMProductTableViewCell.m */,
+				D47C58041EF9069300C4E0DF /* UINavigationBar+ChangeNavigationBarColor.h */,
+				D47C58051EF9069300C4E0DF /* UINavigationBar+ChangeNavigationBarColor.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1177,19 +1243,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63EF3E51ED53B3B00874489 /* PMDetailViewModel.m in Sources */,
 				C63EF3E31ED53B2300874489 /* PMNormalInvoiceViewController.m in Sources */,
-				C63EF3E41ED53B2300874489 /* PMDetailAdsViewCell.m in Sources */,
-				D4C784611ED2D04B00702958 /* UINavigationBar+DeprecateBackground.m in Sources */,
 				D4C784621ED2D04B00702958 /* PMPrivateInvoiceViewController.m in Sources */,
 				C6E92A621ECDD5C00081924A /* WXSTransitionManager+FragmentAnimation.m in Sources */,
 				C6E92A5E1ECDD5C00081924A /* WXSPercentDrivenInteractiveTransition.m in Sources */,
 				C6E92A361ECDD5920081924A /* PMCategoryRightViewCell.m in Sources */,
+				D4AFC9A01F09D951000D1A6F /* MJDIYHeader.m in Sources */,
 				C6E92A371ECDD5920081924A /* UICollectionViewCell+Identifier.m in Sources */,
 				D49E08B01EE50957006B2979 /* MyOrdersViewController.m in Sources */,
+				D47C57811EF79DA000C4E0DF /* PMProductModel.m in Sources */,
+				D4AFC9A61F09DF2A000D1A6F /* PMDeatilModel.m in Sources */,
 				C6E92A681ECDD5C00081924A /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				D4C785461ED6788D00702958 /* PMCommditTableViewCell.m in Sources */,
 				C6E92A381ECDD5920081924A /* PMGoodsDetailViewController.m in Sources */,
+				D4AFC9991F09D906000D1A6F /* LZHScrollView.m in Sources */,
 				D49E08C01EE50AB9006B2979 /* RecipientViewController.m in Sources */,
 				D49E08BA1EE509E1006B2979 /* ObligationViewController.m in Sources */,
 				C609A9CC1ECC04AF00DDAB6A /* main.m in Sources */,
@@ -1216,7 +1283,9 @@
 				D4C784E91ED5669000702958 /* PMPayTableViewCell.m in Sources */,
 				D49E08C31EE50AD8006B2979 /* PendingEvaluationViewController.m in Sources */,
 				C6D794ED1ED96778005820F8 /* PMShareCollectionViewCell.m in Sources */,
+				D4173D8E1F1328FC00A9C12E /* NSString+AttributedString.m in Sources */,
 				C6480F4A1ECBF6970025457D /* NSArray+Description.m in Sources */,
+				D4AFC9A91F09DF4F000D1A6F /* PMDetailTableViewCell.m in Sources */,
 				C6480F5A1ECBF6AC0025457D /* ViewController.m in Sources */,
 				C6480F4C1ECBF6970025457D /* NSCalendar+Utils.m in Sources */,
 				C63EF38C1ECF2F1700874489 /* PMMineView.m in Sources */,
@@ -1236,6 +1305,9 @@
 				C6E92A611ECDD5C00081924A /* WXSTransitionManager+CoverAnimation.m in Sources */,
 				D4C785491ED6C0E100702958 /* PMBusinessTableViewCell.m in Sources */,
 				D4C784781ED2DFC700702958 /* LXSegmentScrollView.m in Sources */,
+				D4AFC9981F09D906000D1A6F /* LZHCollectionViewCell.m in Sources */,
+				D4AFC9AC1F09DF6C000D1A6F /* SelectView.m in Sources */,
+				D47C58001EF8F43100C4E0DF /* PMHomeHeaderView.m in Sources */,
 				D4B617941EC9A1F400CB1AD8 /* PinMaiWangTabBarViewController.m in Sources */,
 				C6480F511ECBF6970025457D /* UIColor+RGB.m in Sources */,
 				D4C785401ED6692600702958 /* PMBusinessViewController.m in Sources */,
@@ -1244,6 +1316,7 @@
 				D4C7845A1ED2921B00702958 /* PMNormalInvoiceHeaderView.m in Sources */,
 				C6E92A631ECDD5C00081924A /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
 				D42E32321ECC1D5000052781 /* HomeTableViewCell.m in Sources */,
+				D4AFC9AF1F09DF8A000D1A6F /* BottomBuyCartView.m in Sources */,
 				D4B617C91ECAC95D00CB1AD8 /* XRCarouselView.m in Sources */,
 				C609A9DB1ECC3E2E00DDAB6A /* PMCategoryContentView.m in Sources */,
 				C6E92A5B1ECDD5C00081924A /* UINavigationController+WXSTransition.m in Sources */,
@@ -1255,10 +1328,11 @@
 				D4C8CB881ECEBE9C00E15121 /* PMLoginViewController.m in Sources */,
 				C609A9DE1ECC440D00DDAB6A /* PMCategoryLeftViewCell.m in Sources */,
 				C6E92A661ECDD5C00081924A /* WXSTransitionManager+SystermAnimation.m in Sources */,
-				C609AA051ECD870A00DDAB6A /* PMGoodsDetailView.m in Sources */,
 				D4B617871EC99FAC00CB1AD8 /* CartViewController.m in Sources */,
+				D4AFC99F1F09D951000D1A6F /* MJDIYAutoFooter.m in Sources */,
 				D4C8CB811ECE8F0300E15121 /* PMAboutViewController.m in Sources */,
 				C6E92A5D1ECDD5C00081924A /* UIViewController+WXSTransitionProperty.m in Sources */,
+				D4AFC9B21F09DFB1000D1A6F /* SelectSizeCollectionViewCell.m in Sources */,
 				D4BE2EA51ECECE1C009E70C0 /* LZHTextField.m in Sources */,
 				D4B617841EC99F8900CB1AD8 /* AuctionViewController.m in Sources */,
 				C6480F541ECBF6970025457D /* UIImage+ReSize.m in Sources */,
@@ -1267,7 +1341,7 @@
 				D4B617D11ECAE80C00CB1AD8 /* SGAdvertScrollView.m in Sources */,
 				C6D794E71ED87FD7005820F8 /* PMPopupView.m in Sources */,
 				C6E92A691ECDD5C00081924A /* WXSTransitionManager.m in Sources */,
-				C609AA0B1ECD96B000DDAB6A /* PMDetailTitleViewCell.m in Sources */,
+				D47C58061EF9069300C4E0DF /* UINavigationBar+ChangeNavigationBarColor.m in Sources */,
 				D45D34651ED9DBCF009505FB /* PMUser.m in Sources */,
 				C6E92A651ECDD5C00081924A /* WXSTransitionManager+SpreadAnimation.m in Sources */,
 				C6480F521ECBF6970025457D /* UIImage+Color.m in Sources */,
@@ -1280,7 +1354,9 @@
 				C6D794EA1ED885AC005820F8 /* PMShareView.m in Sources */,
 				D4BE2EA91ECEE7C8009E70C0 /* PMMyAccountViewController.m in Sources */,
 				D45D346B1ED9DEC6009505FB /* PMAddNewAddresssViewController.m in Sources */,
+				D4AFC9A31F09D970000D1A6F /* UILabel+LabelHeightAndWidth.m in Sources */,
 				D4C784861ED3DC4600702958 /* PMWithdrawViewController.m in Sources */,
+				D47C577E1EF79D8C00C4E0DF /* PMProductTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
