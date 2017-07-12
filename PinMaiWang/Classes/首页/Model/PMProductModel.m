@@ -1,22 +1,23 @@
 //
-//  HomeModel.m
+//  PMProductModel.m
 //  PinMaiWang
 //
-//  Created by 嚼华先森 on 2017/5/17.
+//  Created by 嚼华先森 on 2017/6/19.
 //  Copyright © 2017年 嚼华. All rights reserved.
 //
 
-#import "HomeModel.h"
+#import "PMProductModel.h"
 
-@implementation HomeModel
+@implementation PMProductModel
+
 -(void)setValue:(id)value forUndefinedKey:(NSString *)key{
     
     
 }
 
-+(instancetype)homeModelDealWithDict:(NSDictionary *)dict{
++(instancetype)modelDealWithDict:(NSDictionary *)dict{
     
-    HomeModel *model = [[HomeModel alloc]init];
+    PMProductModel *model = [[self alloc]init];
     [model setValuesForKeysWithDictionary:dict];
     return model;
 }

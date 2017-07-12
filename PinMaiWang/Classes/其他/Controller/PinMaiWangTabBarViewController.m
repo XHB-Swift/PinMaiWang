@@ -14,7 +14,9 @@
 #import "CartViewController.h"
 
 @interface PinMaiWangTabBarViewController ()
-
+{
+    NSInteger _index;
+}
 @end
 
 @implementation PinMaiWangTabBarViewController
@@ -76,6 +78,10 @@
     navs = nil;
     
 }
+
+
+
+
 
 
 @end
