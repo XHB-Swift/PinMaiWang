@@ -18,12 +18,13 @@
 #import <MJExtension.h>
 
 #import "UINavigationController+WXSTransition.h"
-#import "UINavigationBar+DeprecateBackground.h"
+#import "UINavigationBar+ChangeNavigationBarColor.h"
 #import "UIViewController+WXSTransition.h"
 #import <SDImageCache.h>
 #import "BLAreaPickerView.h"
 
-
+#import "MJDIYHeader.h"
+#import "MJDIYAutoFooter.h"
 
 
 #define UI_IS_LANDSCAPE         ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
