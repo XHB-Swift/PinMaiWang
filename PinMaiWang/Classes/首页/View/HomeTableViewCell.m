@@ -34,53 +34,53 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
-        self.iconView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 100, 100)];
-        self.iconView.image = [UIImage imageNamed:@"lobster"];
+        self.iconView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 2, self.bounds.size.width/3, self.bounds.size.width/3)];
         [self.contentView addSubview:self.iconView];
         
-        self.title = [[UILabel alloc]initWithFrame:CGRectMake(self.iconView.maxX+10, 10, XHB_SCREEN_WIDTH-self.iconView.width-10 - 40, 30)];
+        self.title = [[UILabel alloc]initWithFrame:CGRectMake(self.iconView.maxX+10, 5, XHB_SCREEN_WIDTH-self.iconView.width-10 - 40, 30)];
         self.title.numberOfLines = 0;
-        self.title.text = @"吉利乔治 法国生蚝";
         self.title.font = [UIFont systemFontOfSize:14.0];
-        //        self.title.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:self.title];
         
         self.placeView = [[UIImageView alloc]initWithFrame:CGRectMake(self.title.maxX+5, 5, 20, 20)];
-        self.placeView.image = [UIImage resizeImage:[UIImage imageNamed:@"index_06"] toNewSize:CGSizeMake(20, 20)];
         [self.contentView addSubview:self.placeView];
         
         
         self.size = [[UILabel alloc]initWithFrame:CGRectMake(self.title.x, self.title.maxY+5, XHB_SCREEN_WIDTH/2, 20)];
         self.size.font = [UIFont systemFontOfSize:13.0];
-        //        self.size.backgroundColor = [UIColor yellowColor];
-        self.size.text = @"8.5千克/盒子";
         [self.contentView addSubview:self.size];
         
         
         self.price = [[UILabel alloc]initWithFrame:CGRectMake(self.size.x, self.size.maxY+5, XHB_SCREEN_WIDTH/2, self.size.height)];
         self.price.font = [UIFont systemFontOfSize:12.0];
-        self.price.text = @"¥25.33起/500克";
         self.price.textColor = [UIColor redColor];
-        //        self.price.backgroundColor = [UIColor blueColor];
         [self.contentView addSubview:self.price];
         
         self.totalPrice = [[UILabel alloc]initWithFrame:CGRectMake(self.price.x, self.price.maxY+5, XHB_SCREEN_WIDTH/3.5, self.price.height)];
         self.totalPrice.font = [UIFont systemFontOfSize:11.0];
-        self.totalPrice.text = @"¥9999/箱";
         self.totalPrice.textColor = [UIColor redColor];
-        //        self.totalPrice.backgroundColor = [UIColor purpleColor];
         [self.contentView addSubview:self.totalPrice];
         
         
         self.number = [[UILabel alloc]initWithFrame:CGRectMake(self.totalPrice.maxX+10, self.price.maxY+5, XHB_SCREEN_WIDTH-self.totalPrice.width-self.iconView.width-40, self.totalPrice.height)];
         self.number.font = [UIFont systemFontOfSize:11.0];
-        self.number.text = @"已售999999箱";
-        //        self.number.backgroundColor = [UIColor cyanColor];
         [self.contentView addSubview:self.number];
     }
     return self;
 }
 
+-(void)setModel:(HomeModel *)model{
+    
+    _model = model;
+    self.imageView.image = [UIImage imageNamed:model.icon];
+    self.placeView.image = [UIImage imageNamed:model.img];
+    self.title.text = model.name;
+    self.price.text = model.price;
+    self.size.text = model.size;
+    self.totalPrice.text = model.allPrice;
+    self.number.text = model.sellOut;
+    
+}
 
 
 @end
